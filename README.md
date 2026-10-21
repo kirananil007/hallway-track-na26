@@ -33,7 +33,16 @@ npm test
 # Data pipeline
 cd pipeline
 uv run pytest
+uv run python ingest.py   # fetch the latest schedule into web/public/data/
 ```
+
+## Where the data comes from
+
+- **Sessions:** the official schedule on Sessionize, refreshed every 6 hours by a GitHub Action
+  ([refresh-data.yml](.github/workflows/refresh-data.yml)). We keep only the title, time, room,
+  speakers and a ~200-character summary, and every session links to its official page.
+- **Interest tags:** keyword matching from [pipeline/tags.yaml](pipeline/tags.yaml). PRs that
+  improve it are welcome.
 
 ## Contributing
 

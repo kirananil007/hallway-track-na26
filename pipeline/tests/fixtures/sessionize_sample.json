@@ -1,0 +1,124 @@
+{
+  "_comment": "Made-up sessions in the shape of the Sessionize schedule JSON. Not real event data.",
+  "categories": [
+    {
+      "id": 1,
+      "title": "All Sessions",
+      "type": "session",
+      "sort": 0,
+      "items": [
+        {"id": 10, "name": "Observability", "sort": 0},
+        {"id": 11, "name": "Keynote Sessions", "sort": 1},
+        {"id": 12, "name": "⚡ Lightning Talks", "sort": 2},
+        {"id": 13, "name": "CNCF-hosted Co-located Events", "sort": 3},
+        {"id": 14, "name": "Breaks", "sort": 4},
+        {"id": 15, "name": "Project Lightning Talks", "sort": 5},
+        {"id": 16, "name": "Platform Engineering", "sort": 6}
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Audience Level",
+      "type": "session",
+      "sort": 1,
+      "items": [
+        {"id": 20, "name": "Beginner", "sort": 0},
+        {"id": 21, "name": "Advanced", "sort": 1},
+        {"id": 22, "name": "Any Level", "sort": 2}
+      ]
+    }
+  ],
+  "rooms": [
+    {"id": 100, "name": "Salt Palace | Level 1 | Hall DE", "sort": 0},
+    {"id": 101, "name": "Salt Palace | Level 2 | 250 A-C ", "sort": 1},
+    {"id": 102, "name": "Hyatt Regency | Level 4 | Regency Ballroom B-D", "sort": 2}
+  ],
+  "speakers": [
+    {"id": "sp-1", "firstName": "Avery", "lastName": "Example", "fullName": "Avery Example"},
+    {"id": "sp-2", "firstName": "Blake", "lastName": "Sample", "fullName": "Blake Sample"},
+    {"id": "sp-3", "firstName": "Casey", "lastName": "Placeholder", "fullName": null}
+  ],
+  "questions": [],
+  "sessions": [
+    {
+      "id": "1001",
+      "title": "Keynote: The Next Decade of Example Orchestration",
+      "description": "Opening remarks.",
+      "startsAt": "2026-11-10T09:00:00",
+      "endsAt": "2026-11-10T09:20:00",
+      "speakers": ["sp-1"],
+      "categoryItems": [11],
+      "roomId": 100
+    },
+    {
+      "id": "1002",
+      "title": "Scaling Prometheus and OpenTelemetry Pipelines Without Tears",
+      "description": "Our metrics pipeline grew from ten clusters to a thousand. We walk through how we tuned the OTel Collector, added KEDA-based autoscaling for ingestion, and used eBPF to find the noisy neighbours that were dropping spans, with a dashboard you can take home.",
+      "startsAt": "2026-11-10T11:00:00",
+      "endsAt": "2026-11-10T11:30:00",
+      "speakers": ["sp-1", "sp-2"],
+      "categoryItems": [10, 21],
+      "roomId": 101
+    },
+    {
+      "id": "1003",
+      "title": "Five GitOps Mistakes We Made So You Don't Have To",
+      "description": "A quick tour of Argo CD anti-patterns.",
+      "startsAt": "2026-11-11T16:00:00",
+      "endsAt": "2026-11-11T16:05:00",
+      "speakers": ["sp-3"],
+      "categoryItems": [12, 22],
+      "roomId": 100
+    },
+    {
+      "id": "1004",
+      "title": "ExampleCon Hosted by CNCF - Full Day Event | ALL ACCESS PASS REQUIRED",
+      "description": null,
+      "startsAt": "2026-11-09T09:00:00",
+      "endsAt": "2026-11-09T17:00:00",
+      "speakers": [],
+      "categoryItems": [13],
+      "roomId": 101
+    },
+    {
+      "id": "1005",
+      "title": "BREAK",
+      "description": "",
+      "startsAt": "2026-11-09T10:30:00",
+      "endsAt": "2026-11-09T10:45:00",
+      "speakers": [],
+      "categoryItems": [15],
+      "roomId": 102
+    },
+    {
+      "id": "1006",
+      "title": "Building Your First Internal Developer Platform",
+      "description": "Getting started with Backstage and golden paths.",
+      "startsAt": "2026-11-12T13:00:00",
+      "endsAt": "2026-11-12T13:30:00",
+      "speakers": ["sp-404"],
+      "categoryItems": [16, 20],
+      "roomId": 999
+    },
+    {
+      "id": "1002",
+      "title": "Scaling Prometheus and OpenTelemetry Pipelines Without Tears (Updated)",
+      "description": "Room change: now in 250 A-C. Our metrics pipeline grew from ten clusters to a thousand. We walk through how we tuned the OTel Collector, added KEDA-based autoscaling for ingestion, and used eBPF to find noisy neighbours.",
+      "startsAt": "2026-11-10T11:00:00",
+      "endsAt": "2026-11-10T11:30:00",
+      "speakers": ["sp-1", "sp-2"],
+      "categoryItems": [10, 21],
+      "roomId": 101
+    },
+    {
+      "id": "1007",
+      "title": "Not Scheduled Yet",
+      "description": "",
+      "startsAt": null,
+      "endsAt": null,
+      "speakers": [],
+      "categoryItems": [],
+      "roomId": null
+    }
+  ]
+}

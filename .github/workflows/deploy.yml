@@ -22,13 +22,17 @@ concurrency:
 jobs:
   build:
     # GitHub Pages isn't available for private repos on the free plan, so skip until public.
-    if: ${{ !github.event.repository.private }}
+    # (When called from refresh-data.yml the event has no repo details; that workflow checks.)
+    if: ${{ github.event.repository.private != true }}
     runs-on: ubuntu-latest
     defaults:
       run:
         working-directory: web
     steps:
       - uses: actions/checkout@v4
+        with:
+          # Always build the latest main, including a data commit refresh-data.yml just pushed.
+          ref: main
       - uses: actions/setup-node@v4
         with:
           node-version: 24

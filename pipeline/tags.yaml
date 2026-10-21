@@ -1,0 +1,27 @@
+# Interest tags shown in the app, and the keywords that trigger each one.
+#
+# Matching is case-insensitive and on whole words, over the session title, track and
+# description. "ai" matches "AI inference" but not "yaml" or "aim".
+#
+# Want better tags? Add a keyword to a list (or add a new tag) and open a pull request.
+# Keep the list to roughly 20 tags so the filter chips stay usable on a phone.
+
+observability: [observability, monitoring, metrics, tracing, distributed tracing, logging, logs, prometheus, grafana, jaeger, thanos, alerting, dashboards]
+opentelemetry: [opentelemetry, otel, otlp]
+autoscaling: [autoscaling, autoscaler, autoscalers, hpa, vpa, keda, karpenter, cluster autoscaler, scale to zero]
+platform-engineering: [platform engineering, platform engineers, platform team, internal developer platform, idp, backstage, developer portal, golden path, golden paths, crossplane]
+gitops: [gitops, argo cd, argocd, argo, flux, fluxcd]
+security: [security, securing, supply chain, sbom, sboms, sigstore, cosign, vulnerability, vulnerabilities, cve, cves, zero trust, policy as code, opa, kyverno, falco, rbac, secrets, spiffe, spire]
+networking: [networking, network, connectivity, cni, service mesh, istio, linkerd, envoy, gateway api, ingress, dns, load balancing, cilium]
+ebpf: [ebpf, bpf, tetragon, pixie]
+ai-ml: [ai, ml, machine learning, llm, llms, genai, generative ai, gpu, gpus, kubeflow, mlops]
+inference: [inference, model serving, kserve, vllm, llm-d]
+agentic: [agentic, agentics, ai agent, ai agents, multi-agent, mcp, model context protocol]
+storage: [storage, csi, persistent volume, persistent volumes, pvc, rook, ceph, longhorn, etcd, database, databases, backup, backups, stateful, statefulset, statefulsets]
+finops: [finops, cost optimization, cost optimisation, cost savings, cloud cost, cloud costs, cost efficiency, opencost, kubecost]
+sre: [sre, sres, site reliability, reliability, incident, incidents, on-call, oncall, postmortem, postmortems, slo, slos, sli, slis, chaos engineering, resilience]
+multi-cluster: [multi-cluster, multicluster, multi cluster, fleet management, federation, karmada, cluster api, multi-cloud, multicloud, hybrid cloud]
+wasm: [wasm, webassembly, wasi, wasmcloud, wasmedge]
+edge: [edge computing, kubeedge, k3s, iot, kubernetes on edge, at the edge, edge day, far edge]
+contributor: [contributor, contributors, contributing, maintainer, maintainers, contribfest, sig, sigs, upstream, mentoring, mentorship]
+beginner: [beginner, beginners, novice, introduction to, intro to, "101", getting started, first-timer, first-timers, newcomer, newcomers]

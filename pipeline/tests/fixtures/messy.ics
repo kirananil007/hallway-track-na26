@@ -1,0 +1,48 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Example//Messy Export For Tests//EN
+X-COMMENT:Made-up sessions. Not real event data.
+BEGIN:VEVENT
+UID:ics-001@example.invalid
+DTSTAMP:20261001T000000Z
+DTSTART:20261110T170000Z
+DTEND:20261110T173000Z
+SUMMARY:Securing the Supply Chain with Example Tools
+LOCATION:Salt Palace | Level 2 | 255 BC
+CATEGORIES:Security
+DESCRIPTION:Speakers: Jane Example (Example Corp)\, John Sample (Sample Inc
+ )\nAudience Level: Advanced\n\nA practical look at signing\, SBOMs and pol
+ icy.
+URL:https://example.invalid/session/ics-001
+END:VEVENT
+BEGIN:VEVENT
+UID:ics-002@example.invalid
+DTSTAMP:20261001T000000Z
+DTSTART;TZID=America/Denver:20261111T140000
+DTEND;TZID=America/Denver:20261111T143000
+SUMMARY:[Beginner] Kubernetes Networking 101
+LOCATION:Hyatt Regency | Level 2 | Salt Lake Ballroom C
+DESCRIPTION:<p>No speaker listed yet. Learn how <b>Services</b> &amp\; CNI
+  plugins fit together.</p>
+END:VEVENT
+BEGIN:VEVENT
+UID:ics-003@example.invalid
+DTSTAMP:20261001T000000Z
+DTSTART:20261112T100000
+DTEND:20261112T103000
+SUMMARY:Floating Time Session
+DESCRIPTION:Speaker: Solo Presenter\n[Intermediate] A session whose export
+  forgot the time zone.
+END:VEVENT
+BEGIN:VEVENT
+UID:ics-001@example.invalid
+DTSTAMP:20261002T000000Z
+DTSTART:20261110T170000Z
+DTEND:20261110T173000Z
+SUMMARY:Securing the Supply Chain with Example Tools (Room change)
+LOCATION:Salt Palace | Level 2 | 255 EF
+CATEGORIES:Security
+DESCRIPTION:Speakers: Jane Example; John Sample\nAudience Level: Advanced\n
+ \nA practical look at signing\, SBOMs and policy.
+END:VEVENT
+END:VCALENDAR

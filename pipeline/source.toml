@@ -1,0 +1,14 @@
+# Where the pipeline reads the official schedule from. See PLAN.md §0 for the background.
+[source]
+# "sessionize" (Sessionize JSON) or "ics" (iCalendar file).
+adapter = "sessionize"
+
+# An https:// URL, or a file path relative to pipeline/ (e.g. "../data/raw/schedule.ics").
+# TODO(verify): switch to the official https://sessionize.com/api/v2/<id>/view/All if CNCF shares the ID.
+location = "https://kubecon-cloudnativecon-north-america-2026.sessionize.com/api/schedule"
+
+# Shown in meta.json so the site can say where the data came from.
+label = "Sessionize event app"
+
+# Each session links to this + its id (checked 2026-10-21).
+session_url_base = "https://kubecon-cloudnativecon-north-america-2026.sessionize.com/session/"

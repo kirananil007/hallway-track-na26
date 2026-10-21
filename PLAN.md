@@ -32,7 +32,7 @@ Today: 2026-10-21 (19 days out). Target: public MVP (M0–M5) by **2026-10-26**,
 2. `ics` — any iCal file (Sched-style or otherwise). This is the generic path and the **manual fallback**: you drop a file in `data/raw/`.
 3. *(Not doing)* Scraping the LF HTML schedule page. That breaks the "never scrape HTML" rule.
 
-We pick the source with a config file (`pipeline/source.toml`), not code changes. If no live source is reachable, the pipeline uses the last committed snapshot in `data/raw/` and the site still builds.
+We pick the source with a config file (`pipeline/source.toml`), not code changes. If no live source is reachable, the pipeline keeps the last committed `web/public/data/sessions.json` and the site still builds. We **don't** commit the raw download, because it holds full abstracts and speaker bios. `data/raw/` is only for a manual drop-in file.
 
 The output shape stays exactly as specified. I'm renaming the field comments from "Sched UID" to "source UID". The `url` field will point to the official session page, whichever platform hosts it.
 
@@ -116,7 +116,7 @@ pipeline/
   build_side_events.py
   tests/  tests/fixtures/
 data/
-  raw/                   # committed last-good snapshot (+ .etag)
+  raw/                   # manual fallback drop-in only (raw downloads are not committed)
   events.yaml  events.schema.json
   colocated.yaml         # M6
 web/
