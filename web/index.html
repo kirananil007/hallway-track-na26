@@ -9,6 +9,17 @@
       content="Hallway Track: an unofficial community planner for KubeCon + CloudNativeCon North America 2026 in Salt Lake City."
     />
     <title>Hallway Track · KubeCon + CloudNativeCon NA 2026 planner</title>
+    <!-- Start downloading the schedule while the app's JavaScript loads. -->
+    <link rel="preload" href="%BASE_URL%data/sessions.json" as="fetch" crossorigin="anonymous" />
+    <script>
+      // Apply the saved (or system) theme before first paint, so there's no white flash.
+      var theme = null
+      try {
+        theme = localStorage.getItem('hallway-track.theme')
+      } catch (e) {}
+      var dark = theme ? theme === 'dark' : window.matchMedia('(prefers-color-scheme: dark)').matches
+      document.documentElement.classList.toggle('dark', dark)
+    </script>
   </head>
   <body>
     <div id="root"></div>

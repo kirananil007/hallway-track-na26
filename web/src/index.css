@@ -1,2 +1,13 @@
 /* Tailwind v4: one import pulls in the base styles and all utility classes. */
 @import "tailwindcss";
+
+/* `dark:` classes follow a .dark class on <html> (set in index.html and by the toggle),
+   instead of only the system setting, so people can switch manually. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+html {
+  color-scheme: light;
+}
+html.dark {
+  color-scheme: dark; /* dark scrollbars and form controls */
+}

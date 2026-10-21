@@ -8,6 +8,11 @@ export const EVENT = {
   timeZone: 'America/Denver',
   firstDay: '2026-11-09',
   lastDay: '2026-11-12',
+  // Nov 8 only has registration, but it's in the schedule, so it gets a day button too.
+  days: ['2026-11-08', '2026-11-09', '2026-11-10', '2026-11-11', '2026-11-12'],
+  // What Browse shows before the event starts: the first main-conference day.
+  defaultDay: '2026-11-10',
+  officialScheduleUrl: 'https://events.linuxfoundation.org/kubecon-cloudnativecon-north-america/program/schedule/',
 } as const
 
 // Whole days from `today` until the first event day (0 once the event has started).
