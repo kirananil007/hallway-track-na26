@@ -2263,7 +2263,6 @@
     "type": "other",
     "level": "unknown",
     "speakers": [
-      "Fabian Kammel",
       "Vicente Herrera"
     ],
     "summary": "An Introduction to Capture The Flag The Cloud Native Capture The Flag (CTF) is available to all KubeCon + CloudNativeCon attendees. In preparation for playing the game, you are invited to attend an…",
