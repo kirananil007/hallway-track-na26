@@ -5315,7 +5315,8 @@
     "type": "keynote",
     "level": "unknown",
     "speakers": [
-      "Phong Nguyen"
+      "Phong Nguyen",
+      "Shaun Hopper"
     ],
     "summary": "At Meta, ~15 engineers run ~100 Kubernetes clusters for AI research & inference. Terraform exceeds expectations at its job: setting up infra for those clusters. The problem is its side gig: deploying…",
     "url": "https://kubecon-cloudnativecon-north-america-2026.sessionize.com/session/1360829",
