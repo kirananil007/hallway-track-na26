@@ -10,6 +10,7 @@ import type { ReactNode } from 'react'
 import { LEVEL_LABELS, TYPE_LABELS, roomLabel, tagLabel } from '../lib/labels'
 import { durationMinutes, formatDuration, formatTime } from '../lib/time'
 import type { Session, SessionType } from '../types'
+import { TONE_CLASS, type CardTone } from './cardTone'
 
 // Colored badge per session type. Plain talks get no badge to keep the list calm.
 const TYPE_BADGE: Partial<Record<SessionType, string>> = {
@@ -19,12 +20,6 @@ const TYPE_BADGE: Partial<Record<SessionType, string>> = {
   other: 'bg-slate-100 text-slate-700 dark:bg-slate-800 dark:text-slate-300',
 }
 
-const TONE_CLASS = {
-  normal: 'border-slate-200 dark:border-slate-800',
-  conflict: 'border-red-500 dark:border-red-500',
-  backup: 'border-dashed border-slate-400 dark:border-slate-600',
-}
-
 interface Props {
   session: Session
   timeZone?: string
@@ -32,7 +27,7 @@ interface Props {
   onTagClick?: (tag: string) => void
   actions?: ReactNode
   notice?: ReactNode
-  tone?: keyof typeof TONE_CLASS
+  tone?: CardTone
 }
 
 export function SessionCard({

@@ -1,0 +1,26 @@
+# Checks every pull request that adds or changes a side event.
+# If this fails, open the "Details" link: it lists each problem and how to fix it.
+name: Validate side events
+
+on:
+  pull_request:
+    paths:
+      - data/events.yaml
+      - data/events.schema.json
+      - pipeline/build_side_events.py
+      - pipeline/tags.yaml
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: pipeline
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+      - name: Check data/events.yaml
+        run: uv run python build_side_events.py --check

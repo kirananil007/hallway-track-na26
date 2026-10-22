@@ -2,7 +2,7 @@
 // Spec: RFC 5545. The fiddly parts are handled here: CRLF line endings, escaping, folding
 // long lines at 75 bytes, and a VTIMEZONE block so times stay in Salt Lake City time.
 
-import type { Session } from '../types'
+import type { Session, SideEvent } from '../types'
 import { EVENT } from './event'
 import { roomLabel } from './labels'
 
@@ -148,6 +148,30 @@ export function sessionToEvent(session: Session, backup: boolean): CalendarEvent
     end: session.end,
     location: [roomLabel(session.room), EVENT.city].filter(Boolean).join(', '),
     url: session.url,
+    description,
+    tentative: backup,
+  }
+}
+
+// A community side event as a calendar event.
+export function sideEventToEvent(event: SideEvent, backup: boolean): CalendarEvent {
+  const description = [
+    backup ? 'Backup option for this time slot.' : '',
+    `Hosted by ${event.host}.`,
+    `${event.cost === 'free' ? 'Free' : 'Paid'}${event.requires_registration ? ', registration required' : ''}.`,
+    `RSVP / details: ${event.url}`,
+    'Community-submitted side event, not part of the official program. Check the organizer\'s page for changes.',
+  ]
+    .filter(Boolean)
+    .join('\n\n')
+
+  return {
+    uid: `side-${event.id}@${UID_DOMAIN}`,
+    title: backup ? `[Backup] ${event.title}` : event.title,
+    start: event.start,
+    end: event.end,
+    location: [event.venue, event.address].filter(Boolean).join(', '),
+    url: event.url,
     description,
     tentative: backup,
   }

@@ -1,5 +1,5 @@
 // Shapes of the JSON files the pipeline writes to public/data/.
-// Keep these in sync with pipeline/normalize.py and pipeline/ingest.py.
+// Keep these in sync with pipeline/normalize.py, ingest.py and build_side_events.py.
 
 export type SessionType = 'keynote' | 'breakout' | 'lightning' | 'colocated' | 'other'
 export type Level = 'beginner' | 'intermediate' | 'advanced' | 'unknown'
@@ -18,6 +18,25 @@ export interface Session {
   summary: string
   url: string
   tags: string[]
+}
+
+// A community side event from data/events.yaml.
+export interface SideEvent {
+  id: string
+  title: string
+  host: string
+  start: string
+  end: string
+  day: string
+  venue: string
+  address: string // may be empty
+  url: string // RSVP / registration page
+  tags: string[]
+  cost: 'free' | 'paid'
+  requires_registration: boolean
+  submitted_by: string // GitHub handle
+  last_verified: string // YYYY-MM-DD
+  example: boolean // placeholder showing the format, not a real event
 }
 
 export interface Meta {

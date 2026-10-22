@@ -1,0 +1,72 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/kirananil007/hallway-track-na26/data/events.schema.json",
+  "title": "Community side events for KubeCon + CloudNativeCon NA 2026",
+  "type": "object",
+  "required": ["events"],
+  "additionalProperties": false,
+  "properties": {
+    "events": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/event" }
+    }
+  },
+  "$defs": {
+    "localTime": {
+      "description": "Salt Lake City local time, e.g. 2026-11-10T18:30 (an optional -07:00 offset is allowed).",
+      "type": "string",
+      "pattern": "^2026-11-\\d{2}T\\d{2}:\\d{2}(:\\d{2})?(-07:00)?$"
+    },
+    "event": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id", "title", "host", "start", "end", "venue", "url", "tags",
+        "cost", "requires_registration", "submitted_by", "last_verified"
+      ],
+      "properties": {
+        "id": {
+          "description": "Short unique name, lowercase with dashes, e.g. otel-community-meetup.",
+          "type": "string",
+          "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$",
+          "maxLength": 60
+        },
+        "title": { "type": "string", "minLength": 3, "maxLength": 120 },
+        "host": { "type": "string", "minLength": 2, "maxLength": 80 },
+        "start": { "$ref": "#/$defs/localTime" },
+        "end": { "$ref": "#/$defs/localTime" },
+        "venue": { "type": "string", "minLength": 2, "maxLength": 120 },
+        "address": { "type": "string", "maxLength": 200 },
+        "url": {
+          "description": "RSVP or registration page. Must be https.",
+          "type": "string",
+          "pattern": "^https://[^\\s]+$",
+          "maxLength": 300
+        },
+        "tags": {
+          "description": "Interest tags from pipeline/tags.yaml.",
+          "type": "array",
+          "items": { "type": "string" },
+          "maxItems": 5,
+          "uniqueItems": true
+        },
+        "cost": { "enum": ["free", "paid"] },
+        "requires_registration": { "type": "boolean" },
+        "submitted_by": {
+          "description": "Your GitHub handle, without the @.",
+          "type": "string",
+          "pattern": "^[A-Za-z0-9](-?[A-Za-z0-9]){0,38}$"
+        },
+        "last_verified": {
+          "description": "The date you last checked the event details, YYYY-MM-DD.",
+          "type": "string",
+          "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+        },
+        "example": {
+          "description": "Placeholder entry used to show the format. Shown with an EXAMPLE badge.",
+          "type": "boolean"
+        }
+      }
+    }
+  }
+}

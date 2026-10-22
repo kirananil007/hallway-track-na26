@@ -5,7 +5,7 @@ import { Button } from '../components/Button'
 import { FilterBar } from '../components/FilterBar'
 import { SessionCard } from '../components/SessionCard'
 import type { PlanApi } from '../hooks/usePlan'
-import { overlaps } from '../lib/conflicts'
+import { countClashes, type PlanEntry } from '../lib/planEntries'
 import {
   applyFilters,
   defaultFilters,
@@ -25,10 +25,11 @@ interface Props {
   today: string
   timeZone?: string
   plan: PlanApi
+  planEntries: PlanEntry[] // what's in the plan, with times, for clash warnings
   onParamsChange: (params: URLSearchParams) => void
 }
 
-export function Browse({ sessions, params, today, timeZone, plan, onParamsChange }: Props) {
+export function Browse({ sessions, params, today, timeZone, plan, planEntries, onParamsChange }: Props) {
   // useMemo: only recompute when the inputs change, not on every render.
   // We key on the params *string* because a new URLSearchParams object arrives each render.
   const paramsKey = params.toString()
@@ -44,11 +45,7 @@ export function Browse({ sessions, params, today, timeZone, plan, onParamsChange
     () => new Set(plan.items.filter((i) => i.kind === 'session').map((i) => i.id)),
     [plan.items],
   )
-  const mainPicks = useMemo(() => {
-    const mainIds = new Set(plan.items.filter((i) => i.kind === 'session' && !i.backup).map((i) => i.id))
-    return sessions.filter((s) => mainIds.has(s.id))
-  }, [plan.items, sessions])
-  const clashCount = (s: Session) => mainPicks.filter((p) => p.id !== s.id && overlaps(p, s)).length
+  const clashCount = (s: Session) => countClashes(`session:${s.id}`, s, planEntries)
 
   const toggleTag = (tag: string) =>
     setFilters({

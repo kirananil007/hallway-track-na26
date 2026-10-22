@@ -62,7 +62,10 @@ The rules live in [web/src/lib/scoring.ts](web/src/lib/scoring.ts) and
 
 ## Contributing
 
-Coming in M5: add a side event by editing one YAML file in the GitHub web editor.
+**Add a side event in about a minute, right from GitHub's web editor:** see
+[CONTRIBUTING.md](CONTRIBUTING.md). Every pull request is checked automatically by
+[validate-events.yml](.github/workflows/validate-events.yml), and merged events show up on
+the site within minutes.
 
 ## License
 

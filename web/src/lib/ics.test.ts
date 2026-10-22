@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest'
 import type { Session } from '../types'
-import { buildCalendar, escapeText, foldLine, sessionToEvent, toLocalStamp, toUtcStamp } from './ics'
+import { buildCalendar, escapeText, foldLine, sessionToEvent, sideEventToEvent, toLocalStamp, toUtcStamp } from './ics'
 
 const NOW = new Date('2026-10-21T22:13:00Z')
 
@@ -94,6 +94,35 @@ describe('buildCalendar', () => {
   it('keeps UIDs stable across exports so re-imports update instead of duplicating', () => {
     const later = buildCalendar([sessionToEvent(SESSION, false)], new Date('2026-11-01T00:00:00Z'))
     expect(later).toContain('UID:session-1246765@hallway-track-na26')
+  })
+
+  it('exports side events with venue, RSVP link and a community note', () => {
+    const side = sideEventToEvent(
+      {
+        id: 'otel-meetup',
+        title: 'OTel meetup',
+        host: 'Some Group',
+        start: '2026-11-10T18:30:00-07:00',
+        end: '2026-11-10T21:00:00-07:00',
+        day: '2026-11-10',
+        venue: 'A Venue',
+        address: '1 Main St',
+        url: 'https://example.com/rsvp',
+        tags: [],
+        cost: 'free',
+        requires_registration: true,
+        submitted_by: 'someone',
+        last_verified: '2026-10-21',
+        example: false,
+      },
+      false,
+    )
+    const text = unfold(buildCalendar([side], NOW))
+    expect(text).toContain('UID:side-otel-meetup@hallway-track-na26')
+    expect(text).toContain('DTSTART;TZID=America/Denver:20261110T183000')
+    expect(text).toContain('LOCATION:A Venue\\, 1 Main St')
+    expect(text).toContain('Free\\, registration required.')
+    expect(text).toContain('Community-submitted side event')
   })
 
   it('produces an empty but valid calendar for an empty plan', () => {

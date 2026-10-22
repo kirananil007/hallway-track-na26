@@ -1,55 +1,43 @@
-// My Plan: the sessions the user picked, with conflicts flagged, plus export and share.
+// My Plan: the sessions and side events the user picked, with conflicts flagged,
+// plus export and share.
 
 import { useMemo, useState } from 'react'
 import { Button } from '../components/Button'
 import { SessionCard } from '../components/SessionCard'
+import { SideEventCard } from '../components/SideEventCard'
 import type { PlanApi } from '../hooks/usePlan'
 import { downloadFile, shareLink } from '../lib/browser'
-import { findConflicts } from '../lib/conflicts'
-import { groupByDayAndSlot } from '../lib/filters'
-import { buildCalendar, sessionToEvent } from '../lib/ics'
+import { buildCalendar, sessionToEvent, sideEventToEvent } from '../lib/ics'
 import { planKey, type PlanItem } from '../lib/plan'
+import { planConflicts, type PlanEntry } from '../lib/planEntries'
 import { buildHash } from '../lib/route'
 import { decodePlan, encodePlan } from '../lib/share'
 import { formatDayLabel, formatTime } from '../lib/time'
-import type { Session } from '../types'
+import type { Session, SideEvent } from '../types'
 
 interface Props {
   sessions: Session[]
+  sideEvents: SideEvent[]
   plan: PlanApi
+  entries: PlanEntry[] // plan items matched to sessions/side events (see planEntries.ts)
+  missing: PlanItem[] // plan items whose session/event no longer exists
   params: URLSearchParams // may contain ?share=<code> from a shared link
   timeZone?: string
   onCloseShared: () => void
 }
 
-export function MyPlan({ sessions, plan, params, timeZone, onCloseShared }: Props) {
+export function MyPlan({ sessions, sideEvents, plan, entries, missing, params, timeZone, onCloseShared }: Props) {
   const [includeBackups, setIncludeBackups] = useState(true)
   const [shareStatus, setShareStatus] = useState('')
 
-  const byId = useMemo(() => new Map(sessions.map((s) => [s.id, s])), [sessions])
-
-  // Plan items matched to sessions. Items whose session vanished from the schedule are kept
-  // aside so we can tell the user, instead of silently dropping them.
-  const sessionItems = plan.items.filter((i) => i.kind === 'session')
-  const entries = sessionItems.flatMap((item) => {
-    const session = byId.get(item.id)
-    return session ? [{ item, session }] : []
-  })
-  const missing = sessionItems.filter((item) => !byId.has(item.id))
-  const backupIds = new Set(entries.filter((e) => e.item.backup).map((e) => e.session.id))
-
-  // Conflicts only count main picks: marking one as a backup resolves the clash.
-  const conflicts = findConflicts(
-    entries
-      .filter((e) => !e.item.backup)
-      .map((e) => ({ key: e.session.id, start: e.session.start, end: e.session.end })),
-  )
-  const groups = groupByDayAndSlot(entries.map((e) => e.session))
+  const titles = useMemo(() => new Map(entries.map((e) => [e.key, e.title])), [entries])
+  const conflicts = planConflicts(entries)
+  const backupCount = entries.filter((e) => e.item.backup).length
 
   const exportCalendar = () => {
     const events = entries
       .filter((e) => includeBackups || !e.item.backup)
-      .map((e) => sessionToEvent(e.session, e.item.backup))
+      .map((e) => (e.session ? sessionToEvent(e.session, e.item.backup) : sideEventToEvent(e.side!, e.item.backup)))
     downloadFile('kubecon-na-2026-plan.ics', buildCalendar(events), 'text/calendar;charset=utf-8')
   }
 
@@ -64,7 +52,13 @@ export function MyPlan({ sessions, plan, params, timeZone, onCloseShared }: Prop
 
   return (
     <div className="space-y-6">
-      <SharedPlanPreview params={params} byId={byId} onImport={plan.merge} onClose={onCloseShared} />
+      <SharedPlanPreview
+        params={params}
+        sessions={sessions}
+        sideEvents={sideEvents}
+        onImport={plan.merge}
+        onClose={onCloseShared}
+      />
 
       {!plan.saved && (
         <p className="rounded-lg bg-amber-50 p-3 text-sm text-amber-900 dark:bg-amber-950 dark:text-amber-200">
@@ -79,13 +73,17 @@ export function MyPlan({ sessions, plan, params, timeZone, onCloseShared }: Prop
           <a href="#/browse" className="underline">
             Browse
           </a>{' '}
-          and tap “Add to plan” on the sessions you like.
+          or{' '}
+          <a href="#/recommend" className="underline">
+            Plan my KubeCon
+          </a>{' '}
+          and add the sessions you like.
         </p>
       ) : (
         <section aria-label="Plan actions" className="space-y-3">
           <p className="text-sm">
-            {entries.length} {entries.length === 1 ? 'session' : 'sessions'}
-            {backupIds.size > 0 && ` (${backupIds.size} backup)`}
+            {entries.length} {entries.length === 1 ? 'item' : 'items'}
+            {backupCount > 0 && ` (${backupCount} backup)`}
             {conflicts.size > 0 && (
               <span className="text-red-700 dark:text-red-400"> · {conflicts.size} overlapping, see the red cards</span>
             )}
@@ -98,7 +96,7 @@ export function MyPlan({ sessions, plan, params, timeZone, onCloseShared }: Prop
             <Button
               variant="danger"
               onClick={() => {
-                if (window.confirm('Remove every session from your plan?')) plan.clear()
+                if (window.confirm('Remove everything from your plan?')) plan.clear()
               }}
             >
               Clear plan
@@ -118,8 +116,8 @@ export function MyPlan({ sessions, plan, params, timeZone, onCloseShared }: Prop
 
       {missing.length > 0 && (
         <p className="rounded-lg bg-amber-50 p-3 text-sm text-amber-900 dark:bg-amber-950 dark:text-amber-200">
-          {missing.length} {missing.length === 1 ? 'session in your plan is' : 'sessions in your plan are'} no
-          longer in the schedule (cancelled or changed).{' '}
+          {missing.length} {missing.length === 1 ? 'item in your plan is' : 'items in your plan are'} no longer
+          listed (cancelled or changed).{' '}
           <button
             type="button"
             className="underline"
@@ -130,64 +128,58 @@ export function MyPlan({ sessions, plan, params, timeZone, onCloseShared }: Prop
         </p>
       )}
 
-      {groups.map((group) => (
-        <section key={group.day} aria-labelledby={`plan-day-${group.day}`}>
-          <h2 id={`plan-day-${group.day}`} className="mb-2 text-lg font-bold">
-            {formatDayLabel(group.day)}
-          </h2>
-          <div className="space-y-2">
-            {group.slots.flatMap((slot) =>
-              slot.sessions.map((s) => {
-                const isBackup = backupIds.has(s.id)
-                const clashTitles = (conflicts.get(s.id) ?? []).map((id) => byId.get(id)?.title ?? id)
-                return (
-                  <div key={s.id}>
-                    <p className="text-sm font-semibold text-sky-800 dark:text-sky-300">{formatTime(s.start, timeZone)}</p>
-                    <SessionCard
-                      session={s}
-                      timeZone={timeZone}
-                      tone={clashTitles.length ? 'conflict' : isBackup ? 'backup' : 'normal'}
-                      notice={
-                        clashTitles.length > 0 ? (
-                          <span className="text-red-700 dark:text-red-400">
-                            ⚠ Overlaps with {clashTitles.map((t) => `“${t}”`).join(', ')}. Mark one as a backup?
-                          </span>
-                        ) : isBackup ? (
-                          <span className="text-slate-600 dark:text-slate-400">Backup choice</span>
-                        ) : null
-                      }
-                      actions={
-                        <>
-                          <Button onClick={() => plan.setBackup('session', s.id, !isBackup)}>
-                            {isBackup ? 'Make main choice' : 'Mark as backup'}
-                          </Button>
-                          <Button variant="danger" onClick={() => plan.toggle('session', s.id)}>
-                            Remove
-                          </Button>
-                        </>
-                      }
-                    />
-                  </div>
-                )
-              }),
+      {entries.map((entry, index) => {
+        const newDay = index === 0 || entries[index - 1].day !== entry.day
+        const isBackup = entry.item.backup
+        const clashTitles = (conflicts.get(entry.key) ?? []).map((key) => titles.get(key) ?? key)
+        const tone = clashTitles.length ? 'conflict' : isBackup ? 'backup' : 'normal'
+        const notice =
+          clashTitles.length > 0 ? (
+            <span className="text-red-700 dark:text-red-400">
+              ⚠ Overlaps with {clashTitles.map((t) => `“${t}”`).join(', ')}. Mark one as a backup?
+            </span>
+          ) : isBackup ? (
+            <span className="text-slate-600 dark:text-slate-400">Backup choice</span>
+          ) : null
+        const actions = (
+          <>
+            <Button onClick={() => plan.setBackup(entry.item.kind, entry.item.id, !isBackup)}>
+              {isBackup ? 'Make main choice' : 'Mark as backup'}
+            </Button>
+            <Button variant="danger" onClick={() => plan.toggle(entry.item.kind, entry.item.id)}>
+              Remove
+            </Button>
+          </>
+        )
+
+        return (
+          <div key={entry.key}>
+            {newDay && <h2 className="mb-2 text-lg font-bold">{formatDayLabel(entry.day)}</h2>}
+            <p className="text-sm font-semibold text-sky-800 dark:text-sky-300">{formatTime(entry.start, timeZone)}</p>
+            {entry.session ? (
+              <SessionCard session={entry.session} timeZone={timeZone} tone={tone} notice={notice} actions={actions} />
+            ) : (
+              <SideEventCard event={entry.side!} timeZone={timeZone} tone={tone} notice={notice} actions={actions} />
             )}
           </div>
-        </section>
-      ))}
+        )
+      })}
     </div>
   )
 }
 
 // Shown when someone opens a shared plan link. It never replaces the viewer's own plan
-// on its own: they choose whether to add the shared sessions.
+// on its own: they choose whether to add the shared items.
 function SharedPlanPreview({
   params,
-  byId,
+  sessions,
+  sideEvents,
   onImport,
   onClose,
 }: {
   params: URLSearchParams
-  byId: Map<string, Session>
+  sessions: Session[]
+  sideEvents: SideEvent[]
   onImport: (items: PlanItem[]) => void
   onClose: () => void
 }) {
@@ -206,16 +198,19 @@ function SharedPlanPreview({
     )
   }
 
-  const known = shared.filter((item) => item.kind === 'session' && byId.has(item.id))
+  const titleOf = (item: PlanItem) =>
+    (item.kind === 'session' ? sessions : sideEvents).find((x) => x.id === item.id)?.title
+  const known = shared.filter((item) => titleOf(item))
   return (
     <section aria-label="Shared plan" className="space-y-2 rounded-lg border border-sky-400 p-3">
       <h2 className="font-semibold">
-        Someone shared a plan with {known.length} {known.length === 1 ? 'session' : 'sessions'}
+        Someone shared a plan with {known.length} {known.length === 1 ? 'item' : 'items'}
       </h2>
       <ul className="list-disc space-y-0.5 pl-5 text-sm">
         {known.map((item) => (
-          <li key={item.id}>
-            {byId.get(item.id)?.title}
+          <li key={planKey(item.kind, item.id)}>
+            {titleOf(item)}
+            {item.kind === 'side' && ' (side event)'}
             {item.backup && ' (backup)'}
           </li>
         ))}

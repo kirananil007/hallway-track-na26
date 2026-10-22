@@ -1,10 +1,10 @@
 import { useEffect, useState } from 'react'
-import type { Meta, Session } from '../types'
+import type { Meta, Session, SideEvent } from '../types'
 
 export type DataState =
   | { status: 'loading' }
   | { status: 'error'; message: string }
-  | { status: 'ready'; sessions: Session[]; meta: Meta }
+  | { status: 'ready'; sessions: Session[]; sideEvents: SideEvent[]; meta: Meta }
 
 // BASE_URL is "/hallway-track-na26/" on GitHub Pages (set in vite.config.ts).
 async function getJson<T>(path: string): Promise<T> {
@@ -13,15 +13,20 @@ async function getJson<T>(path: string): Promise<T> {
   return (await response.json()) as T
 }
 
-// Loads sessions.json and meta.json once, when the app starts.
+// Loads the data files once, when the app starts. Side events are optional: if that
+// file is missing or broken, the rest of the app still works.
 export function useData(): DataState {
   const [state, setState] = useState<DataState>({ status: 'loading' })
 
   useEffect(() => {
     let cancelled = false
-    Promise.all([getJson<Session[]>('data/sessions.json'), getJson<Meta>('data/meta.json')])
-      .then(([sessions, meta]) => {
-        if (!cancelled) setState({ status: 'ready', sessions, meta })
+    Promise.all([
+      getJson<Session[]>('data/sessions.json'),
+      getJson<Meta>('data/meta.json'),
+      getJson<SideEvent[]>('data/side_events.json').catch(() => []),
+    ])
+      .then(([sessions, meta, sideEvents]) => {
+        if (!cancelled) setState({ status: 'ready', sessions, sideEvents, meta })
       })
       .catch((error: unknown) => {
         if (!cancelled) setState({ status: 'error', message: String(error) })

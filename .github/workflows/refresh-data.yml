@@ -1,9 +1,14 @@
-# Every 6 hours: re-run the pipeline, commit the JSON only if it changed, then redeploy.
+# Every 6 hours, and whenever a side event is merged: rebuild the data JSON,
+# commit it only if it changed, then redeploy.
 name: Refresh schedule data
 
 on:
   schedule:
     - cron: "17 */6 * * *" # a few minutes past the hour, when Actions is less busy
+  push:
+    branches: [main]
+    paths:
+      - data/events.yaml
   workflow_dispatch:
 
 permissions:
@@ -23,9 +28,13 @@ jobs:
       - uses: actions/checkout@v4
       - uses: astral-sh/setup-uv@v6
 
-      - name: Run the pipeline
+      - name: Fetch the schedule
         working-directory: pipeline
         run: uv run python ingest.py
+
+      - name: Build side events
+        working-directory: pipeline
+        run: uv run python build_side_events.py
 
       - name: Commit if the data changed
         id: commit
