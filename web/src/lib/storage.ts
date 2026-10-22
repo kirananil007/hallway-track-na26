@@ -11,10 +11,31 @@ export function readSetting(key: string): string | null {
   }
 }
 
-export function writeSetting(key: string, value: string): void {
+// Returns false if the value couldn't be saved.
+export function writeSetting(key: string, value: string): boolean {
   try {
     window.localStorage.setItem(PREFIX + key, value)
+    return true
   } catch {
-    // Storage unavailable: the setting just won't be remembered next visit.
+    return false
   }
+}
+
+export function readJson(key: string): unknown {
+  const text = readSetting(key)
+  if (text === null) return null
+  try {
+    return JSON.parse(text)
+  } catch {
+    return null // corrupted value: treat as empty rather than crash
+  }
+}
+
+export function writeJson(key: string, value: unknown): boolean {
+  return writeSetting(key, JSON.stringify(value))
+}
+
+// The full localStorage key, for listening to changes from other tabs.
+export function storageKey(key: string): string {
+  return PREFIX + key
 }

@@ -1,18 +1,22 @@
 import { useState } from 'react'
 import { Footer } from './components/Footer'
 import { Header } from './components/Header'
+import { TabBar } from './components/TabBar'
 import { useData } from './hooks/useData'
 import { useHashRoute } from './hooks/useHashRoute'
+import { usePlan } from './hooks/usePlan'
 import { useDarkMode, useTimeMode } from './hooks/useSettings'
 import { EVENT, daysUntilEvent } from './lib/event'
 import { todayInEventZone, zoneFor } from './lib/time'
 import { Browse } from './pages/Browse'
+import { MyPlan } from './pages/MyPlan'
 
-// The app shell: header, the current page, footer.
-// Pages are picked from the URL hash (see lib/route.ts); for now there's only Browse.
+// The app shell: header, tabs, the current page, footer.
+// Pages are picked from the URL hash (see lib/route.ts).
 export default function App() {
   const data = useData()
-  const { params, navigate } = useHashRoute()
+  const plan = usePlan() // lives here so every page sees the same plan
+  const { route, params, navigate } = useHashRoute()
   const [timeMode, setTimeMode] = useTimeMode()
   const [dark, toggleDark] = useDarkMode()
   // Read the clock once on first render, not on every re-render.
@@ -28,6 +32,7 @@ export default function App() {
           dark={dark}
           onToggleDark={toggleDark}
         />
+        <TabBar current={route} planCount={plan.items.length} />
 
         <main className="mt-6">
           {data.status === 'loading' && <p className="text-slate-600 dark:text-slate-400">Loading the schedule…</p>}
@@ -42,13 +47,24 @@ export default function App() {
             </p>
           )}
 
-          {data.status === 'ready' && (
+          {data.status === 'ready' && route === 'browse' && (
             <Browse
               sessions={data.sessions}
               params={params}
               today={today}
               timeZone={zoneFor(timeMode)}
+              plan={plan}
               onParamsChange={(next) => navigate('browse', next, { replace: true })}
+            />
+          )}
+
+          {data.status === 'ready' && route === 'plan' && (
+            <MyPlan
+              sessions={data.sessions}
+              plan={plan}
+              params={params}
+              timeZone={zoneFor(timeMode)}
+              onCloseShared={() => navigate('plan', undefined, { replace: true })}
             />
           )}
         </main>

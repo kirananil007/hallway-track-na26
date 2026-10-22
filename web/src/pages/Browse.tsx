@@ -1,8 +1,11 @@
 // The Browse page: filters on top, then sessions grouped by day and start time.
 
 import { useMemo } from 'react'
+import { Button } from '../components/Button'
 import { FilterBar } from '../components/FilterBar'
 import { SessionCard } from '../components/SessionCard'
+import type { PlanApi } from '../hooks/usePlan'
+import { overlaps } from '../lib/conflicts'
 import {
   applyFilters,
   defaultFilters,
@@ -21,10 +24,11 @@ interface Props {
   params: URLSearchParams // filters come from the URL hash
   today: string
   timeZone?: string
+  plan: PlanApi
   onParamsChange: (params: URLSearchParams) => void
 }
 
-export function Browse({ sessions, params, today, timeZone, onParamsChange }: Props) {
+export function Browse({ sessions, params, today, timeZone, plan, onParamsChange }: Props) {
   // useMemo: only recompute when the inputs change, not on every render.
   // We key on the params *string* because a new URLSearchParams object arrives each render.
   const paramsKey = params.toString()
@@ -34,6 +38,17 @@ export function Browse({ sessions, params, today, timeZone, onParamsChange }: Pr
   const options = useMemo(() => filterOptions(sessions), [sessions])
   const visible = useMemo(() => applyFilters(sessions, filters), [sessions, filters])
   const groups = useMemo(() => groupByDayAndSlot(visible), [visible])
+
+  // What's already in the plan, so cards can show "In plan" or warn about clashes.
+  const planned = useMemo(
+    () => new Set(plan.items.filter((i) => i.kind === 'session').map((i) => i.id)),
+    [plan.items],
+  )
+  const mainPicks = useMemo(() => {
+    const mainIds = new Set(plan.items.filter((i) => i.kind === 'session' && !i.backup).map((i) => i.id))
+    return sessions.filter((s) => mainIds.has(s.id))
+  }, [plan.items, sessions])
+  const clashCount = (s: Session) => mainPicks.filter((p) => p.id !== s.id && overlaps(p, s)).length
 
   const toggleTag = (tag: string) =>
     setFilters({
@@ -75,15 +90,35 @@ export function Browse({ sessions, params, today, timeZone, onParamsChange }: Pr
                   <span className="font-normal text-slate-500"> · {slot.sessions.length}</span>
                 </h3>
                 <div className="mt-1 space-y-2">
-                  {slot.sessions.map((s) => (
-                    <SessionCard
-                      key={s.id}
-                      session={s}
-                      timeZone={timeZone}
-                      activeTags={filters.tags}
-                      onTagClick={toggleTag}
-                    />
-                  ))}
+                  {slot.sessions.map((s) => {
+                    const inPlan = planned.has(s.id)
+                    const clashes = inPlan ? 0 : clashCount(s)
+                    return (
+                      <SessionCard
+                        key={s.id}
+                        session={s}
+                        timeZone={timeZone}
+                        activeTags={filters.tags}
+                        onTagClick={toggleTag}
+                        notice={
+                          clashes > 0 && (
+                            <span className="text-amber-700 dark:text-amber-400">
+                              ⚠ Clashes with {clashes} {clashes === 1 ? 'session' : 'sessions'} in your plan
+                            </span>
+                          )
+                        }
+                        actions={
+                          <Button
+                            variant={inPlan ? 'secondary' : 'primary'}
+                            aria-pressed={inPlan}
+                            onClick={() => plan.toggle('session', s.id)}
+                          >
+                            {inPlan ? '✓ In my plan' : '+ Add to plan'}
+                          </Button>
+                        }
+                      />
+                    )
+                  })}
                 </div>
               </div>
             ))}

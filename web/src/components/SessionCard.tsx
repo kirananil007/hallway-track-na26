@@ -1,6 +1,12 @@
 // One session in the list. The title links to the official session page, where the
 // full abstract lives (we only keep a short summary).
+//
+// Pages customise it with:
+//   actions - buttons at the bottom (e.g. "Add to plan", "Remove")
+//   notice  - a short line above the title (e.g. "Overlaps with …")
+//   tone    - 'conflict' (red border) or 'backup' (dashed border)
 
+import type { ReactNode } from 'react'
 import { LEVEL_LABELS, TYPE_LABELS, roomLabel, tagLabel } from '../lib/labels'
 import { durationMinutes, formatDuration, formatTime } from '../lib/time'
 import type { Session, SessionType } from '../types'
@@ -13,18 +19,36 @@ const TYPE_BADGE: Partial<Record<SessionType, string>> = {
   other: 'bg-slate-100 text-slate-700 dark:bg-slate-800 dark:text-slate-300',
 }
 
+const TONE_CLASS = {
+  normal: 'border-slate-200 dark:border-slate-800',
+  conflict: 'border-red-500 dark:border-red-500',
+  backup: 'border-dashed border-slate-400 dark:border-slate-600',
+}
+
 interface Props {
   session: Session
   timeZone?: string
-  activeTags: string[]
-  onTagClick: (tag: string) => void
+  activeTags?: string[]
+  onTagClick?: (tag: string) => void
+  actions?: ReactNode
+  notice?: ReactNode
+  tone?: keyof typeof TONE_CLASS
 }
 
-export function SessionCard({ session: s, timeZone, activeTags, onTagClick }: Props) {
+export function SessionCard({
+  session: s,
+  timeZone,
+  activeTags = [],
+  onTagClick,
+  actions,
+  notice,
+  tone = 'normal',
+}: Props) {
   const minutes = durationMinutes(s.start, s.end)
 
   return (
-    <article className="rounded-xl border border-slate-200 p-3 dark:border-slate-800">
+    <article className={`rounded-xl border p-3 ${TONE_CLASS[tone]}`}>
+      {notice && <div className="mb-1 text-xs font-medium">{notice}</div>}
       <div className="flex flex-wrap items-center gap-2 text-xs text-slate-600 dark:text-slate-400">
         <span>
           until {formatTime(s.end, timeZone)} · {formatDuration(minutes)}
@@ -61,7 +85,8 @@ export function SessionCard({ session: s, timeZone, activeTags, onTagClick }: Pr
               {/* Tapping a tag filters the list by it */}
               <button
                 type="button"
-                onClick={() => onTagClick(tag)}
+                onClick={() => onTagClick?.(tag)}
+                disabled={!onTagClick}
                 aria-pressed={activeTags.includes(tag)}
                 className={`rounded-full px-2 py-0.5 text-xs ${
                   activeTags.includes(tag)
@@ -75,6 +100,8 @@ export function SessionCard({ session: s, timeZone, activeTags, onTagClick }: Pr
           ))}
         </ul>
       )}
+
+      {actions && <div className="mt-3 flex flex-wrap gap-2">{actions}</div>}
     </article>
   )
 }
