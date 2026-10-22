@@ -56,7 +56,7 @@ export function SideEventCard({ event: e, timeZone, actions, notice, tone = 'nor
         </ul>
       )}
 
-      <p className="mt-2 text-xs text-slate-500">
+      <p className="mt-2 text-xs text-slate-500 dark:text-slate-400">
         Added by{' '}
         <a className="underline" href={`https://github.com/${e.submitted_by}`}>
           @{e.submitted_by}

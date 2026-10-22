@@ -11,3 +11,32 @@ html {
 html.dark {
   color-scheme: dark; /* dark scrollbars and form controls */
 }
+
+/* A clearly visible focus ring for keyboard users, on every interactive element. */
+:focus-visible {
+  outline: 2px solid var(--color-sky-600);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+html.dark :focus-visible {
+  outline-color: var(--color-sky-300);
+}
+
+/* Styles for the Markdown-rendered pages (the first-timer guide). Tailwind resets
+   headings and lists, so we give them back some shape here. */
+.markdown h1 {
+  @apply text-2xl font-bold;
+}
+.markdown h2 {
+  @apply mt-8 text-lg font-bold;
+}
+.markdown p,
+.markdown ul {
+  @apply mt-3;
+}
+.markdown ul {
+  @apply list-disc space-y-2 pl-5;
+}
+.markdown a {
+  @apply underline;
+}

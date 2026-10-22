@@ -1,4 +1,5 @@
-// Tabs across the top. They're plain links to "#/route", so Back/Forward work as expected.
+// Tabs across the top, plus a row of guide links. They're plain links to "#/route",
+// so Back/Forward work as expected.
 
 import type { Route } from '../lib/route'
 
@@ -15,30 +16,52 @@ export function TabBar({ current, planCount }: Props) {
     { route: 'side-events', label: 'Side events' },
     { route: 'plan', label: planCount ? `My plan (${planCount})` : 'My plan' },
   ]
+  const guides: { route: Route; label: string }[] = [
+    { route: 'monday', label: 'Monday & passes' },
+    { route: 'first-timer', label: 'First-timer tips' },
+  ]
 
   return (
-    <nav aria-label="Pages" className="-mx-4 mt-4 flex gap-1 overflow-x-auto border-b border-slate-200 px-4 dark:border-slate-800">
-      {tabs.map((tab) => (
-        <a
-          key={tab.route}
-          href={`#/${tab.route}`}
-          aria-current={current === tab.route ? 'page' : undefined}
-          className={`-mb-px shrink-0 border-b-2 px-2 py-2 text-sm font-medium whitespace-nowrap sm:px-3 ${
-            current === tab.route
-              ? 'border-sky-700 text-sky-800 dark:border-sky-400 dark:text-sky-300'
-              : 'border-transparent text-slate-600 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-100'
-          }`}
-        >
-          {tab.short ? (
-            <>
-              <span className="sm:hidden">{tab.short}</span>
-              <span className="hidden sm:inline">{tab.label}</span>
-            </>
-          ) : (
-            tab.label
-          )}
-        </a>
-      ))}
+    <nav aria-label="Pages" className="mt-4">
+      <div className="-mx-4 flex gap-1 overflow-x-auto border-b border-slate-200 px-4 dark:border-slate-800">
+        {tabs.map((tab) => (
+          <a
+            key={tab.route}
+            href={`#/${tab.route}`}
+            aria-current={current === tab.route ? 'page' : undefined}
+            className={`-mb-px shrink-0 border-b-2 px-2 py-2 text-sm font-medium whitespace-nowrap sm:px-3 ${
+              current === tab.route
+                ? 'border-sky-700 text-sky-800 dark:border-sky-400 dark:text-sky-300'
+                : 'border-transparent text-slate-600 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-100'
+            }`}
+          >
+            {tab.short ? (
+              <>
+                <span className="sm:hidden">{tab.short}</span>
+                <span className="hidden sm:inline">{tab.label}</span>
+              </>
+            ) : (
+              tab.label
+            )}
+          </a>
+        ))}
+      </div>
+      <div className="mt-2 flex gap-4 text-sm">
+        {guides.map((guide) => (
+          <a
+            key={guide.route}
+            href={`#/${guide.route}`}
+            aria-current={current === guide.route ? 'page' : undefined}
+            className={
+              current === guide.route
+                ? 'font-semibold text-sky-800 underline dark:text-sky-300'
+                : 'text-slate-600 underline hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-100'
+            }
+          >
+            {guide.label}
+          </a>
+        ))}
+      </div>
     </nav>
   )
 }

@@ -1,7 +1,7 @@
 // Hash-based routing without a router library.
 // "#/browse?day=2026-11-11" -> { route: 'browse', params: day=2026-11-11 }
 
-export const ROUTES = ['browse', 'recommend', 'side-events', 'plan'] as const // more tabs arrive in later milestones
+export const ROUTES = ['browse', 'recommend', 'side-events', 'plan', 'monday', 'first-timer'] as const
 export type Route = (typeof ROUTES)[number]
 
 export function parseHash(hash: string): { route: Route; params: URLSearchParams } {

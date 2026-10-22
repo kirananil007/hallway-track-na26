@@ -1,0 +1,39 @@
+<!doctype html>
+<!-- Source of web/public/og.png (1200x630). Re-render with: chrome --headless --window-size=1200,630 --screenshot=og.png docs/og-image.html -->
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  html, body { margin: 0; width: 1200px; height: 630px; overflow: hidden; }
+  body {
+    background: #020617; color: #f1f5f9;
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+    display: flex; flex-direction: column; justify-content: space-between;
+    padding: 72px 80px; box-sizing: border-box;
+  }
+  .top { display: flex; align-items: center; gap: 28px; }
+  .top img { width: 96px; height: 96px; }
+  h1 { font-size: 88px; margin: 0; letter-spacing: -2px; }
+  .sub { font-size: 38px; color: #cbd5e1; margin-top: 28px; line-height: 1.25; }
+  .chips { display: flex; gap: 16px; margin-top: 36px; flex-wrap: wrap; }
+  .chip { font-size: 28px; padding: 10px 22px; border-radius: 999px; background: #0c4a6e; color: #e0f2fe; }
+  .chip.pink { background: #831843; color: #fce7f3; }
+  .foot { font-size: 26px; color: #94a3b8; display: flex; flex-direction: column; gap: 8px; }
+</style>
+</head>
+<body>
+  <div>
+    <div class="top"><img src="../web/public/favicon.svg" alt=""><h1>Hallway Track</h1></div>
+    <div class="sub">A community planner for<br>KubeCon + CloudNativeCon North America 2026</div>
+    <div class="chips">
+      <span class="chip">Build a clash-free plan</span>
+      <span class="chip">Export to your calendar</span>
+      <span class="chip pink">Community side events</span>
+    </div>
+  </div>
+  <div class="foot">
+    <span>Salt Lake City · Nov 9–12, 2026 · Free &amp; open source</span>
+    <span>Unofficial · not affiliated with CNCF or the Linux Foundation</span>
+  </div>
+</body>
+</html>

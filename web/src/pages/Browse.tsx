@@ -84,7 +84,7 @@ export function Browse({ sessions, params, today, timeZone, plan, planEntries, o
                 {/* Sticky time label stays visible while scrolling through a busy slot */}
                 <h3 className="sticky top-0 z-10 -mx-4 bg-white/95 px-4 py-1 text-sm font-semibold text-sky-800 backdrop-blur dark:bg-slate-950/95 dark:text-sky-300">
                   {formatTime(slot.start, timeZone)}
-                  <span className="font-normal text-slate-500"> · {slot.sessions.length}</span>
+                  <span className="font-normal text-slate-500 dark:text-slate-400"> · {slot.sessions.length}</span>
                 </h3>
                 <div className="mt-1 space-y-2">
                   {slot.sessions.map((s) => {

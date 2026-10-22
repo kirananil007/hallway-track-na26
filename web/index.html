@@ -3,12 +3,29 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0369a1" />
     <meta
       name="description"
-      content="Hallway Track: an unofficial community planner for KubeCon + CloudNativeCon North America 2026 in Salt Lake City."
+      content="Build a clash-free schedule for KubeCon + CloudNativeCon North America 2026, export it to your calendar, and find community side events. Free, open source, unofficial."
     />
     <title>Hallway Track · KubeCon + CloudNativeCon NA 2026 planner</title>
+
+    <!-- Link previews (LinkedIn, Slack, X...). Image URLs must be absolute. -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Hallway Track" />
+    <meta property="og:title" content="Hallway Track: a community planner for KubeCon + CloudNativeCon NA 2026" />
+    <meta
+      property="og:description"
+      content="Build a clash-free schedule, export it to your calendar, and find community side events. Free, open source, unofficial."
+    />
+    <meta property="og:url" content="https://kirananil007.github.io/hallway-track-na26/" />
+    <meta property="og:image" content="https://kirananil007.github.io/hallway-track-na26/og.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Hallway Track: a community planner for KubeCon + CloudNativeCon North America 2026" />
+    <meta name="twitter:card" content="summary_large_image" />
     <!-- Start downloading the schedule while the app's JavaScript loads. -->
     <link rel="preload" href="%BASE_URL%data/sessions.json" as="fetch" crossorigin="anonymous" />
     <script>

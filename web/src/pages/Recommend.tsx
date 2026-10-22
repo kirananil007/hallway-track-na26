@@ -226,7 +226,7 @@ export function Recommend({ sessions, plan, params, timeZone, onParamsChange }: 
 function Reasons({ scored }: { scored: Scored }) {
   return (
     <span className="text-emerald-800 dark:text-emerald-300">
-      Why: {scored.reasons.join(' · ')} <span className="text-slate-500">(score {scored.score})</span>
+      Why: {scored.reasons.join(' · ')} <span className="text-slate-500 dark:text-slate-400">(score {scored.score})</span>
     </span>
   )
 }
