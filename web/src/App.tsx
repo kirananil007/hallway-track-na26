@@ -10,6 +10,7 @@ import { EVENT, daysUntilEvent } from './lib/event'
 import { todayInEventZone, zoneFor } from './lib/time'
 import { Browse } from './pages/Browse'
 import { MyPlan } from './pages/MyPlan'
+import { Recommend } from './pages/Recommend'
 
 // The app shell: header, tabs, the current page, footer.
 // Pages are picked from the URL hash (see lib/route.ts).
@@ -55,6 +56,16 @@ export default function App() {
               timeZone={zoneFor(timeMode)}
               plan={plan}
               onParamsChange={(next) => navigate('browse', next, { replace: true })}
+            />
+          )}
+
+          {data.status === 'ready' && route === 'recommend' && (
+            <Recommend
+              sessions={data.sessions}
+              plan={plan}
+              params={params}
+              timeZone={zoneFor(timeMode)}
+              onParamsChange={(next) => navigate('recommend', next, { replace: true })}
             />
           )}
 
