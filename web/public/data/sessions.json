@@ -6048,7 +6048,10 @@
     "track": "Project Pavilion Stage",
     "type": "other",
     "level": "unknown",
-    "speakers": [],
+    "speakers": [
+      "Fabian Kammel",
+      "Vicente Herrera"
+    ],
     "summary": "The Capture The Flag (CTF) experience runs concurrently to KubeCon + CloudNativeCon North America 2026! Delve deeper into the dark and mysterious world of Cloud Native security! Exploit a supply chain…",
     "url": "https://kubecon-cloudnativecon-north-america-2026.sessionize.com/session/1364875",
     "tags": [
