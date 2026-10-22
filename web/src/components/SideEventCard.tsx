@@ -26,9 +26,6 @@ export function SideEventCard({ event: e, timeZone, actions, notice, tone = 'nor
           until {formatTime(e.end, timeZone)} · {formatDuration(durationMinutes(e.start, e.end))}
         </span>
         <span className={`${badge} bg-pink-100 text-pink-800 dark:bg-pink-950 dark:text-pink-300`}>Side event</span>
-        {e.example && (
-          <span className={`${badge} bg-slate-800 text-white dark:bg-slate-200 dark:text-slate-900`}>EXAMPLE</span>
-        )}
         <span className="rounded border border-slate-300 px-1.5 py-0.5 dark:border-slate-700">
           {e.cost === 'free' ? 'Free' : 'Paid'}
           {e.requires_registration && ' · RSVP required'}

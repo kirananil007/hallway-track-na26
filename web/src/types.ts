@@ -36,7 +36,6 @@ export interface SideEvent {
   requires_registration: boolean
   submitted_by: string // GitHub handle
   last_verified: string // YYYY-MM-DD
-  example: boolean // placeholder showing the format, not a real event
 }
 
 export interface Meta {

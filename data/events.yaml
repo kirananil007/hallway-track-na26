@@ -1,54 +1,22 @@
 # Community side events around KubeCon + CloudNativeCon NA 2026 (Salt Lake City).
 #
-# Add yours: copy an entry below, change it, and open a pull request. See CONTRIBUTING.md.
-# - Times are Salt Lake City local time (MST), e.g. 2026-11-10T18:30
-# - Allowed dates: Nov 8-13, 2026
-# - tags: up to 5 from pipeline/tags.yaml (e.g. observability, security, ai-ml, beginner)
-# - Only list public events that follow the event Code of Conduct.
+# To add yours: paste an entry under `events:` at the bottom, using this template
+# (keep the two spaces before "- id"), then open a pull request. See CONTRIBUTING.md.
 #
-# The entries marked `example: true` only show the format. They're not real events
-# and will be removed once real ones are added.
+#   - id: otel-community-meetup          # short, lowercase-with-dashes, unique
+#     title: OpenTelemetry community meetup
+#     host: Your group or company
+#     start: 2026-11-10T18:30            # Salt Lake City local time (MST)
+#     end: 2026-11-10T21:00
+#     venue: Name of the place
+#     address: 123 Main St, Salt Lake City, UT   # optional
+#     url: https://lu.ma/your-event      # RSVP or details page, https only
+#     tags: [observability, opentelemetry]       # up to 5, from pipeline/tags.yaml
+#     cost: free                         # free or paid
+#     requires_registration: true
+#     submitted_by: your-github-handle   # without the @
+#     last_verified: 2026-10-21          # the date you checked the details
+#
+# Rules: dates Nov 8-13, 2026; public events only; follow the event Code of Conduct.
 
 events:
-  - id: example-observability-meetup
-    title: "EXAMPLE: Observability community meetup"
-    host: Example Org
-    start: 2026-11-10T18:30
-    end: 2026-11-10T21:00
-    venue: Example Venue
-    address: 123 Example St, Salt Lake City, UT
-    url: https://example.com/rsvp/observability-meetup
-    tags: [observability, opentelemetry]
-    cost: free
-    requires_registration: true
-    submitted_by: kirananil007
-    last_verified: 2026-10-21
-    example: true
-
-  - id: example-first-timers-coffee
-    title: "EXAMPLE: First-timers morning coffee"
-    host: Example Community Group
-    start: 2026-11-10T07:30
-    end: 2026-11-10T08:30
-    venue: Example Cafe
-    url: https://example.com/rsvp/first-timers-coffee
-    tags: [beginner, contributor]
-    cost: free
-    requires_registration: false
-    submitted_by: kirananil007
-    last_verified: 2026-10-21
-    example: true
-
-  - id: example-platform-happy-hour
-    title: "EXAMPLE: Platform engineering happy hour"
-    host: Example Org
-    start: 2026-11-11T18:00
-    end: 2026-11-11T20:00
-    venue: Example Bar
-    url: https://example.com/rsvp/platform-happy-hour
-    tags: [platform-engineering, gitops]
-    cost: paid
-    requires_registration: true
-    submitted_by: kirananil007
-    last_verified: 2026-10-21
-    example: true

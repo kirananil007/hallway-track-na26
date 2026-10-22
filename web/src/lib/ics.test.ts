@@ -113,7 +113,6 @@ describe('buildCalendar', () => {
         requires_registration: true,
         submitted_by: 'someone',
         last_verified: '2026-10-21',
-        example: false,
       },
       false,
     )

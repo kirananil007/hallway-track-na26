@@ -52,7 +52,14 @@ def test_output_uses_mst_and_event_day():
     assert event["start"] == "2026-11-10T18:30:00-07:00"
     assert event["end"] == "2026-11-10T21:00:00-07:00"
     assert event["day"] == "2026-11-10"
-    assert event["address"] == "" and event["example"] is False
+    assert event["address"] == ""
+
+
+def test_no_events_yet_is_valid():
+    # The real file starts as just `events:` with nothing under it.
+    data = b.load_events("events:\n")
+    assert data == {"events": []}
+    assert errors_for(data) == []
 
 
 @pytest.mark.parametrize(

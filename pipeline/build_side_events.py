@@ -46,7 +46,11 @@ _PlainLoader.yaml_implicit_resolvers = {
 
 
 def load_events(text: str) -> object:
-    return yaml.load(text, Loader=_PlainLoader)
+    data = yaml.load(text, Loader=_PlainLoader)
+    # An `events:` key with nothing under it (no events yet) reads as None; treat it as empty.
+    if isinstance(data, dict) and data.get("events") is None:
+        data["events"] = []
+    return data
 
 
 def _label(index: int, entry: object) -> str:
@@ -127,7 +131,6 @@ def to_json(events: list[dict]) -> list[dict]:
                 "requires_registration": event["requires_registration"],
                 "submitted_by": event["submitted_by"],
                 "last_verified": event["last_verified"],
-                "example": event.get("example", False),
             }
         )
     return sorted(out, key=lambda e: (e["start"], e["title"]))

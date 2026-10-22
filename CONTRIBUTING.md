@@ -9,7 +9,8 @@ KubeCon + CloudNativeCon NA 2026 in Salt Lake City (Nov 8–13), add it.
 
 1. Open [`data/events.yaml` in the GitHub editor](https://github.com/kirananil007/hallway-track-na26/edit/main/data/events.yaml).
    GitHub will offer to fork the repo for you. Say yes.
-2. Copy one of the entries and paste it at the end of the list. Change the details:
+2. Paste this at the very end of the file, under `events:` (the same template is in the
+   comments at the top of the file), and change the details:
 
    ```yaml
      - id: otel-community-meetup          # short, lowercase-with-dashes, unique

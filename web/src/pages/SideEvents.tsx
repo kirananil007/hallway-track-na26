@@ -24,7 +24,6 @@ export function SideEvents({ events, plan, planEntries, timeZone }: Props) {
   const [day, setDay] = useState(ALL)
   const days = useMemo(() => [...new Set(events.map((e) => e.day))].sort(), [events])
   const visible = events.filter((e) => day === ALL || e.day === day)
-  const onlyExamples = events.every((e) => e.example)
 
   return (
     <div className="space-y-5">
@@ -46,13 +45,18 @@ export function SideEvents({ events, plan, planEntries, timeZone }: Props) {
         </div>
       </section>
 
-      {onlyExamples && (
-        <p className="rounded-lg bg-amber-50 p-3 text-sm text-amber-900 dark:bg-amber-950 dark:text-amber-200">
-          No real events yet, only examples showing the format. Hosting or know of one? Add it!
+      {events.length === 0 && (
+        <p className="rounded-lg bg-slate-100 p-4 text-center dark:bg-slate-900">
+          No side events listed yet. Hosting one, or know of one?{' '}
+          <a href={REPO.addEventUrl} className="font-medium underline">
+            Add it
+          </a>{' '}
+          and it'll show up here for everyone.
         </p>
       )}
 
-      <div role="group" aria-label="Day" className="-mx-4 flex gap-2 overflow-x-auto px-4 pb-1">
+      {/* Day buttons only help once there are events on more than one day */}
+      <div role="group" aria-label="Day" className={`-mx-4 flex gap-2 overflow-x-auto px-4 pb-1 ${days.length < 2 ? 'hidden' : ''}`}>
         {[ALL, ...days].map((d) => (
           <Button key={d} aria-pressed={day === d} variant={day === d ? 'primary' : 'secondary'} onClick={() => setDay(d)}>
             {d === ALL ? 'All days' : formatDayLabel(d)}
