@@ -675,8 +675,8 @@
     ]
   },
   {
-    "id": "1289876",
-    "title": "Architecture Without Gatekeepers: Decoupling for Neutrality",
+    "id": "1370530",
+    "title": "Supply Chain Security at Home: From Source to Service Without the Hassle",
     "start": "2026-11-09T11:38:00-07:00",
     "end": "2026-11-09T11:43:00-07:00",
     "day": "2026-11-09",
@@ -685,11 +685,13 @@
     "type": "lightning",
     "level": "unknown",
     "speakers": [
-      "Marcin Gwozdz"
+      "Andrew Thorp"
     ],
-    "summary": "Open source only works if the community can contribute without hitting a wall. We realized our architecture at OpenEverest was unintentionally biased toward specific tools, so we rebuilt it. I’ll…",
-    "url": "https://kubecon-cloudnativecon-north-america-2026.sessionize.com/session/1289876",
-    "tags": []
+    "summary": "Every container image you pull is someone else's build you chose to trust. Most homelab operators grab pre-built images from Docker Hub and hope for the best. Building from source is a longstanding…",
+    "url": "https://kubecon-cloudnativecon-north-america-2026.sessionize.com/session/1370530",
+    "tags": [
+      "security"
+    ]
   },
   {
     "id": "1289877",
@@ -1412,6 +1414,23 @@
     "tags": [
       "security"
     ]
+  },
+  {
+    "id": "1289876",
+    "title": "Architecture Without Gatekeepers: Decoupling for Neutrality",
+    "start": "2026-11-09T16:34:00-07:00",
+    "end": "2026-11-09T16:39:00-07:00",
+    "day": "2026-11-09",
+    "room": "Hyatt Regency | Level 4 | Regency Ballroom B-D",
+    "track": "Project Lightning Talks",
+    "type": "lightning",
+    "level": "unknown",
+    "speakers": [
+      "Marcin Gwozdz"
+    ],
+    "summary": "Open source only works if the community can contribute without hitting a wall. We realized our architecture at OpenEverest was unintentionally biased toward specific tools, so we rebuilt it. I’ll…",
+    "url": "https://kubecon-cloudnativecon-north-america-2026.sessionize.com/session/1289876",
+    "tags": []
   },
   {
     "id": "1289971",
@@ -2264,7 +2283,8 @@
     "type": "other",
     "level": "unknown",
     "speakers": [
-      "Vicente Herrera"
+      "Vicente Herrera",
+      "Torin van den Bulk"
     ],
     "summary": "An Introduction to Capture The Flag The Cloud Native Capture The Flag (CTF) is available to all KubeCon + CloudNativeCon attendees. In preparation for playing the game, you are invited to attend an…",
     "url": "https://kubecon-cloudnativecon-north-america-2026.sessionize.com/session/1364870",
@@ -3506,7 +3526,7 @@
     "type": "breakout",
     "level": "advanced",
     "speakers": [
-      "Justin OLeary"
+      "Justin O’Leary"
     ],
     "summary": "You locked down RBAC. You scoped your namespaces. You followed least privilege. But the attacker who just became your GCP Org admin? They never left their namespace. The call came from inside the…",
     "url": "https://kubecon-cloudnativecon-north-america-2026.sessionize.com/session/1247376",
@@ -9503,8 +9523,7 @@
     "level": "unknown",
     "speakers": [
       "Carlos Costa",
-      "Robert Shaw",
-      "Abdullah Gharaibeh"
+      "Robert Shaw"
     ],
     "summary": "llm-d reaches 1.0 — the point where the project declares production maturity for its core control plane: routing, disaggregation, KV cache management, flow control, and autoscaling. This session…",
     "url": "https://kubecon-cloudnativecon-north-america-2026.sessionize.com/session/1334864",
