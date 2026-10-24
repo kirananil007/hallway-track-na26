@@ -2769,7 +2769,7 @@
     "type": "other",
     "level": "unknown",
     "speakers": [
-      "Michael Forrester"
+      "Michael Rishi Forrester"
     ],
     "summary": "",
     "url": "https://kubecon-cloudnativecon-north-america-2026.sessionize.com/session/1333738",
@@ -6870,7 +6870,7 @@
     "type": "other",
     "level": "unknown",
     "speakers": [
-      "Michael Forrester"
+      "Michael Rishi Forrester"
     ],
     "summary": "10-Minute Tip Talk",
     "url": "https://kubecon-cloudnativecon-north-america-2026.sessionize.com/session/1371077",
@@ -8486,6 +8486,24 @@
       "autoscaling",
       "gitops",
       "networking"
+    ]
+  },
+  {
+    "id": "1371581",
+    "title": "Network Nook Meetup: A Platform Approach to Achieving AI ROI, Sponsored by CDW",
+    "start": "2026-11-11T15:40:00-07:00",
+    "end": "2026-11-11T16:10:00-07:00",
+    "day": "2026-11-11",
+    "room": "Salt Palace | Level 1 | Solutions Showcase | Hall 1 | Alpine Overlook Zone | Network Nook",
+    "track": "Experiences",
+    "type": "other",
+    "level": "unknown",
+    "speakers": [],
+    "summary": "Join us for casual and engaging meetups at the Network Nook during lunch breaks! These informal gatherings are open to all, whether you're a first-time attendee, a solo traveler, or simply looking to…",
+    "url": "https://kubecon-cloudnativecon-north-america-2026.sessionize.com/session/1371581",
+    "tags": [
+      "networking",
+      "ai-ml"
     ]
   },
   {
@@ -10948,7 +10966,7 @@
     "type": "breakout",
     "level": "unknown",
     "speakers": [
-      "Michael Forrester",
+      "Michael Rishi Forrester",
       "Whitney Lee"
     ],
     "summary": "In 2026, a developer asked a burrito chain's chatbot to reverse a linked list before ordering their meal. The bot delivered a solution, then asked what they wanted. A user does not need to be…",
