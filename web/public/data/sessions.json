@@ -365,7 +365,10 @@
     "track": "Project Lightning Talks",
     "type": "lightning",
     "level": "unknown",
-    "speakers": [],
+    "speakers": [
+      "Jorge Castro",
+      "Katherine Druckman"
+    ],
     "summary": "",
     "url": "https://kubecon-cloudnativecon-north-america-2026.sessionize.com/session/1289969",
     "tags": []
@@ -1007,7 +1010,10 @@
     "track": "Project Lightning Talks",
     "type": "lightning",
     "level": "unknown",
-    "speakers": [],
+    "speakers": [
+      "Jorge Castro",
+      "Katherine Druckman"
+    ],
     "summary": "",
     "url": "https://kubecon-cloudnativecon-north-america-2026.sessionize.com/session/1289970",
     "tags": []
@@ -1492,8 +1498,8 @@
     "speakers": [
       "Jonathan Bryce",
       "Chris Aniszczyk",
-      "Kevin Cochrane",
       "Robert Nishihara",
+      "Kevin Cochrane",
       "Bassam Tabbara"
     ],
     "summary": "",
@@ -1501,23 +1507,26 @@
     "tags": []
   },
   {
-    "id": "1349401",
-    "title": "Pods in the Wild: Reinforcement Learning on Kubernetes with OpenRL",
+    "id": "1367757",
+    "title": "Agent Substrate: Open Layers for Agentic Systems",
     "start": "2026-11-10T09:32:00-07:00",
-    "end": "2026-11-10T09:40:00-07:00",
+    "end": "2026-11-10T09:39:00-07:00",
     "day": "2026-11-10",
     "room": "Salt Palace | Level 1 | Hall DE",
     "track": "Keynote Sessions",
     "type": "keynote",
     "level": "unknown",
     "speakers": [
-      "Sunil Arora",
-      "Ravin Kumar"
+      "Jaana Dogan",
+      "Dmitry Berkovich",
+      "Tim Hockin",
+      "Eitan Yarmush",
+      "Luiz Scheidegger"
     ],
-    "summary": "What do wild dolphins, open-weight Gemma models, and Kubernetes have in common? Pods, of course! By training DolphinGemma on decades of marine acoustic data, researchers are actively decoding dolphin…",
-    "url": "https://kubecon-cloudnativecon-north-america-2026.sessionize.com/session/1349401",
+    "summary": "Running agentic workloads on Kubernetes presents several challenges. Agent Substrate is a new project, built on and with Kubernetes, which enables you to securely run huge numbers of agents on…",
+    "url": "https://kubecon-cloudnativecon-north-america-2026.sessionize.com/session/1367757",
     "tags": [
-      "ai-ml"
+      "agentic"
     ]
   },
   {
@@ -1562,8 +1571,8 @@
     ]
   },
   {
-    "id": "1362673",
-    "title": "One Kubernetes, Different Environments: Closing the Portability Gaps",
+    "id": "1301749",
+    "title": "Sandbox Your Agents",
     "start": "2026-11-10T09:56:00-07:00",
     "end": "2026-11-10T10:01:00-07:00",
     "day": "2026-11-10",
@@ -1572,33 +1581,34 @@
     "type": "keynote",
     "level": "unknown",
     "speakers": [
-      "Dilpreet Bindra"
+      "Jessica Forrester"
     ],
-    "summary": "What does portability really mean when Kubernetes spans containers, virtual machines, and increasingly diverse infrastructure? This keynote will discuss how VM API and the Workload Conformance Working…",
-    "url": "https://kubecon-cloudnativecon-north-america-2026.sessionize.com/session/1362673",
-    "tags": []
+    "summary": "AI Agents offer unequalled automation tooling for rapid software development, but with unfettered power comes great headaches, namely how to scope and secure them in cloud native stacks. A problematic…",
+    "url": "https://kubecon-cloudnativecon-north-america-2026.sessionize.com/session/1301749",
+    "tags": [
+      "ai-ml",
+      "agentic",
+      "storage"
+    ]
   },
   {
-    "id": "1367757",
-    "title": "Agent Substrate: Open Layers for Agentic Systems",
+    "id": "1349401",
+    "title": "Pods in the Wild: Reinforcement Learning on Kubernetes with OpenRL",
     "start": "2026-11-10T10:03:00-07:00",
-    "end": "2026-11-10T10:10:00-07:00",
+    "end": "2026-11-10T10:11:00-07:00",
     "day": "2026-11-10",
     "room": "Salt Palace | Level 1 | Hall DE",
     "track": "Keynote Sessions",
     "type": "keynote",
     "level": "unknown",
     "speakers": [
-      "Jaana Dogan",
-      "Dmitry Berkovich",
-      "Tim Hockin",
-      "Eitan Yarmush",
-      "Luiz Scheidegger"
+      "Sunil Arora",
+      "Ravin Kumar"
     ],
-    "summary": "Running agentic workloads on Kubernetes presents several challenges. Agent Substrate is a new project, built on and with Kubernetes, which enables you to securely run huge numbers of agents on…",
-    "url": "https://kubecon-cloudnativecon-north-america-2026.sessionize.com/session/1367757",
+    "summary": "What do wild dolphins, open-weight Gemma models, and Kubernetes have in common? Pods, of course! By training DolphinGemma on decades of marine acoustic data, researchers are actively decoding dolphin…",
+    "url": "https://kubecon-cloudnativecon-north-america-2026.sessionize.com/session/1349401",
     "tags": [
-      "agentic"
+      "ai-ml"
     ]
   },
   {
@@ -1625,8 +1635,8 @@
     ]
   },
   {
-    "id": "1301749",
-    "title": "Sandbox Your Agents",
+    "id": "1362673",
+    "title": "One Kubernetes, Different Environments: Closing the Portability Gaps",
     "start": "2026-11-10T10:19:00-07:00",
     "end": "2026-11-10T10:24:00-07:00",
     "day": "2026-11-10",
@@ -1635,15 +1645,11 @@
     "type": "keynote",
     "level": "unknown",
     "speakers": [
-      "Jessica Forrester"
+      "Dilpreet Bindra"
     ],
-    "summary": "AI Agents offer unequalled automation tooling for rapid software development, but with unfettered power comes great headaches, namely how to scope and secure them in cloud native stacks. A problematic…",
-    "url": "https://kubecon-cloudnativecon-north-america-2026.sessionize.com/session/1301749",
-    "tags": [
-      "ai-ml",
-      "agentic",
-      "storage"
-    ]
+    "summary": "What does portability really mean when Kubernetes spans containers, virtual machines, and increasingly diverse infrastructure? This keynote will discuss how VM API and the Workload Conformance Working…",
+    "url": "https://kubecon-cloudnativecon-north-america-2026.sessionize.com/session/1362673",
+    "tags": []
   },
   {
     "id": "1309267",
@@ -1892,7 +1898,7 @@
     "room": "Salt Palace | Level 1 | Grand Ballroom H",
     "track": "AI Inference + Agentic",
     "type": "breakout",
-    "level": "beginner",
+    "level": "unknown",
     "speakers": [
       "Anton Alexander",
       "Scott Adams"
@@ -1904,8 +1910,7 @@
       "ai-ml",
       "inference",
       "agentic",
-      "sre",
-      "beginner"
+      "sre"
     ]
   },
   {
@@ -1998,7 +2003,7 @@
     "start": "2026-11-10T11:30:00-07:00",
     "end": "2026-11-10T12:00:00-07:00",
     "day": "2026-11-10",
-    "room": "Hyatt Regency | Level 4 | Regency Ballroom B-D",
+    "room": "Hyatt Regency | Level 4 | Regency Ballroom CD",
     "track": "Cloud Native Novice",
     "type": "breakout",
     "level": "beginner",
@@ -2449,7 +2454,7 @@
     "start": "2026-11-10T12:20:00-07:00",
     "end": "2026-11-10T12:50:00-07:00",
     "day": "2026-11-10",
-    "room": "Hyatt Regency | Level 4 | Regency Ballroom B-D",
+    "room": "Hyatt Regency | Level 4 | Regency Ballroom CD",
     "track": "Cloud Native Novice",
     "type": "breakout",
     "level": "unknown",
@@ -3411,7 +3416,7 @@
     "start": "2026-11-10T14:50:00-07:00",
     "end": "2026-11-10T15:20:00-07:00",
     "day": "2026-11-10",
-    "room": "Hyatt Regency | Level 4 | Regency Ballroom B-D",
+    "room": "Hyatt Regency | Level 4 | Regency Ballroom CD",
     "track": "Data Processing + Storage",
     "type": "breakout",
     "level": "unknown",
@@ -3520,7 +3525,7 @@
     "start": "2026-11-10T14:50:00-07:00",
     "end": "2026-11-10T15:20:00-07:00",
     "day": "2026-11-10",
-    "room": "Salt Palace | Level 1 | Hall DE",
+    "room": "Hyatt Regency | Level 4 | Regency Ballroom B",
     "track": "AI Inference + Agentic",
     "type": "breakout",
     "level": "unknown",
@@ -3920,7 +3925,7 @@
     "start": "2026-11-10T15:40:00-07:00",
     "end": "2026-11-10T16:10:00-07:00",
     "day": "2026-11-10",
-    "room": "Salt Palace | Level 1 | Hall DE",
+    "room": "Hyatt Regency | Level 4 | Regency Ballroom B",
     "track": "AI Inference + Agentic",
     "type": "breakout",
     "level": "advanced",
@@ -4178,7 +4183,7 @@
     "start": "2026-11-10T15:40:00-07:00",
     "end": "2026-11-10T16:10:00-07:00",
     "day": "2026-11-10",
-    "room": "Hyatt Regency | Level 4 | Regency Ballroom B-D",
+    "room": "Hyatt Regency | Level 4 | Regency Ballroom CD",
     "track": "AI Inference + Agentic",
     "type": "breakout",
     "level": "unknown",
@@ -4559,7 +4564,7 @@
     "start": "2026-11-10T16:40:00-07:00",
     "end": "2026-11-10T17:10:00-07:00",
     "day": "2026-11-10",
-    "room": "Salt Palace | Level 1 | Hall DE",
+    "room": "Hyatt Regency | Level 4 | Regency Ballroom B",
     "track": "AI Inference + Agentic",
     "type": "breakout",
     "level": "unknown",
@@ -4716,7 +4721,7 @@
     "start": "2026-11-10T16:40:00-07:00",
     "end": "2026-11-10T17:10:00-07:00",
     "day": "2026-11-10",
-    "room": "Hyatt Regency | Level 4 | Regency Ballroom B-D",
+    "room": "Hyatt Regency | Level 4 | Regency Ballroom CD",
     "track": "Operations + Performance",
     "type": "breakout",
     "level": "unknown",
@@ -5034,7 +5039,7 @@
     "start": "2026-11-10T17:30:00-07:00",
     "end": "2026-11-10T18:00:00-07:00",
     "day": "2026-11-10",
-    "room": "Hyatt Regency | Level 4 | Regency Ballroom B-D",
+    "room": "Hyatt Regency | Level 4 | Regency Ballroom CD",
     "track": "Operations + Performance",
     "type": "breakout",
     "level": "unknown",
@@ -5077,7 +5082,7 @@
     "start": "2026-11-10T17:30:00-07:00",
     "end": "2026-11-10T18:00:00-07:00",
     "day": "2026-11-10",
-    "room": "Salt Palace | Level 1 | Hall DE",
+    "room": "Hyatt Regency | Level 4 | Regency Ballroom B",
     "track": "AI Inference + Agentic",
     "type": "breakout",
     "level": "unknown",
@@ -5389,6 +5394,23 @@
     "tags": []
   },
   {
+    "id": "1372841",
+    "title": "Human Scale, Agent Scale",
+    "start": "2026-11-11T09:00:00-07:00",
+    "end": "2026-11-11T09:05:00-07:00",
+    "day": "2026-11-11",
+    "room": "Salt Palace | Level 1 | Hall DE",
+    "track": "Keynote Sessions",
+    "type": "keynote",
+    "level": "unknown",
+    "speakers": [
+      "Jonathan Bryce"
+    ],
+    "summary": "",
+    "url": "https://kubecon-cloudnativecon-north-america-2026.sessionize.com/session/1372841",
+    "tags": []
+  },
+  {
     "id": "1294702",
     "title": "The Flywheel Effect: Why Community Is the Ultimate End-User Advantage",
     "start": "2026-11-11T09:00:00-07:00",
@@ -5407,6 +5429,26 @@
     "tags": [
       "platform-engineering",
       "ai-ml"
+    ]
+  },
+  {
+    "id": "1302691",
+    "title": "Beyond End User: CAP and the Evolution of Open Source at CVS Health",
+    "start": "2026-11-11T09:07:00-07:00",
+    "end": "2026-11-11T09:12:00-07:00",
+    "day": "2026-11-11",
+    "room": "Salt Palace | Level 1 | Hall DE",
+    "track": "Keynote Sessions",
+    "type": "keynote",
+    "level": "unknown",
+    "speakers": [
+      "Michael Amundson",
+      "Jim Beyers"
+    ],
+    "summary": "Two years ago, the DevEx organization at CVS Health set an audacious plan in motion: build a platform capable of running the company’s thousands of existing applications while remaining approachable…",
+    "url": "https://kubecon-cloudnativecon-north-america-2026.sessionize.com/session/1302691",
+    "tags": [
+      "contributor"
     ]
   },
   {
@@ -5569,26 +5611,6 @@
       "networking",
       "ai-ml",
       "inference"
-    ]
-  },
-  {
-    "id": "1302691",
-    "title": "Beyond End User: CAP and the Evolution of Open Source at CVS Health",
-    "start": "2026-11-11T10:23:00-07:00",
-    "end": "2026-11-11T10:28:00-07:00",
-    "day": "2026-11-11",
-    "room": "Salt Palace | Level 1 | Hall DE",
-    "track": "Keynote Sessions",
-    "type": "keynote",
-    "level": "unknown",
-    "speakers": [
-      "Michael Amundson",
-      "Jim Beyers"
-    ],
-    "summary": "Two years ago, the DevEx organization at CVS Health set an audacious plan in motion: build a platform capable of running the company’s thousands of existing applications while remaining approachable…",
-    "url": "https://kubecon-cloudnativecon-north-america-2026.sessionize.com/session/1302691",
-    "tags": [
-      "contributor"
     ]
   },
   {
@@ -5802,7 +5824,7 @@
   },
   {
     "id": "1370908",
-    "title": "Build with Open Source AI hosted by MLH | Speaker Peter Frank",
+    "title": "Build with Open Source AI hosted by MLH",
     "start": "2026-11-11T11:00:00-07:00",
     "end": "2026-11-11T11:20:00-07:00",
     "day": "2026-11-11",
@@ -5810,7 +5832,9 @@
     "track": "Project Pavilion Stage",
     "type": "other",
     "level": "unknown",
-    "speakers": [],
+    "speakers": [
+      "Peter Frank"
+    ],
     "summary": "Join Major League Hacking (MLH) and DEV in the Project Pavilion for a quick look back at Hacktoberfest 2026 and what the community built with open weight models and open source agents, plus how to run…",
     "url": "https://kubecon-cloudnativecon-north-america-2026.sessionize.com/session/1370908",
     "tags": [
@@ -6086,7 +6110,7 @@
     "start": "2026-11-11T11:00:00-07:00",
     "end": "2026-11-11T11:30:00-07:00",
     "day": "2026-11-11",
-    "room": "Hyatt Regency | Level 4 | Regency Ballroom B-D",
+    "room": "Hyatt Regency | Level 4 | Regency Ballroom CD",
     "track": "Observability",
     "type": "breakout",
     "level": "advanced",
@@ -6590,7 +6614,7 @@
     "start": "2026-11-11T11:50:00-07:00",
     "end": "2026-11-11T12:20:00-07:00",
     "day": "2026-11-11",
-    "room": "Hyatt Regency | Level 4 | Regency Ballroom B-D",
+    "room": "Hyatt Regency | Level 4 | Regency Ballroom CD",
     "track": "Observability",
     "type": "breakout",
     "level": "unknown",
@@ -6895,21 +6919,6 @@
       "networking",
       "storage"
     ]
-  },
-  {
-    "id": "1370896",
-    "title": "CNCF Project Demos",
-    "start": "2026-11-11T13:15:00-07:00",
-    "end": "2026-11-11T15:00:00-07:00",
-    "day": "2026-11-11",
-    "room": "Salt Palace | Level 1 | Solutions Showcase | Hall 5 | Cosmic Canyon Zone | Project Pavilion",
-    "track": "Project Pavilion Stage",
-    "type": "other",
-    "level": "unknown",
-    "speakers": [],
-    "summary": "",
-    "url": "https://kubecon-cloudnativecon-north-america-2026.sessionize.com/session/1370896",
-    "tags": []
   },
   {
     "id": "1369673",
@@ -7241,6 +7250,21 @@
     ]
   },
   {
+    "id": "1370896",
+    "title": "CNCF Project Demos",
+    "start": "2026-11-11T13:40:00-07:00",
+    "end": "2026-11-11T15:15:00-07:00",
+    "day": "2026-11-11",
+    "room": "Salt Palace | Level 1 | Solutions Showcase | Hall 5 | Cosmic Canyon Zone | Project Pavilion",
+    "track": "Project Pavilion Stage",
+    "type": "other",
+    "level": "unknown",
+    "speakers": [],
+    "summary": "",
+    "url": "https://kubecon-cloudnativecon-north-america-2026.sessionize.com/session/1370896",
+    "tags": []
+  },
+  {
     "id": "1371079",
     "title": "From Cloud Native to Agent Native with MCP",
     "start": "2026-11-11T13:45:00-07:00",
@@ -7524,7 +7548,7 @@
     "start": "2026-11-11T14:20:00-07:00",
     "end": "2026-11-11T14:50:00-07:00",
     "day": "2026-11-11",
-    "room": "Salt Palace | Level 1 | Hall DE",
+    "room": "Hyatt Regency | Level 4 | Regency Ballroom B",
     "track": "Cloud Native Novice",
     "type": "breakout",
     "level": "beginner",
@@ -7754,10 +7778,10 @@
   {
     "id": "1233132",
     "title": "Open Source Has a Human Deficit. Here's How We Fix It.",
-    "start": "2026-11-11T14:27:00-07:00",
-    "end": "2026-11-11T14:32:00-07:00",
+    "start": "2026-11-11T14:25:00-07:00",
+    "end": "2026-11-11T14:30:00-07:00",
     "day": "2026-11-11",
-    "room": "Hyatt Regency | Level 4 | Regency Ballroom B-D",
+    "room": "Hyatt Regency | Level 4 | Regency Ballroom CD",
     "track": "Lightning Talks",
     "type": "lightning",
     "level": "unknown",
@@ -7798,7 +7822,7 @@
     "start": "2026-11-11T14:34:00-07:00",
     "end": "2026-11-11T14:39:00-07:00",
     "day": "2026-11-11",
-    "room": "Hyatt Regency | Level 4 | Regency Ballroom B-D",
+    "room": "Hyatt Regency | Level 4 | Regency Ballroom CD",
     "track": "Lightning Talks",
     "type": "lightning",
     "level": "unknown",
@@ -7819,7 +7843,7 @@
     "start": "2026-11-11T14:41:00-07:00",
     "end": "2026-11-11T14:46:00-07:00",
     "day": "2026-11-11",
-    "room": "Hyatt Regency | Level 4 | Regency Ballroom B-D",
+    "room": "Hyatt Regency | Level 4 | Regency Ballroom CD",
     "track": "Lightning Talks",
     "type": "lightning",
     "level": "unknown",
@@ -7883,7 +7907,7 @@
     "start": "2026-11-11T14:48:00-07:00",
     "end": "2026-11-11T14:53:00-07:00",
     "day": "2026-11-11",
-    "room": "Hyatt Regency | Level 4 | Regency Ballroom B-D",
+    "room": "Hyatt Regency | Level 4 | Regency Ballroom CD",
     "track": "Lightning Talks",
     "type": "lightning",
     "level": "beginner",
@@ -7927,7 +7951,7 @@
     "start": "2026-11-11T14:55:00-07:00",
     "end": "2026-11-11T15:00:00-07:00",
     "day": "2026-11-11",
-    "room": "Hyatt Regency | Level 4 | Regency Ballroom B-D",
+    "room": "Hyatt Regency | Level 4 | Regency Ballroom CD",
     "track": "Lightning Talks",
     "type": "lightning",
     "level": "advanced",
@@ -7963,7 +7987,7 @@
     "start": "2026-11-11T15:02:00-07:00",
     "end": "2026-11-11T15:07:00-07:00",
     "day": "2026-11-11",
-    "room": "Hyatt Regency | Level 4 | Regency Ballroom B-D",
+    "room": "Hyatt Regency | Level 4 | Regency Ballroom CD",
     "track": "Lightning Talks",
     "type": "lightning",
     "level": "advanced",
@@ -8000,7 +8024,7 @@
     "start": "2026-11-11T15:09:00-07:00",
     "end": "2026-11-11T15:14:00-07:00",
     "day": "2026-11-11",
-    "room": "Hyatt Regency | Level 4 | Regency Ballroom B-D",
+    "room": "Hyatt Regency | Level 4 | Regency Ballroom CD",
     "track": "Lightning Talks",
     "type": "lightning",
     "level": "beginner",
@@ -8096,7 +8120,7 @@
     "type": "other",
     "level": "unknown",
     "speakers": [
-      "Eli Aleyner"
+      "Per Krogslund"
     ],
     "summary": "Ten years ago, the OCI gave the industry one image format, so an image built on one machine runs on any other. Agents break that promise. An agent installs packages, calls APIs, and uses credentials…",
     "url": "https://kubecon-cloudnativecon-north-america-2026.sessionize.com/session/1367762",
@@ -8130,7 +8154,7 @@
     "start": "2026-11-11T15:10:00-07:00",
     "end": "2026-11-11T15:40:00-07:00",
     "day": "2026-11-11",
-    "room": "Salt Palace | Level 1 | Hall DE",
+    "room": "Hyatt Regency | Level 4 | Regency Ballroom B",
     "track": "Cloud Native Novice",
     "type": "breakout",
     "level": "beginner",
@@ -8390,29 +8414,12 @@
     ]
   },
   {
-    "id": "1364856",
-    "title": "CLBO: ClashLoopBackOff: Attendee Edition",
-    "start": "2026-11-11T15:15:00-07:00",
-    "end": "2026-11-11T16:15:00-07:00",
-    "day": "2026-11-11",
-    "room": "Salt Palace | Level 1 | Solutions Showcase | Hall 5 | Cosmic Canyon Zone | Project Pavilion",
-    "track": "Project Pavilion Stage",
-    "type": "other",
-    "level": "unknown",
-    "speakers": [],
-    "summary": "Come and join a competition of people using their technical ingenuity and creativity to solve a challenge put forth by the Scheduler (host). Time is limited and stakes are high, as this isn’t just a…",
-    "url": "https://kubecon-cloudnativecon-north-america-2026.sessionize.com/session/1364856",
-    "tags": [
-      "observability"
-    ]
-  },
-  {
     "id": "1250936",
     "title": "When Agents Talk to Agents: Scaling A2A on Kubernetes Without Drowning in Connections",
     "start": "2026-11-11T15:16:00-07:00",
     "end": "2026-11-11T15:21:00-07:00",
     "day": "2026-11-11",
-    "room": "Hyatt Regency | Level 4 | Regency Ballroom B-D",
+    "room": "Hyatt Regency | Level 4 | Regency Ballroom CD",
     "track": "Lightning Talks",
     "type": "lightning",
     "level": "unknown",
@@ -8432,7 +8439,7 @@
     "start": "2026-11-11T15:23:00-07:00",
     "end": "2026-11-11T15:28:00-07:00",
     "day": "2026-11-11",
-    "room": "Hyatt Regency | Level 4 | Regency Ballroom B-D",
+    "room": "Hyatt Regency | Level 4 | Regency Ballroom CD",
     "track": "Lightning Talks",
     "type": "lightning",
     "level": "beginner",
@@ -8446,6 +8453,23 @@
       "ai-ml",
       "contributor",
       "beginner"
+    ]
+  },
+  {
+    "id": "1364856",
+    "title": "CLBO: ClashLoopBackOff: Attendee Edition",
+    "start": "2026-11-11T15:25:00-07:00",
+    "end": "2026-11-11T16:25:00-07:00",
+    "day": "2026-11-11",
+    "room": "Salt Palace | Level 1 | Solutions Showcase | Hall 5 | Cosmic Canyon Zone | Project Pavilion",
+    "track": "Project Pavilion Stage",
+    "type": "other",
+    "level": "unknown",
+    "speakers": [],
+    "summary": "Come and join a competition of people using their technical ingenuity and creativity to solve a challenge put forth by the Scheduler (host). Time is limited and stakes are high, as this isn’t just a…",
+    "url": "https://kubecon-cloudnativecon-north-america-2026.sessionize.com/session/1364856",
+    "tags": [
+      "observability"
     ]
   },
   {
@@ -8649,7 +8673,7 @@
     "start": "2026-11-11T16:10:00-07:00",
     "end": "2026-11-11T16:40:00-07:00",
     "day": "2026-11-11",
-    "room": "Salt Palace | Level 1 | Hall DE",
+    "room": "Hyatt Regency | Level 4 | Regency Ballroom B",
     "track": "Cloud Native Novice",
     "type": "breakout",
     "level": "unknown",
@@ -8871,7 +8895,7 @@
     "start": "2026-11-11T16:10:00-07:00",
     "end": "2026-11-11T16:40:00-07:00",
     "day": "2026-11-11",
-    "room": "Hyatt Regency | Level 4 | Regency Ballroom B-D",
+    "room": "Hyatt Regency | Level 4 | Regency Ballroom CD",
     "track": "Observability",
     "type": "breakout",
     "level": "unknown",
@@ -9108,8 +9132,8 @@
   {
     "id": "1370902",
     "title": "CNCF Project Demos",
-    "start": "2026-11-11T16:30:00-07:00",
-    "end": "2026-11-11T16:55:00-07:00",
+    "start": "2026-11-11T16:35:00-07:00",
+    "end": "2026-11-11T17:00:00-07:00",
     "day": "2026-11-11",
     "room": "Salt Palace | Level 1 | Solutions Showcase | Hall 5 | Cosmic Canyon Zone | Project Pavilion",
     "track": "Project Pavilion Stage",
@@ -9149,7 +9173,7 @@
     "start": "2026-11-11T17:00:00-07:00",
     "end": "2026-11-11T17:30:00-07:00",
     "day": "2026-11-11",
-    "room": "Hyatt Regency | Level 4 | Regency Ballroom B-D",
+    "room": "Hyatt Regency | Level 4 | Regency Ballroom CD",
     "track": "Observability",
     "type": "breakout",
     "level": "unknown",
@@ -9240,7 +9264,7 @@
     "start": "2026-11-11T17:00:00-07:00",
     "end": "2026-11-11T17:30:00-07:00",
     "day": "2026-11-11",
-    "room": "Salt Palace | Level 1 | Hall DE",
+    "room": "Hyatt Regency | Level 4 | Regency Ballroom B",
     "track": "Cloud Native Novice",
     "type": "breakout",
     "level": "beginner",
@@ -10131,7 +10155,7 @@
     "start": "2026-11-12T11:00:00-07:00",
     "end": "2026-11-12T11:30:00-07:00",
     "day": "2026-11-12",
-    "room": "Hyatt Regency | Level 4 | Regency Ballroom B-D",
+    "room": "Hyatt Regency | Level 4 | Regency Ballroom CD",
     "track": "Security",
     "type": "breakout",
     "level": "advanced",
@@ -10525,7 +10549,7 @@
     "start": "2026-11-12T11:50:00-07:00",
     "end": "2026-11-12T12:20:00-07:00",
     "day": "2026-11-12",
-    "room": "Hyatt Regency | Level 4 | Regency Ballroom B-D",
+    "room": "Hyatt Regency | Level 4 | Regency Ballroom CD",
     "track": "Platform Engineering",
     "type": "breakout",
     "level": "unknown",
@@ -11055,7 +11079,7 @@
     "start": "2026-11-12T13:50:00-07:00",
     "end": "2026-11-12T14:20:00-07:00",
     "day": "2026-11-12",
-    "room": "Hyatt Regency | Level 4 | Regency Ballroom B-D",
+    "room": "Hyatt Regency | Level 4 | Regency Ballroom CD",
     "track": "Platform Engineering",
     "type": "breakout",
     "level": "unknown",
@@ -11359,7 +11383,7 @@
     "start": "2026-11-12T14:40:00-07:00",
     "end": "2026-11-12T15:10:00-07:00",
     "day": "2026-11-12",
-    "room": "Hyatt Regency | Level 4 | Regency Ballroom B-D",
+    "room": "Hyatt Regency | Level 4 | Regency Ballroom CD",
     "track": "Data Processing + Storage",
     "type": "breakout",
     "level": "unknown",
@@ -11732,7 +11756,7 @@
     "start": "2026-11-12T15:30:00-07:00",
     "end": "2026-11-12T16:00:00-07:00",
     "day": "2026-11-12",
-    "room": "Hyatt Regency | Level 4 | Regency Ballroom B-D",
+    "room": "Hyatt Regency | Level 4 | Regency Ballroom CD",
     "track": "Observability",
     "type": "breakout",
     "level": "advanced",
