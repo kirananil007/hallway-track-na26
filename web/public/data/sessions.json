@@ -5411,27 +5411,6 @@
     "tags": []
   },
   {
-    "id": "1294702",
-    "title": "The Flywheel Effect: Why Community Is the Ultimate End-User Advantage",
-    "start": "2026-11-11T09:00:00-07:00",
-    "end": "2026-11-11T09:10:00-07:00",
-    "day": "2026-11-11",
-    "room": "Salt Palace | Level 1 | Hall DE",
-    "track": "Keynote Sessions",
-    "type": "keynote",
-    "level": "unknown",
-    "speakers": [
-      "Abby Bangser",
-      "Phill Morton"
-    ],
-    "summary": "Cloud native promises a future without limits, but every end-user organization eventually discovers the same truth: no team becomes limitless alone. Every day, end users push CNCF projects into new…",
-    "url": "https://kubecon-cloudnativecon-north-america-2026.sessionize.com/session/1294702",
-    "tags": [
-      "platform-engineering",
-      "ai-ml"
-    ]
-  },
-  {
     "id": "1302691",
     "title": "Beyond End User: CAP and the Evolution of Open Source at CVS Health",
     "start": "2026-11-11T09:07:00-07:00",
@@ -5452,10 +5431,31 @@
     ]
   },
   {
+    "id": "1294702",
+    "title": "The Flywheel Effect: Why Community Is the Ultimate End-User Advantage",
+    "start": "2026-11-11T09:14:00-07:00",
+    "end": "2026-11-11T09:24:00-07:00",
+    "day": "2026-11-11",
+    "room": "Salt Palace | Level 1 | Hall DE",
+    "track": "Keynote Sessions",
+    "type": "keynote",
+    "level": "unknown",
+    "speakers": [
+      "Abby Bangser",
+      "Phill Morton"
+    ],
+    "summary": "Cloud native promises a future without limits, but every end-user organization eventually discovers the same truth: no team becomes limitless alone. Every day, end users push CNCF projects into new…",
+    "url": "https://kubecon-cloudnativecon-north-america-2026.sessionize.com/session/1294702",
+    "tags": [
+      "platform-engineering",
+      "ai-ml"
+    ]
+  },
+  {
     "id": "1367917",
     "title": "The Cloud Native Feedback Loop: How End Users and Developers Drive CNCF Projects Forward",
-    "start": "2026-11-11T09:19:00-07:00",
-    "end": "2026-11-11T09:29:00-07:00",
+    "start": "2026-11-11T09:33:00-07:00",
+    "end": "2026-11-11T09:43:00-07:00",
     "day": "2026-11-11",
     "room": "Salt Palace | Level 1 | Hall DE",
     "track": "Keynote Sessions",
@@ -5474,8 +5474,8 @@
   {
     "id": "1363905",
     "title": "A Tribute to Open Source",
-    "start": "2026-11-11T09:31:00-07:00",
-    "end": "2026-11-11T09:36:00-07:00",
+    "start": "2026-11-11T09:45:00-07:00",
+    "end": "2026-11-11T09:50:00-07:00",
     "day": "2026-11-11",
     "room": "Salt Palace | Level 1 | Hall DE",
     "track": "Keynote Sessions",
@@ -5491,8 +5491,8 @@
   {
     "id": "1353217",
     "title": "Code, Containers, and Clusters: The Next Chapter of Apple's Container Framework",
-    "start": "2026-11-11T09:38:00-07:00",
-    "end": "2026-11-11T09:48:00-07:00",
+    "start": "2026-11-11T09:52:00-07:00",
+    "end": "2026-11-11T10:02:00-07:00",
     "day": "2026-11-11",
     "room": "Salt Palace | Level 1 | Hall DE",
     "track": "Keynote Sessions",
@@ -5513,8 +5513,8 @@
   {
     "id": "1301748",
     "title": "Context Unlocks Autonomous AI Infrastructure",
-    "start": "2026-11-11T09:50:00-07:00",
-    "end": "2026-11-11T09:55:00-07:00",
+    "start": "2026-11-11T10:04:00-07:00",
+    "end": "2026-11-11T10:09:00-07:00",
     "day": "2026-11-11",
     "room": "Salt Palace | Level 1 | Hall DE",
     "track": "Keynote Sessions",
@@ -5532,8 +5532,8 @@
   {
     "id": "1360829",
     "title": "We Have GitOps at Home: How Meta Went from Terraform on Cron to GitOps for AI Infra",
-    "start": "2026-11-11T09:57:00-07:00",
-    "end": "2026-11-11T10:02:00-07:00",
+    "start": "2026-11-11T10:11:00-07:00",
+    "end": "2026-11-11T10:16:00-07:00",
     "day": "2026-11-11",
     "room": "Salt Palace | Level 1 | Hall DE",
     "track": "Keynote Sessions",
@@ -5554,8 +5554,8 @@
   {
     "id": "1295999",
     "title": "Production AI on Kubernetes: Built to Scale with Oracle Cloud",
-    "start": "2026-11-11T10:04:00-07:00",
-    "end": "2026-11-11T10:09:00-07:00",
+    "start": "2026-11-11T10:18:00-07:00",
+    "end": "2026-11-11T10:23:00-07:00",
     "day": "2026-11-11",
     "room": "Salt Palace | Level 1 | Hall DE",
     "track": "Keynote Sessions",
@@ -5573,30 +5573,10 @@
     ]
   },
   {
-    "id": "1368714",
-    "title": "Built on Kubernetes. Proven at Uber Scale. Now Open Source.",
-    "start": "2026-11-11T10:11:00-07:00",
-    "end": "2026-11-11T10:14:00-07:00",
-    "day": "2026-11-11",
-    "room": "Salt Palace | Level 1 | Hall DE",
-    "track": "Keynote Sessions",
-    "type": "keynote",
-    "level": "unknown",
-    "speakers": [
-      "Viv Keswani"
-    ],
-    "summary": "Uber announces the open sourcing of Michelangelo AI, its Kubernetes-native ML platform designed to run across on-premises and public cloud environments, powering mission-critical AI across its global…",
-    "url": "https://kubecon-cloudnativecon-north-america-2026.sessionize.com/session/1368714",
-    "tags": [
-      "ai-ml",
-      "agentic"
-    ]
-  },
-  {
     "id": "1294242",
     "title": "Sovereign AI Starts at the Traffic Layer",
-    "start": "2026-11-11T10:16:00-07:00",
-    "end": "2026-11-11T10:21:00-07:00",
+    "start": "2026-11-11T10:25:00-07:00",
+    "end": "2026-11-11T10:30:00-07:00",
     "day": "2026-11-11",
     "room": "Salt Palace | Level 1 | Hall DE",
     "track": "Keynote Sessions",
@@ -5612,21 +5592,6 @@
       "ai-ml",
       "inference"
     ]
-  },
-  {
-    "id": "1302804",
-    "title": "Closing Remarks",
-    "start": "2026-11-11T10:29:00-07:00",
-    "end": "2026-11-11T10:30:00-07:00",
-    "day": "2026-11-11",
-    "room": "Salt Palace | Level 1 | Hall DE",
-    "track": "Keynote Sessions",
-    "type": "keynote",
-    "level": "unknown",
-    "speakers": [],
-    "summary": "",
-    "url": "https://kubecon-cloudnativecon-north-america-2026.sessionize.com/session/1302804",
-    "tags": []
   },
   {
     "id": "1369676",
@@ -5678,6 +5643,41 @@
     "speakers": [],
     "summary": "",
     "url": "https://kubecon-cloudnativecon-north-america-2026.sessionize.com/session/1289744",
+    "tags": []
+  },
+  {
+    "id": "1368714",
+    "title": "Built on Kubernetes. Proven at Uber Scale. Now Open Source.",
+    "start": "2026-11-11T10:32:00-07:00",
+    "end": "2026-11-11T10:35:00-07:00",
+    "day": "2026-11-11",
+    "room": "Salt Palace | Level 1 | Hall DE",
+    "track": "Keynote Sessions",
+    "type": "keynote",
+    "level": "unknown",
+    "speakers": [
+      "Viv Keswani"
+    ],
+    "summary": "Uber announces the open sourcing of Michelangelo AI, its Kubernetes-native ML platform designed to run across on-premises and public cloud environments, powering mission-critical AI across its global…",
+    "url": "https://kubecon-cloudnativecon-north-america-2026.sessionize.com/session/1368714",
+    "tags": [
+      "ai-ml",
+      "agentic"
+    ]
+  },
+  {
+    "id": "1302804",
+    "title": "Closing Remarks",
+    "start": "2026-11-11T10:35:00-07:00",
+    "end": "2026-11-11T10:36:00-07:00",
+    "day": "2026-11-11",
+    "room": "Salt Palace | Level 1 | Hall DE",
+    "track": "Keynote Sessions",
+    "type": "keynote",
+    "level": "unknown",
+    "speakers": [],
+    "summary": "",
+    "url": "https://kubecon-cloudnativecon-north-america-2026.sessionize.com/session/1302804",
     "tags": []
   },
   {
