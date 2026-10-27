@@ -5248,7 +5248,7 @@
   },
   {
     "id": "1364853",
-    "title": "CLBO: ClashLoopBackOff",
+    "title": "CLBO: ClashLoopBackOff: Demo Night",
     "start": "2026-11-10T18:00:00-07:00",
     "end": "2026-11-10T19:15:00-07:00",
     "day": "2026-11-10",
@@ -5257,10 +5257,10 @@
     "type": "other",
     "level": "unknown",
     "speakers": [],
-    "summary": "Come and watch a competition of two people using their technical ingenuity and creativity to solve a challenge put forth by the Scheduler (host). Time is limited and stakes are high, as this isn’t…",
+    "summary": "Join CNCF project maintainers and cloud native community members for an informal evening of demos, fresh ideas, and creative projects! Discover what others are building, explore new tools and…",
     "url": "https://kubecon-cloudnativecon-north-america-2026.sessionize.com/session/1364853",
     "tags": [
-      "observability"
+      "contributor"
     ]
   },
   {
@@ -5463,7 +5463,9 @@
     "level": "unknown",
     "speakers": [
       "Marlow Warnicke",
-      "Kevin Wang"
+      "Brandt Keller",
+      "Alolita Sharma",
+      "William Crum"
     ],
     "summary": "How do today’s reference architectures become real production platforms built on CNCF projects that evolve, mature, and earn long-term trust? In this joint keynote the CNCF End User Technical Advisory…",
     "url": "https://kubecon-cloudnativecon-north-america-2026.sessionize.com/session/1367917",
@@ -8466,7 +8468,7 @@
     "type": "other",
     "level": "unknown",
     "speakers": [],
-    "summary": "Come and join a competition of people using their technical ingenuity and creativity to solve a challenge put forth by the Scheduler (host). Time is limited and stakes are high, as this isn’t just a…",
+    "summary": "Get ready for a fast-paced technical showdown where creativity, problem-solving, and Kubernetes skills take center stage! Watch two competitors go head-to-head with just 20 minutes to tackle a…",
     "url": "https://kubecon-cloudnativecon-north-america-2026.sessionize.com/session/1364856",
     "tags": [
       "observability"
