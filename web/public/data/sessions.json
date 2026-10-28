@@ -1675,6 +1675,33 @@
     ]
   },
   {
+    "id": "1373663",
+    "title": "Project Pavilion Kiosks | Tuesday Morning",
+    "start": "2026-11-10T10:30:00-07:00",
+    "end": "2026-11-10T14:30:00-07:00",
+    "day": "2026-11-10",
+    "room": "Salt Palace | Level 1 | Solutions Showcase | Hall 5 | Cosmic Canyon Zone | Project Pavilion",
+    "track": "Project Opportunities",
+    "type": "other",
+    "level": "unknown",
+    "speakers": [],
+    "summary": "P-1A Helm P-1B OpenChoreo P-2A kube-burner P-2B Flux P-3A Rook P-3B Karmada P-4A Linkerd P-4B k0s P-5A Kueue / Workload Aware Scheduling (SIG Subproject) P-5B SIG-etcd P-6A Dynamic Resource Allocation…",
+    "url": "https://kubecon-cloudnativecon-north-america-2026.sessionize.com/session/1373663",
+    "tags": [
+      "opentelemetry",
+      "platform-engineering",
+      "gitops",
+      "security",
+      "networking",
+      "inference",
+      "storage",
+      "finops",
+      "multi-cluster",
+      "edge",
+      "contributor"
+    ]
+  },
+  {
     "id": "1302802",
     "title": "Closing Remarks",
     "start": "2026-11-10T10:44:00-07:00",
@@ -3772,6 +3799,31 @@
     "tags": []
   },
   {
+    "id": "1373665",
+    "title": "Project Pavilion Kiosks | Tuesday Afternoon",
+    "start": "2026-11-10T15:00:00-07:00",
+    "end": "2026-11-10T19:30:00-07:00",
+    "day": "2026-11-10",
+    "room": "Salt Palace | Level 1 | Solutions Showcase | Hall 5 | Cosmic Canyon Zone | Project Pavilion",
+    "track": "Project Opportunities",
+    "type": "other",
+    "level": "unknown",
+    "speakers": [],
+    "summary": "P-1A Vitess P-1B Tekton Pipelines P-2A Cloud Native Buildpacks P-2B Flux P-3A Kubevela P-3B Backstage P-4A Linkerd P-4B KEDA P-5A Kueue / Workload Aware Scheduling (SIG Subproject) P-5B Headlamp (SIG)…",
+    "url": "https://kubecon-cloudnativecon-north-america-2026.sessionize.com/session/1373665",
+    "tags": [
+      "observability",
+      "autoscaling",
+      "platform-engineering",
+      "gitops",
+      "security",
+      "networking",
+      "ai-ml",
+      "sre",
+      "contributor"
+    ]
+  },
+  {
     "id": "1334816",
     "title": "After Admission: Kernel Enforcement for Agents Kyverno Let In",
     "start": "2026-11-10T15:15:00-07:00",
@@ -5554,6 +5606,31 @@
     ]
   },
   {
+    "id": "1373666",
+    "title": "Project Pavilion Kiosks | Wednesday Morning",
+    "start": "2026-11-11T10:15:00-07:00",
+    "end": "2026-11-11T13:25:00-07:00",
+    "day": "2026-11-11",
+    "room": "Salt Palace | Level 1 | Solutions Showcase | Hall 5 | Cosmic Canyon Zone | Project Pavilion",
+    "track": "Project Opportunities",
+    "type": "other",
+    "level": "unknown",
+    "speakers": [],
+    "summary": "P-1A Helm P-1B Radius P-2A Drasi P-2B Flux P-3A Rook P-3B Karmada P-4A Linkerd P-4B external-secrets P-5A Kueue / Workload Aware Scheduling (SIG Subproject) P-5B Gateway API (SIG Subproject) P-6A…",
+    "url": "https://kubecon-cloudnativecon-north-america-2026.sessionize.com/session/1373666",
+    "tags": [
+      "opentelemetry",
+      "platform-engineering",
+      "gitops",
+      "security",
+      "networking",
+      "inference",
+      "storage",
+      "multi-cluster",
+      "contributor"
+    ]
+  },
+  {
     "id": "1295999",
     "title": "Production AI on Kubernetes: Built to Scale with Oracle Cloud",
     "start": "2026-11-11T10:18:00-07:00",
@@ -7324,6 +7401,31 @@
       "networking",
       "ai-ml",
       "agentic"
+    ]
+  },
+  {
+    "id": "1373667",
+    "title": "Project Pavilion Kiosks | Wednesday Afternoon",
+    "start": "2026-11-11T13:55:00-07:00",
+    "end": "2026-11-11T17:00:00-07:00",
+    "day": "2026-11-11",
+    "room": "Salt Palace | Level 1 | Solutions Showcase | Hall 5 | Cosmic Canyon Zone | Project Pavilion",
+    "track": "Project Opportunities",
+    "type": "other",
+    "level": "unknown",
+    "speakers": [],
+    "summary": "P-1A Vitess P-1B Tekton Pipelines P-2A Cloud Native Buildpacks P-2B Flux P-3A Kubevela P-3B Backstage P-4A Linkerd P-4B KEDA P-5A Kueue / Workload Aware Scheduling (SIG Subproject) P-5B SIG-etcd P-6A…",
+    "url": "https://kubecon-cloudnativecon-north-america-2026.sessionize.com/session/1373667",
+    "tags": [
+      "observability",
+      "autoscaling",
+      "platform-engineering",
+      "gitops",
+      "security",
+      "networking",
+      "ai-ml",
+      "storage",
+      "contributor"
     ]
   },
   {
@@ -9713,6 +9815,31 @@
     ]
   },
   {
+    "id": "1373668",
+    "title": "Project Pavilion Kiosks | Thursday Morning",
+    "start": "2026-11-12T10:15:00-07:00",
+    "end": "2026-11-12T11:55:00-07:00",
+    "day": "2026-11-12",
+    "room": "Salt Palace | Level 1 | Solutions Showcase | Hall 5 | Cosmic Canyon Zone | Project Pavilion",
+    "track": "Project Opportunities",
+    "type": "other",
+    "level": "unknown",
+    "speakers": [],
+    "summary": "P-1A Helm P-1B TBD P-2A Drasi P-2B Flux P-3A Rook P-3B Karmada P-4A Linkerd P-4B Microcks P-5A Kueue / Workload Aware Scheduling (SIG Subproject) P-5B SIG-etcd P-6A Project Capsule P-6B Istio P-7A…",
+    "url": "https://kubecon-cloudnativecon-north-america-2026.sessionize.com/session/1373668",
+    "tags": [
+      "opentelemetry",
+      "platform-engineering",
+      "gitops",
+      "security",
+      "networking",
+      "inference",
+      "storage",
+      "multi-cluster",
+      "contributor"
+    ]
+  },
+  {
     "id": "1294245",
     "title": "Cloud Native Without Limits: What Can AI Agents Do for Us?",
     "start": "2026-11-12T10:17:00-07:00",
@@ -10776,6 +10903,31 @@
     "summary": "",
     "url": "https://kubecon-cloudnativecon-north-america-2026.sessionize.com/session/1289747",
     "tags": []
+  },
+  {
+    "id": "1373669",
+    "title": "Project Pavilion Kiosks | Thursday Afternoon",
+    "start": "2026-11-12T12:25:00-07:00",
+    "end": "2026-11-12T14:00:00-07:00",
+    "day": "2026-11-12",
+    "room": "Salt Palace | Level 1 | Solutions Showcase | Hall 5 | Cosmic Canyon Zone | Project Pavilion",
+    "track": "Project Opportunities",
+    "type": "other",
+    "level": "unknown",
+    "speakers": [],
+    "summary": "P-1A Vitess P-1B Tekton Pipelines P-2A Cloud Native Buildpacks P-2B Flux P-3A Kubevela P-3B Backstage P-4A Linkerd P-4B KEDA P-5A Kueue / Workload Aware Scheduling (SIG Subproject) P-5B SIG-etcd P-6A…",
+    "url": "https://kubecon-cloudnativecon-north-america-2026.sessionize.com/session/1373669",
+    "tags": [
+      "observability",
+      "autoscaling",
+      "platform-engineering",
+      "gitops",
+      "security",
+      "networking",
+      "ai-ml",
+      "storage",
+      "contributor"
+    ]
   },
   {
     "id": "1369446",
