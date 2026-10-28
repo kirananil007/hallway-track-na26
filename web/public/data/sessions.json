@@ -31,7 +31,7 @@
   },
   {
     "id": "1344383",
-    "title": "Agent Rush Hackathon Hosted by Vultr | SEPARATE REGISTRATION REQUIRED",
+    "title": "Agent Rush Hackathon Hosted by Vultr | SOLD OUT",
     "start": "2026-11-08T09:00:00-07:00",
     "end": "2026-11-08T18:00:00-07:00",
     "day": "2026-11-08",
@@ -97,7 +97,7 @@
   },
   {
     "id": "1309278",
-    "title": "OpenShift Commons Gathering Hosted by Red Hat | SEPARATE REGISTRATION REQUIRED",
+    "title": "OpenShift Commons Gathering Hosted by Red Hat | SOLD OUT",
     "start": "2026-11-09T08:00:00-07:00",
     "end": "2026-11-09T15:00:00-07:00",
     "day": "2026-11-09",
@@ -137,7 +137,7 @@
   },
   {
     "id": "1345255",
-    "title": "DSX OS AI Inference and Contributor Workshop Hosted by NVIDIA | SEPARATE REGISTRATION REQUIRED",
+    "title": "DSX OS AI Inference and Contributor Workshop Hosted by NVIDIA | SOLD OUT",
     "start": "2026-11-09T08:30:00-07:00",
     "end": "2026-11-09T17:00:00-07:00",
     "day": "2026-11-09",
@@ -497,7 +497,7 @@
   },
   {
     "id": "1336214",
-    "title": "KubeAuto Day North America with Kelsey Hightower Hosted by Cast AI | SEPARATE REGISTRATION REQUIRED",
+    "title": "KubeAuto Day North America with Kelsey Hightower Hosted by Cast AI | SOLD OUT",
     "start": "2026-11-09T10:30:00-07:00",
     "end": "2026-11-09T19:00:00-07:00",
     "day": "2026-11-09",
@@ -1043,7 +1043,7 @@
   },
   {
     "id": "1328984",
-    "title": "Discovering and Securing AI Agents in Kubernetes Hosted by Tigera | SEPARATE REGISTRATION REQUIRED",
+    "title": "Discovering and Securing AI Agents in Kubernetes Hosted by Tigera | SOLD OUT",
     "start": "2026-11-09T14:00:00-07:00",
     "end": "2026-11-09T17:00:00-07:00",
     "day": "2026-11-09",
@@ -1422,6 +1422,46 @@
     ]
   },
   {
+    "id": "1374348",
+    "title": "KAI Scheduler: What's New & What's Next in AI Workload Orchestration",
+    "start": "2026-11-09T16:20:00-07:00",
+    "end": "2026-11-09T16:25:00-07:00",
+    "day": "2026-11-09",
+    "room": "Hyatt Regency | Level 4 | Regency Ballroom B-D",
+    "track": "Project Lightning Talks",
+    "type": "lightning",
+    "level": "unknown",
+    "speakers": [
+      "Omri Cohen"
+    ],
+    "summary": "As multi-tenant AI clusters grow, the KAI Scheduler continues to evolve to tackle modern k8s AI clusters challenges. In this talk, we will highlight the newest features and capabilities recently added…",
+    "url": "https://kubecon-cloudnativecon-north-america-2026.sessionize.com/session/1374348",
+    "tags": [
+      "ai-ml"
+    ]
+  },
+  {
+    "id": "1374350",
+    "title": "Stop Templating YAML: Build Configuration Supply Chains with kpt and Porch",
+    "start": "2026-11-09T16:27:00-07:00",
+    "end": "2026-11-09T16:32:00-07:00",
+    "day": "2026-11-09",
+    "room": "Hyatt Regency | Level 4 | Regency Ballroom B-D",
+    "track": "Project Lightning Talks",
+    "type": "lightning",
+    "level": "unknown",
+    "speakers": [
+      "Liam Fallon"
+    ],
+    "summary": "Kubernetes made infrastructure declarative, yet teams still manage configuration through templates, overlays, Git conventions, and custom automation. At scale, this creates YAML sprawl, inconsistent…",
+    "url": "https://kubecon-cloudnativecon-north-america-2026.sessionize.com/session/1374350",
+    "tags": [
+      "platform-engineering",
+      "gitops",
+      "multi-cluster"
+    ]
+  },
+  {
     "id": "1289876",
     "title": "Architecture Without Gatekeepers: Decoupling for Neutrality",
     "start": "2026-11-09T16:34:00-07:00",
@@ -1767,6 +1807,28 @@
     "summary": "",
     "url": "https://kubecon-cloudnativecon-north-america-2026.sessionize.com/session/1289746",
     "tags": []
+  },
+  {
+    "id": "1374035",
+    "title": "Demo Theater: Agentic AI Needs Agentic Infrastructure: Autonomy on Kubernetes",
+    "start": "2026-11-10T10:50:00-07:00",
+    "end": "2026-11-10T11:10:00-07:00",
+    "day": "2026-11-10",
+    "room": "Salt Palace | Level 1 | Solutions Showcase | Hall 1 | Alpine Overlook Zone | Demo Theater",
+    "track": "Sponsor Demo Theater",
+    "type": "other",
+    "level": "unknown",
+    "speakers": [
+      "Yodar Shafrir"
+    ],
+    "summary": "Autonomous workloads need autonomous infrastructure. See how fractional GPU allocations track real usage, pod requests stay accurate as behavior changes, and Karpenter consolidates nodes on accurate…",
+    "url": "https://kubecon-cloudnativecon-north-america-2026.sessionize.com/session/1374035",
+    "tags": [
+      "autoscaling",
+      "networking",
+      "ai-ml",
+      "agentic"
+    ]
   },
   {
     "id": "1341032",
@@ -4149,9 +4211,7 @@
     "type": "breakout",
     "level": "unknown",
     "speakers": [
-      "Kevin Wang",
-      "Ricardo Aravena",
-      "Chen Zicong"
+      "Ricardo Aravena"
     ],
     "summary": "Agentic AI is changing what cloud-native infrastructure must schedule. AI training, inference, and RL workloads continue to stress scheduler throughput and coordination, while agent workloads add…",
     "url": "https://kubecon-cloudnativecon-north-america-2026.sessionize.com/session/1289640",
@@ -5517,7 +5577,7 @@
       "Marlow Warnicke",
       "Brandt Keller",
       "Alolita Sharma",
-      "William Crum"
+      "Daniel Moch"
     ],
     "summary": "How do today’s reference architectures become real production platforms built on CNCF projects that evolve, mature, and earn long-term trust? In this joint keynote the CNCF End User Technical Advisory…",
     "url": "https://kubecon-cloudnativecon-north-america-2026.sessionize.com/session/1367917",
@@ -5912,7 +5972,7 @@
     "type": "other",
     "level": "unknown",
     "speakers": [
-      "Peter Frank"
+      "Mike Swift"
     ],
     "summary": "Join Major League Hacking (MLH) and DEV in the Project Pavilion for a quick look back at Hacktoberfest 2026 and what the community built with open weight models and open source agents, plus how to run…",
     "url": "https://kubecon-cloudnativecon-north-america-2026.sessionize.com/session/1370908",
@@ -6342,7 +6402,7 @@
   },
   {
     "id": "1362623",
-    "title": "Demo Theater: Your Agent Needs a Kernel of Its Own: Hardware-Isolated VM Pods on EKS",
+    "title": "Demo Theater: Agent Sandbox on EKS: Hardware-Isolated microVM Pods for AI Agents",
     "start": "2026-11-11T11:25:00-07:00",
     "end": "2026-11-11T11:45:00-07:00",
     "day": "2026-11-11",
@@ -8617,6 +8677,25 @@
     ]
   },
   {
+    "id": "1374337",
+    "title": "Celebration of Newly Graduated Projects + Project Birthdays 🎉",
+    "start": "2026-11-11T15:40:00-07:00",
+    "end": "2026-11-11T16:10:00-07:00",
+    "day": "2026-11-11",
+    "room": "Salt Palace | Level 1 | Solutions Showcase | Hall 5 | Cosmic Canyon Zone | Project Pavilion",
+    "track": "Project Opportunities",
+    "type": "other",
+    "level": "unknown",
+    "speakers": [],
+    "summary": "Join us in the Project Pavilion to recognize our newest Graduated Projects 🎉 OpenTelemetry, Buildpacks, Karmada, and Kubeflow! Grab a treat & stop by these projects kiosks to say congratulations on…",
+    "url": "https://kubecon-cloudnativecon-north-america-2026.sessionize.com/session/1374337",
+    "tags": [
+      "opentelemetry",
+      "ai-ml",
+      "multi-cluster"
+    ]
+  },
+  {
     "id": "1371581",
     "title": "Network Nook Meetup: A Platform Approach to Achieving AI ROI, Sponsored by CDW",
     "start": "2026-11-11T15:40:00-07:00",
@@ -8727,6 +8806,27 @@
     "summary": "Allyship is often treated as a mindset, but most harm experienced by underrepresented people in Cloud Native comes from small, unconscious moments—mispronounced names, comments on English fluency…",
     "url": "https://kubecon-cloudnativecon-north-america-2026.sessionize.com/session/1336567",
     "tags": []
+  },
+  {
+    "id": "1374040",
+    "title": "Demo Theater: The Software Factory of Factories with Port.io",
+    "start": "2026-11-11T16:00:00-07:00",
+    "end": "2026-11-11T16:20:00-07:00",
+    "day": "2026-11-11",
+    "room": "Salt Palace | Level 1 | Solutions Showcase | Hall 1 | Alpine Overlook Zone | Demo Theater",
+    "track": "Sponsor Demo Theater",
+    "type": "other",
+    "level": "unknown",
+    "speakers": [
+      "Baruch Sadogursky"
+    ],
+    "summary": "Every team wants its own software factory, and apparently the platform team is supposed to build all of them before anyone can get back to shipping features. I'd like the agents to help with that job…",
+    "url": "https://kubecon-cloudnativecon-north-america-2026.sessionize.com/session/1374040",
+    "tags": [
+      "platform-engineering",
+      "networking",
+      "sre"
+    ]
   },
   {
     "id": "1249409",
