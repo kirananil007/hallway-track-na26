@@ -97,7 +97,7 @@
   },
   {
     "id": "1309278",
-    "title": "OpenShift Commons Gathering Hosted by Red Hat | SOLD OUT",
+    "title": "OpenShift Commons Gathering Hosted by Red Hat | SEPARATE REGISTRATION REQUIRED",
     "start": "2026-11-09T08:00:00-07:00",
     "end": "2026-11-09T15:00:00-07:00",
     "day": "2026-11-09",
@@ -4176,7 +4176,7 @@
   },
   {
     "id": "1244963",
-    "title": "Triaging 1,800 Alerts/Month at $0.33 Each: Verkada's MCP Agent on Nine Production Clusters",
+    "title": "Triaging 4,700 Alerts/Month at $0.33 Each: Verkada's MCP Agent on Nine Production Clusters",
     "start": "2026-11-10T15:40:00-07:00",
     "end": "2026-11-10T16:10:00-07:00",
     "day": "2026-11-10",
@@ -4188,7 +4188,7 @@
       "Rohan Sood",
       "Adrian Ng"
     ],
-    "summary": "In April 2026 Verkada's incident-triage agent handled 1,847 production alerts across nine Kubernetes clusters at $0.33 per investigation, with an 86% prompt-cache-read ratio and an 82-second median…",
+    "summary": "Over the last three months Verkada's incident-triage agent handled about 4,700 production alerts a month across nine Kubernetes clusters at $0.33 per investigation, with an 87.5% prompt-cache-read…",
     "url": "https://kubecon-cloudnativecon-north-america-2026.sessionize.com/session/1244963",
     "tags": [
       "observability",
@@ -4211,7 +4211,8 @@
     "type": "breakout",
     "level": "unknown",
     "speakers": [
-      "Ricardo Aravena"
+      "Ricardo Aravena",
+      "Rainie Li"
     ],
     "summary": "Agentic AI is changing what cloud-native infrastructure must schedule. AI training, inference, and RL workloads continue to stress scheduler throughput and coordination, while agent workloads add…",
     "url": "https://kubecon-cloudnativecon-north-america-2026.sessionize.com/session/1289640",
@@ -5562,6 +5563,21 @@
       "platform-engineering",
       "ai-ml"
     ]
+  },
+  {
+    "id": "1374982",
+    "title": "Adyen Joins CNCF: Staying Independent with Open Source",
+    "start": "2026-11-11T09:26:00-07:00",
+    "end": "2026-11-11T09:31:00-07:00",
+    "day": "2026-11-11",
+    "room": "Salt Palace | Level 1 | Hall DE",
+    "track": "Keynote Sessions",
+    "type": "keynote",
+    "level": "unknown",
+    "speakers": [],
+    "summary": "Global Fintech Adyen processed €1.39 trillion in 2025 for businesses around the world on infrastructure it built and runs itself. Principal Engineer Juliano Martinez shares why Adyen is joining CNCF…",
+    "url": "https://kubecon-cloudnativecon-north-america-2026.sessionize.com/session/1374982",
+    "tags": []
   },
   {
     "id": "1367917",
@@ -8687,7 +8703,7 @@
     "type": "other",
     "level": "unknown",
     "speakers": [],
-    "summary": "Join us in the Project Pavilion to recognize our newest Graduated Projects 🎉 OpenTelemetry, Buildpacks, Karmada, and Kubeflow! Grab a treat & stop by these projects kiosks to say congratulations on…",
+    "summary": "Join us in the Project Pavilion to recognize our newest Graduated Projects 🎉 OpenTelemetry, Buildpacks, Karmada, and Kubeflow! Project Birthdays! 🎂 10 Years: Dapr and Fluentd Grab a treat & stop by…",
     "url": "https://kubecon-cloudnativecon-north-america-2026.sessionize.com/session/1374337",
     "tags": [
       "opentelemetry",
@@ -9474,7 +9490,7 @@
     "level": "beginner",
     "speakers": [
       "Ian Rudie",
-      "Jackie Maertens"
+      "Mike Morris"
     ],
     "summary": "When teams first adopt Kubernetes, one of the earliest decisions they face is how to get application traffic into their cluster. As the ecosystem moves beyond the legacy Ingress API, Gateway API is…",
     "url": "https://kubecon-cloudnativecon-north-america-2026.sessionize.com/session/1251218",
@@ -9679,6 +9695,24 @@
       "autoscaling",
       "contributor"
     ]
+  },
+  {
+    "id": "1374991",
+    "title": "Validating Kubernetes Workloads: Checklists and Best Practices",
+    "start": "2026-11-11T17:00:00-07:00",
+    "end": "2026-11-11T17:30:00-07:00",
+    "day": "2026-11-11",
+    "room": "Salt Palace | Level 2 | 254",
+    "track": "Experiences",
+    "type": "other",
+    "level": "unknown",
+    "speakers": [
+      "Nikhita Raghunath",
+      "Nabarun Pal"
+    ],
+    "summary": "Software vendors ship workloads to many Kubernetes distributions, and users must decide whether a workload is safe to run on their cluster. Today each vendor and each user builds a separate validation…",
+    "url": "https://kubecon-cloudnativecon-north-america-2026.sessionize.com/session/1374991",
+    "tags": []
   },
   {
     "id": "1340051",
@@ -10345,8 +10379,7 @@
     "type": "breakout",
     "level": "unknown",
     "speakers": [
-      "Kevin Dubois",
-      "Laurent Broudoux"
+      "Kevin Dubois"
     ],
     "summary": "Building agentic AI systems means juggling API keys for LLMs and MCP-connected tools, plus the burden of configuring those services correctly. Add expensive inference calls and highly customized dev…",
     "url": "https://kubecon-cloudnativecon-north-america-2026.sessionize.com/session/1245273",
@@ -10397,6 +10430,24 @@
     "tags": [
       "security"
     ]
+  },
+  {
+    "id": "1374958",
+    "title": "Public Sector User Group Meetup: Cloud Native in the Public Sector",
+    "start": "2026-11-12T11:00:00-07:00",
+    "end": "2026-11-12T11:30:00-07:00",
+    "day": "2026-11-12",
+    "room": "Salt Palace | Level 2 | 254",
+    "track": "Experiences",
+    "type": "other",
+    "level": "unknown",
+    "speakers": [
+      "William Crum",
+      "Daniel Moch"
+    ],
+    "summary": "An informal, social gathering for anyone working in or adjacent to the public sector who wants to connect with peers and learn how the CNCF Public Sector User Group operates. Come meet the co-chairs…",
+    "url": "https://kubecon-cloudnativecon-north-america-2026.sessionize.com/session/1374958",
+    "tags": []
   },
   {
     "id": "1289727",
@@ -10793,6 +10844,24 @@
     ]
   },
   {
+    "id": "1374960",
+    "title": "Public Sector User Group BoF: Roadmap, White Papers, Our Group",
+    "start": "2026-11-12T11:50:00-07:00",
+    "end": "2026-11-12T12:20:00-07:00",
+    "day": "2026-11-12",
+    "room": "Salt Palace | Level 2 | 254",
+    "track": "Experiences",
+    "type": "other",
+    "level": "unknown",
+    "speakers": [
+      "William Crum",
+      "Daniel Moch"
+    ],
+    "summary": "Join co-chairs William Crum and Daniel Moch for a Birds of a Feather session on the CNCF Public Sector User Group. We will walk through the group's mission and roadmap, share the white papers…",
+    "url": "https://kubecon-cloudnativecon-north-america-2026.sessionize.com/session/1374960",
+    "tags": []
+  },
+  {
     "id": "1289717",
     "title": "Rook: Intro and Deep Dive with Ceph Storage",
     "start": "2026-11-12T11:50:00-07:00",
@@ -11143,6 +11212,27 @@
       "agentic",
       "sre",
       "contributor"
+    ]
+  },
+  {
+    "id": "1374950",
+    "title": "Agentic AI: Let’s Build a Reference Architecture, Live? Or at Least Try!",
+    "start": "2026-11-12T13:50:00-07:00",
+    "end": "2026-11-12T14:20:00-07:00",
+    "day": "2026-11-12",
+    "room": "Salt Palace | Level 2 | 254",
+    "track": "Experiences",
+    "type": "other",
+    "level": "unknown",
+    "speakers": [
+      "Ricardo Rocha"
+    ],
+    "summary": "Deploying agentic AI systems in production is moving at breakneck speed, leaving platform teams to piece together patterns for orchestration, tool sandboxing, state, and security on the fly. In this…",
+    "url": "https://kubecon-cloudnativecon-north-america-2026.sessionize.com/session/1374950",
+    "tags": [
+      "security",
+      "ai-ml",
+      "agentic"
     ]
   },
   {
@@ -11767,6 +11857,25 @@
     ]
   },
   {
+    "id": "1375122",
+    "title": "Platform Engineering User Group BoF",
+    "start": "2026-11-12T14:40:00-07:00",
+    "end": "2026-11-12T15:10:00-07:00",
+    "day": "2026-11-12",
+    "room": "Salt Palace | Level 2 | 254",
+    "track": "Experiences",
+    "type": "other",
+    "level": "unknown",
+    "speakers": [
+      "Chris Plank"
+    ],
+    "summary": "Join co-chairs of the CNCF Platform Engineering User Group for a Birds of a Feather session about the group, a walk through of the group's mission, the tools and information published to date and the…",
+    "url": "https://kubecon-cloudnativecon-north-america-2026.sessionize.com/session/1375122",
+    "tags": [
+      "platform-engineering"
+    ]
+  },
+  {
     "id": "1246342",
     "title": "Securing the Agentic Future: Distributing LLM Weights and Sandboxed AI Agents via Harbor",
     "start": "2026-11-12T14:40:00-07:00",
@@ -12181,6 +12290,25 @@
       "agentic",
       "contributor",
       "beginner"
+    ]
+  },
+  {
+    "id": "1375121",
+    "title": "The CNCF Platform Engineering User Group & Platform Factors",
+    "start": "2026-11-12T15:30:00-07:00",
+    "end": "2026-11-12T16:00:00-07:00",
+    "day": "2026-11-12",
+    "room": "Salt Palace | Level 2 | 254",
+    "track": "Experiences",
+    "type": "other",
+    "level": "unknown",
+    "speakers": [
+      "Chris Plank"
+    ],
+    "summary": "What is the CNCF User Group? What does it do, who’s it for? What are the Platform Factors we’ve been hearing about this week? Join co-chairs and members of the CNCF Platform Engineering User Group who…",
+    "url": "https://kubecon-cloudnativecon-north-america-2026.sessionize.com/session/1375121",
+    "tags": [
+      "platform-engineering"
     ]
   }
 ]
