@@ -10569,11 +10569,10 @@
       "Ciara Stacke",
       "Micheal Kingston"
     ],
-    "summary": "AI agents now call tools over the Model Context Protocol (MCP), and every call looks the same to a gateway: a JSON-RPC POST to /mcp that often returns HTTP 200 even when the tool failed. In this live…",
+    "summary": "Users and AI agents now call tools over the Model Context Protocol (MCP), and every call looks the same to a gateway: a JSON-RPC POST to /mcp that often returns HTTP 200 even when the tool fails. In…",
     "url": "https://kubecon-cloudnativecon-north-america-2026.sessionize.com/session/1362642",
     "tags": [
       "observability",
-      "opentelemetry",
       "networking",
       "ai-ml",
       "agentic"
