@@ -1422,6 +1422,43 @@
     ]
   },
   {
+    "id": "1375159",
+    "title": "Kagent 1.0 with Agent Substrate",
+    "start": "2026-11-09T16:06:00-07:00",
+    "end": "2026-11-09T16:11:00-07:00",
+    "day": "2026-11-09",
+    "room": "Hyatt Regency | Level 4 | Regency Ballroom B-D",
+    "track": "Project Lightning Talks",
+    "type": "lightning",
+    "level": "unknown",
+    "speakers": [
+      "Peter Jausovec"
+    ],
+    "summary": "Kagent 1.0 rebuilds agents on Kubernetes from the ground up with agent substrate and one sandboxed, suspendable Actor per conversation, and a cleaner Harness / AgentTemplate / Agent API.",
+    "url": "https://kubecon-cloudnativecon-north-america-2026.sessionize.com/session/1375159",
+    "tags": []
+  },
+  {
+    "id": "1375161",
+    "title": "Your Routes, My Rules: Making Gateway API Work at Enterprise Scale",
+    "start": "2026-11-09T16:13:00-07:00",
+    "end": "2026-11-09T16:18:00-07:00",
+    "day": "2026-11-09",
+    "room": "Hyatt Regency | Level 4 | Regency Ballroom B-D",
+    "track": "Project Lightning Talks",
+    "type": "lightning",
+    "level": "unknown",
+    "speakers": [
+      "David Jumani"
+    ],
+    "summary": "At enterprise scale, the hard part of running a gateway isn't the traffic, it's the people: dozens of teams who all need to ship routes without waiting on the platform team or breaking each other. In…",
+    "url": "https://kubecon-cloudnativecon-north-america-2026.sessionize.com/session/1375161",
+    "tags": [
+      "platform-engineering",
+      "networking"
+    ]
+  },
+  {
     "id": "1374348",
     "title": "KAI Scheduler: What's New & What's Next in AI Workload Orchestration",
     "start": "2026-11-09T16:20:00-07:00",
@@ -7587,11 +7624,12 @@
       "Diana Zawadzki",
       "Shijie Sheng"
     ],
-    "summary": "Cadence Workflow is a CNCF sandbox project for durable workflow orchestration. This ContribFest will be a working session for improving Cadence’s AI-agent developer path: runnable examples, docs, and…",
+    "summary": "Come build durable AI workflows with Cadence, by hand or with a coding agent. Bring an idea or choose an issue from our contribution pool. We'll start together with Incident Triage, an on-call agent…",
     "url": "https://kubecon-cloudnativecon-north-america-2026.sessionize.com/session/1294751",
     "tags": [
       "ai-ml",
       "agentic",
+      "sre",
       "contributor"
     ]
   },
