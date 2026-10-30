@@ -15,3 +15,9 @@ web/dist/
 .vscode/*
 !.vscode/extensions.json
 *.log
+
+# Screen recordings for social posts (large; kept out of the repo)
+*.mp4
+*.MP4
+*.mov
+*.MOV
