@@ -797,7 +797,7 @@
   },
   {
     "id": "1289883",
-    "title": "Multiclusterize in 5",
+    "title": "Hub → Managed Cluster: How Long Did the Workload Take? Did It Arrive?",
     "start": "2026-11-09T12:06:00-07:00",
     "end": "2026-11-09T12:11:00-07:00",
     "day": "2026-11-09",
@@ -806,12 +806,12 @@
     "type": "lightning",
     "level": "unknown",
     "speakers": [
-      "August Simonelli"
+      "Suvaansh Kumar"
     ],
-    "summary": "You have a controller that solves a real problem on one cluster. Your job is to get it running on all of them - consistently, with config per cluster, without touching each cluster individually. Think…",
+    "summary": "The OCM hub knows when it accepted a ManifestWork, but not how long the work took to land on each managed cluster, or whether it landed at all. In this talk I'll show how OCM v1.4 fills that gap. The…",
     "url": "https://kubecon-cloudnativecon-north-america-2026.sessionize.com/session/1289883",
     "tags": [
-      "agentic"
+      "observability"
     ]
   },
   {
@@ -1533,6 +1533,27 @@
     "tags": []
   },
   {
+    "id": "1375964",
+    "title": "Documentary Premiere: The Linkerd Story: The People Behind the Service Mesh",
+    "start": "2026-11-09T18:30:00-07:00",
+    "end": "2026-11-09T19:30:00-07:00",
+    "day": "2026-11-09",
+    "room": "Salt Palace | Level 1 | 151",
+    "track": "Experiences",
+    "type": "other",
+    "level": "unknown",
+    "speakers": [],
+    "summary": "What started as an engineering challenge at Twitter became Linkerd, the world's first service mesh, helping transform how organizations manage the reliability, security, and observability of their…",
+    "url": "https://kubecon-cloudnativecon-north-america-2026.sessionize.com/session/1375964",
+    "tags": [
+      "observability",
+      "security",
+      "networking",
+      "sre",
+      "contributor"
+    ]
+  },
+  {
     "id": "1292211",
     "title": "Coat + Bag Check",
     "start": "2026-11-10T07:30:00-07:00",
@@ -1576,6 +1597,7 @@
       "Jonathan Bryce",
       "Chris Aniszczyk",
       "Robert Nishihara",
+      "Rita Zhang",
       "Kevin Cochrane",
       "Bassam Tabbara"
     ],
@@ -1791,6 +1813,21 @@
     "speakers": [],
     "summary": "",
     "url": "https://kubecon-cloudnativecon-north-america-2026.sessionize.com/session/1302802",
+    "tags": []
+  },
+  {
+    "id": "1376186",
+    "title": "Explore the Poster Showcase",
+    "start": "2026-11-10T10:45:00-07:00",
+    "end": "2026-11-10T19:30:00-07:00",
+    "day": "2026-11-10",
+    "room": "Salt Palace | Level 1 | Halls A-C, Halls 1-5",
+    "track": "Poster Sessions",
+    "type": "other",
+    "level": "unknown",
+    "speakers": [],
+    "summary": "Explore the Poster Showcase at your own pace! Browse posters highlighting innovative projects, research, and ideas from across the cloud native community. Posters will be available for self-guided…",
+    "url": "https://kubecon-cloudnativecon-north-america-2026.sessionize.com/session/1376186",
     "tags": []
   },
   {
@@ -3204,10 +3241,11 @@
     "type": "other",
     "level": "unknown",
     "speakers": [],
-    "summary": "Sponsor: vCluster Title: Deploy NVIDIA Dynamo as a Stack and Serve a Model Booth: 164 _In order to facilitate networking and business relationships at the event, you may choose to visit a third…",
+    "summary": "Sponsor: vCluster Title: From One Stack to a Managed, Disaggregated Inference Service Booth: 164 _In order to facilitate networking and business relationships at the event, you may choose to visit a…",
     "url": "https://kubecon-cloudnativecon-north-america-2026.sessionize.com/session/1369669",
     "tags": [
-      "networking"
+      "networking",
+      "inference"
     ]
   },
   {
@@ -3869,7 +3907,10 @@
     "track": "Sponsor Demo Theater",
     "type": "other",
     "level": "unknown",
-    "speakers": [],
+    "speakers": [
+      "Mofi Rahman",
+      "Brandon Royal"
+    ],
     "summary": "Running untrusted AI agents requires balancing strict isolation with rapid, cost-effective scaling. Agent Substrate is an open source framework that solves this challenge on Kubernetes by combining…",
     "url": "https://kubecon-cloudnativecon-north-america-2026.sessionize.com/session/1362558",
     "tags": [
@@ -9606,7 +9647,7 @@
   },
   {
     "id": "1250522",
-    "title": "Pushing beyond the Breaking Point: Linked Runners and TEEs for Frontier AI",
+    "title": "Pushing Beyond the Breaking Point: Linked Runners and TEEs for Frontier AI",
     "start": "2026-11-11T17:00:00-07:00",
     "end": "2026-11-11T17:30:00-07:00",
     "day": "2026-11-11",
@@ -9745,8 +9786,10 @@
     "type": "other",
     "level": "unknown",
     "speakers": [
-      "Nikhita Raghunath",
-      "Nabarun Pal"
+      "Nabarun Pal",
+      "Maciej Szulik",
+      "Liz Rice",
+      "Ricardo Aravena"
     ],
     "summary": "Software vendors ship workloads to many Kubernetes distributions, and users must decide whether a workload is safe to run on their cluster. Today each vendor and each user builds a separate validation…",
     "url": "https://kubecon-cloudnativecon-north-america-2026.sessionize.com/session/1374991",
@@ -11905,7 +11948,8 @@
     "type": "other",
     "level": "unknown",
     "speakers": [
-      "Chris Plank"
+      "Chris Plank",
+      "Colin Griffin"
     ],
     "summary": "Join co-chairs of the CNCF Platform Engineering User Group for a Birds of a Feather session about the group, a walk through of the group's mission, the tools and information published to date and the…",
     "url": "https://kubecon-cloudnativecon-north-america-2026.sessionize.com/session/1375122",
@@ -12341,7 +12385,8 @@
     "type": "other",
     "level": "unknown",
     "speakers": [
-      "Chris Plank"
+      "Chris Plank",
+      "Colin Griffin"
     ],
     "summary": "What is the CNCF User Group? What does it do, who’s it for? What are the Platform Factors we’ve been hearing about this week? Join co-chairs and members of the CNCF Platform Engineering User Group who…",
     "url": "https://kubecon-cloudnativecon-north-america-2026.sessionize.com/session/1375121",
