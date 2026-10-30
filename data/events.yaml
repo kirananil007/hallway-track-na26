@@ -20,3 +20,16 @@
 # Rules: dates Nov 8-13, 2026; public events only; follow the event Code of Conduct.
 
 events:
+  - id: red-hat-party
+    title: Red Hat Party
+    host: Red Hat
+    start: 2026-11-10T19:45
+    end: 2026-11-10T22:30
+    venue: Flanker Kitchen & Sporting Club (The Gateway)
+    address: 6 N Rio Grande St, Salt Lake City, UT 84101
+    url: https://reg.experiences.redhat.com/flow/redhat/5117900/rhexpressregistrationapp/page/expressregistration
+    tags: []
+    cost: free
+    requires_registration: true
+    submitted_by: kirananil007
+    last_verified: 2026-10-30

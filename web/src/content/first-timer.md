@@ -3,11 +3,6 @@
 Practical tips from the community. Something missing or out of date?
 [Edit this page on GitHub](https://github.com/kirananil007/hallway-track-na26/edit/main/web/src/content/first-timer.md).
 
-## A note from the maintainer
-
-<!-- TODO(kiran): a few sentences in your own words. Why you built this, what you wish
-you'd known at your first KubeCon. This section shows as just its heading until you fill it in. -->
-
 ## Before you fly
 
 - **Pick your pass.** The All-Access pass includes Monday's CNCF-hosted co-located events;
@@ -46,10 +41,6 @@ Picking up your badge on Sunday or early Monday avoids the Tuesday-morning queue
 - **Talks are usually recorded**, so prioritize sessions where you want to ask questions,
   and hands-on ones like tutorials and Contribfests.
 - **Evenings:** check [Side events](#/side-events) for community meetups and happy hours.
-
-## Things I wish I'd known
-
-<!-- TODO(kiran): your own tips, as a short list. -->
 
 ## Code of Conduct
 

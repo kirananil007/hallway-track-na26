@@ -28,10 +28,6 @@ Salt Lake City · Nov 9–12, 2026
 Times show in Salt Lake City time (MST) or your own. Works on phones, in dark mode, and
 without an account. **No backend, no cookies, no tracking:** your plan stays in your browser.
 
-## Why I built this
-
-<!-- TODO(kiran): your story in a few sentences. -->
-
 ## How it works
 
 ```mermaid
