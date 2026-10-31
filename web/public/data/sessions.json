@@ -9657,7 +9657,8 @@
     "level": "unknown",
     "speakers": [
       "David Porter",
-      "Evan Sheng"
+      "Evan Sheng",
+      "Ning Liao"
     ],
     "summary": "Training and serving frontier AI models pushes Kubernetes past its breaking point. At massive node scale, the sheer explosion of objects, Leases, Pods and Nodes can melt the API server, bottlenecks…",
     "url": "https://kubecon-cloudnativecon-north-america-2026.sessionize.com/session/1250522",
