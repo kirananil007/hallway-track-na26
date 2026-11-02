@@ -5652,7 +5652,9 @@
     "track": "Keynote Sessions",
     "type": "keynote",
     "level": "unknown",
-    "speakers": [],
+    "speakers": [
+      "Juliano Martinez"
+    ],
     "summary": "Global Fintech Adyen processed €1.39 trillion in 2025 for businesses around the world on infrastructure it built and runs itself. Principal Engineer Juliano Martinez shares why Adyen is joining CNCF…",
     "url": "https://kubecon-cloudnativecon-north-america-2026.sessionize.com/session/1374982",
     "tags": []
