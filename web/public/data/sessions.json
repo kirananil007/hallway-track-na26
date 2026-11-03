@@ -497,7 +497,7 @@
   },
   {
     "id": "1336214",
-    "title": "KubeAuto Day North America with Kelsey Hightower Hosted by Cast AI | SOLD OUT",
+    "title": "KubeAuto Day North America with Kelsey Hightower Hosted by Cast AI | SEPARATE REGISTRATION REQUIRED",
     "start": "2026-11-09T10:30:00-07:00",
     "end": "2026-11-09T19:00:00-07:00",
     "day": "2026-11-09",
@@ -1043,7 +1043,7 @@
   },
   {
     "id": "1328984",
-    "title": "Discovering and Securing AI Agents in Kubernetes Hosted by Tigera | SOLD OUT",
+    "title": "Discovering and Securing AI Agents in Kubernetes Hosted by Tigera | SEPARATE REGISTRATION REQUIRED",
     "start": "2026-11-09T14:00:00-07:00",
     "end": "2026-11-09T17:00:00-07:00",
     "day": "2026-11-09",
@@ -1998,7 +1998,7 @@
   },
   {
     "id": "1333734",
-    "title": "KubeScool - Learn the Easiest Way Possible",
+    "title": "KubeSchool - Learn the Easiest Way Possible",
     "start": "2026-11-10T11:02:00-07:00",
     "end": "2026-11-10T11:14:00-07:00",
     "day": "2026-11-10",
@@ -4567,6 +4567,26 @@
     "tags": []
   },
   {
+    "id": "1246066",
+    "title": "AI-DDoS: How AI-Generated Contributions Are Breaching OSS Communities, and What We Can Do about It",
+    "start": "2026-11-10T16:40:00-07:00",
+    "end": "2026-11-10T17:10:00-07:00",
+    "day": "2026-11-10",
+    "room": "Salt Palace | Level 1 | 151",
+    "track": "Cloud Native Experience",
+    "type": "breakout",
+    "level": "unknown",
+    "speakers": [
+      "Zixuan Feng"
+    ],
+    "summary": "OSS communities are sounding the alarm that AI-generated contributions are flooding their projects. Much like a DDoS attack overwhelms a server with excessive requests until it goes offline, this…",
+    "url": "https://kubecon-cloudnativecon-north-america-2026.sessionize.com/session/1246066",
+    "tags": [
+      "ai-ml",
+      "contributor"
+    ]
+  },
+  {
     "id": "1248218",
     "title": "Agents on the Platform: Four Perspectives on the Conversation We're Already Having in Private",
     "start": "2026-11-10T16:40:00-07:00",
@@ -4965,27 +4985,6 @@
     ]
   },
   {
-    "id": "1250187",
-    "title": "Zero Downtime CNI Migration at Scale: Canal to Cilium Across Hundreds of Production Clusters",
-    "start": "2026-11-10T16:40:00-07:00",
-    "end": "2026-11-10T17:10:00-07:00",
-    "day": "2026-11-10",
-    "room": "Salt Palace | Level 1 | 151",
-    "track": "Operations + Performance",
-    "type": "breakout",
-    "level": "advanced",
-    "speakers": [
-      "Prathamesh Bhope"
-    ],
-    "summary": "Migrating a CNI plugin in production is one of the most high-risk operations in Kubernetes infra. At Walmart running hundreds of clusters across cloud and on-premises environments, the team faced…",
-    "url": "https://kubecon-cloudnativecon-north-america-2026.sessionize.com/session/1250187",
-    "tags": [
-      "networking",
-      "storage",
-      "sre"
-    ]
-  },
-  {
     "id": "1240912",
     "title": "Zero-Gap GPU Execution: Building Secure, Pre-Warmed Pod Runtimes for High-Velocity AI Agents",
     "start": "2026-11-10T16:40:00-07:00",
@@ -5062,26 +5061,6 @@
     ],
     "summary": "AI is accelerating the adoption of cloud native. The humans behind those projects matter more than ever, but the pool of them is dangerously thin. Yet, the people most likely to change that ratio…",
     "url": "https://kubecon-cloudnativecon-north-america-2026.sessionize.com/session/1336586",
-    "tags": [
-      "ai-ml",
-      "contributor"
-    ]
-  },
-  {
-    "id": "1246066",
-    "title": "AI-DDoS: How AI-Generated Contributions Are Breaching OSS Communities, and What We Can Do about It",
-    "start": "2026-11-10T17:30:00-07:00",
-    "end": "2026-11-10T18:00:00-07:00",
-    "day": "2026-11-10",
-    "room": "Salt Palace | Level 1 | 151",
-    "track": "Cloud Native Experience",
-    "type": "breakout",
-    "level": "unknown",
-    "speakers": [
-      "Zixuan Feng"
-    ],
-    "summary": "OSS communities are sounding the alarm that AI-generated contributions are flooding their projects. Much like a DDoS attack overwhelms a server with excessive requests until it goes offline, this…",
-    "url": "https://kubecon-cloudnativecon-north-america-2026.sessionize.com/session/1246066",
     "tags": [
       "ai-ml",
       "contributor"
@@ -8281,7 +8260,7 @@
   },
   {
     "id": "1250299",
-    "title": "Dashboards-as-Code and the Silent Lies of kube-state-metrics",
+    "title": "Dashboards-as-Code: Easy to Ship, Easy to Get Wrong",
     "start": "2026-11-11T15:09:00-07:00",
     "end": "2026-11-11T15:14:00-07:00",
     "day": "2026-11-11",
@@ -8292,7 +8271,7 @@
     "speakers": [
       "Cecil Wöbker"
     ],
-    "summary": "A Grafana dashboard, written as code and shipped through the Prometheus operator's sidecar, can deploy cleanly and still render \"No data\" on most of its panels even when the query is right and the…",
+    "summary": "Dashboards-as-code has made shipping observability almost trivial: label a ConfigMap, let the Grafana sidecar load it, or generate dozens of dashboards from a short script and review them like any…",
     "url": "https://kubecon-cloudnativecon-north-america-2026.sessionize.com/session/1250299",
     "tags": [
       "observability",
