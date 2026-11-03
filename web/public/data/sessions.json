@@ -49,6 +49,23 @@
     ]
   },
   {
+    "id": "1379082",
+    "title": "CNCF Maintainer Summit [Near Capacity]",
+    "start": "2026-11-08T09:00:00-07:00",
+    "end": "2026-11-08T17:30:00-07:00",
+    "day": "2026-11-08",
+    "room": "Salt Palace | Level 2 | 250 A-C",
+    "track": "Project Opportunities",
+    "type": "other",
+    "level": "unknown",
+    "speakers": [],
+    "summary": "The CNCF Maintainer Summit is an exclusive event for the people behind our projects to gather face-to-face, collaborate, and celebrate the projects that make “Cloud Native.” Programming will be…",
+    "url": "https://kubecon-cloudnativecon-north-america-2026.sessionize.com/session/1379082",
+    "tags": [
+      "contributor"
+    ]
+  },
+  {
     "id": "1292207",
     "title": "Coat + Bag Check",
     "start": "2026-11-09T07:00:00-07:00",
@@ -369,7 +386,7 @@
       "Jorge Castro",
       "Katherine Druckman"
     ],
-    "summary": "",
+    "summary": "Get your hiking boots ready because we are about to traverse the wild, wonderful world of the CNCF Landscape. Why you ask? We currently have more than 230 projects, and finding information about them…",
     "url": "https://kubecon-cloudnativecon-north-america-2026.sessionize.com/session/1289969",
     "tags": []
   },
@@ -1014,7 +1031,7 @@
       "Jorge Castro",
       "Katherine Druckman"
     ],
-    "summary": "",
+    "summary": "Get your hiking boots ready because we are about to traverse the wild, wonderful world of the CNCF Landscape. Why you ask? We currently have more than 230 projects, and finding information about them…",
     "url": "https://kubecon-cloudnativecon-north-america-2026.sessionize.com/session/1289970",
     "tags": []
   },
@@ -6193,7 +6210,7 @@
     "type": "other",
     "level": "unknown",
     "speakers": [
-      "Shaha Azulay"
+      "Shahar Azulay"
     ],
     "summary": "What happens when observability stops at telling you what’s wrong? The next step is infrastructure that can use production context to continuously make better decisions. In this session, groundcover…",
     "url": "https://kubecon-cloudnativecon-north-america-2026.sessionize.com/session/1362606",
@@ -7071,8 +7088,8 @@
   {
     "id": "1362635",
     "title": "Demo Theater: Unifying Kubernetes and Datacenter Networking with Isovalent and Cisco Nexus One",
-    "start": "2026-11-11T12:39:00-07:00",
-    "end": "2026-11-11T12:59:00-07:00",
+    "start": "2026-11-11T12:40:00-07:00",
+    "end": "2026-11-11T13:00:00-07:00",
     "day": "2026-11-11",
     "room": "Salt Palace | Level 1 | Solutions Showcase | Hall 1 | Alpine Overlook Zone | Demo Theater",
     "track": "Sponsor Demo Theater",
@@ -7594,8 +7611,8 @@
     "type": "other",
     "level": "unknown",
     "speakers": [
-      "Tanya Bansal",
-      "Mickey Boxell"
+      "Mickey Boxell",
+      "Tanya Bansal"
     ],
     "summary": "Kubernetes gives teams a familiar production platform to orchestrate long-running, tool-using AI agents alongside their applications. These agents can write and run code, install packages, and use…",
     "url": "https://kubecon-cloudnativecon-north-america-2026.sessionize.com/session/1362669",
@@ -8177,8 +8194,8 @@
     "type": "other",
     "level": "unknown",
     "speakers": [
-      "Jakub Suchy",
-      "Héléne Durand"
+      "Héléne Durand",
+      "Jakub Suchy"
     ],
     "summary": "Kubernetes solved connectivity inside the cluster. Everything else was different: legacy VMs, bare metal, partner networks, and multiple clouds each connected and secured traffic on their own terms…",
     "url": "https://kubecon-cloudnativecon-north-america-2026.sessionize.com/session/1362683",
@@ -8545,28 +8562,6 @@
     "tags": [
       "observability",
       "autoscaling"
-    ]
-  },
-  {
-    "id": "1250194",
-    "title": "IDPs Are Becoming Control Planes: A Decision Framework for Cloud-Native Platforms",
-    "start": "2026-11-11T15:10:00-07:00",
-    "end": "2026-11-11T15:40:00-07:00",
-    "day": "2026-11-11",
-    "room": "Salt Palace | Level 2 | 255 EF",
-    "track": "Platform Engineering",
-    "type": "breakout",
-    "level": "advanced",
-    "speakers": [
-      "Hossein Salahi"
-    ],
-    "summary": "Internal Developer Platforms started as portals, golden paths, templates, and self-service workflows. In cloud-native environments, many are now becoming platform control planes with APIs…",
-    "url": "https://kubecon-cloudnativecon-north-america-2026.sessionize.com/session/1250194",
-    "tags": [
-      "platform-engineering",
-      "gitops",
-      "ai-ml",
-      "agentic"
     ]
   },
   {
@@ -11086,10 +11081,10 @@
     "level": "unknown",
     "speakers": [
       "Wojciech Tyczyński",
-      "Robert Nishihara",
       "Ricardo Rocha",
       "Kaslin Fields",
-      "Decheng Dai"
+      "Decheng Dai",
+      "Jui-An Huang"
     ],
     "summary": "For years, Kubernetes treated individual pods as scheduling units, complicating the execution of complex distributed systems. With the explosive growth of AI workloads, the ecosystem demands a smarter…",
     "url": "https://kubecon-cloudnativecon-north-america-2026.sessionize.com/session/1250150",
