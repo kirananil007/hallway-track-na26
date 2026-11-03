@@ -2503,6 +2503,27 @@
     ]
   },
   {
+    "id": "1378907",
+    "title": "Demo Theater: DO NOT Give AI Agents Credentials!",
+    "start": "2026-11-10T11:40:00-07:00",
+    "end": "2026-11-10T12:00:00-07:00",
+    "day": "2026-11-10",
+    "room": "Salt Palace | Level 1 | Solutions Showcase | Hall 1 | Alpine Overlook Zone | Demo Theater",
+    "track": "Sponsor Demo Theater",
+    "type": "other",
+    "level": "unknown",
+    "speakers": [
+      "Christian Posta"
+    ],
+    "summary": "How do you stop an AI agent from leaking API Keys, OAuth tokens, or secret credentials? \"\"Hey, here is my API key, can you do this for me\"\" an AI agent can easily ask another agent/API/MCP server. The…",
+    "url": "https://kubecon-cloudnativecon-north-america-2026.sessionize.com/session/1378907",
+    "tags": [
+      "networking",
+      "ai-ml",
+      "agentic"
+    ]
+  },
+  {
     "id": "1334785",
     "title": "AI on Kubernetes Is Just a Pod With a GPU (and That's the Problem)",
     "start": "2026-11-10T11:47:00-07:00",
@@ -5136,6 +5157,30 @@
     ]
   },
   {
+    "id": "1378904",
+    "title": "Demo Theater: Ready or not, your hybrid AI stack is here",
+    "start": "2026-11-10T17:30:00-07:00",
+    "end": "2026-11-10T17:50:00-07:00",
+    "day": "2026-11-10",
+    "room": "Salt Palace | Level 1 | Solutions Showcase | Hall 1 | Alpine Overlook Zone | Demo Theater",
+    "track": "Sponsor Demo Theater",
+    "type": "other",
+    "level": "unknown",
+    "speakers": [
+      "Saad Malik"
+    ],
+    "summary": "As a platform team, you probably did not design a hybrid AI architecture to begin with. While you were busy migrating hundreds of VMs, the GPU budget landed - and now you are running VMs, Kubernetes…",
+    "url": "https://kubecon-cloudnativecon-north-america-2026.sessionize.com/session/1378904",
+    "tags": [
+      "platform-engineering",
+      "gitops",
+      "networking",
+      "ai-ml",
+      "inference",
+      "edge"
+    ]
+  },
+  {
     "id": "1226654",
     "title": "From Consumers to Contributors: How Growing Open Source Members Transformed Our ML Platform Team",
     "start": "2026-11-10T17:30:00-07:00",
@@ -5465,6 +5510,28 @@
     "url": "https://kubecon-cloudnativecon-north-america-2026.sessionize.com/session/1289736",
     "tags": [
       "networking"
+    ]
+  },
+  {
+    "id": "1378905",
+    "title": "Demo Theater: One Terminal, The Entire Agentic SDLC",
+    "start": "2026-11-10T18:20:00-07:00",
+    "end": "2026-11-10T18:40:00-07:00",
+    "day": "2026-11-10",
+    "room": "Salt Palace | Level 1 | Solutions Showcase | Hall 1 | Alpine Overlook Zone | Demo Theater",
+    "track": "Sponsor Demo Theater",
+    "type": "other",
+    "level": "unknown",
+    "speakers": [
+      "Talia Kohan"
+    ],
+    "summary": "In this talk, we’ll work through that scenario as an agentic software development lifecycle. We’ll give an agent an API requirement and follow it through implementation, a collection, tests, CI, and…",
+    "url": "https://kubecon-cloudnativecon-north-america-2026.sessionize.com/session/1378905",
+    "tags": [
+      "observability",
+      "networking",
+      "agentic",
+      "sre"
     ]
   },
   {
@@ -11310,8 +11377,8 @@
     "level": "unknown",
     "speakers": [
       "Andrew Block",
-      "George Jenkins",
-      "Scott Rigby"
+      "Scott Rigby",
+      "George Jenkins"
     ],
     "summary": "Whether you have a passion for Agentic software development or want to learn something new, the Helm project is looking to make all phases of Helm use easier through incorporating agentic resources…",
     "url": "https://kubecon-cloudnativecon-north-america-2026.sessionize.com/session/1294774",
