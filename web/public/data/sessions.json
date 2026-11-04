@@ -1352,7 +1352,7 @@
     "type": "lightning",
     "level": "unknown",
     "speakers": [
-      "Jussi Nummelin"
+      "Prithvi Raj"
     ],
     "summary": "Join us for a lightning‐fast tour of k0s, the CNCF Sandbox distro that turns Kubernetes complexity into “one-click” magic. We'll give a quick intro to k0s, the current state of things, latest…",
     "url": "https://kubecon-cloudnativecon-north-america-2026.sessionize.com/session/1289912",
@@ -2559,6 +2559,28 @@
       "autoscaling",
       "ai-ml",
       "inference"
+    ]
+  },
+  {
+    "id": "1334787",
+    "title": "Supply Chain, Runtime and SDLC: A Cloud Native Security Overview",
+    "start": "2026-11-10T12:02:00-07:00",
+    "end": "2026-11-10T12:14:00-07:00",
+    "day": "2026-11-10",
+    "room": "Salt Palace | Level 1 | Solutions Showcase | Halls 5 | Cosmic Canyon Zone",
+    "track": "Cloud Native Theater",
+    "type": "other",
+    "level": "unknown",
+    "speakers": [
+      "Dr. Constanze Roedig"
+    ],
+    "summary": "Security is often overwhelming, this talk provides an overview of what problems are which (Supply Chain of the Software itself, CICD and gitops, Runtime protection and detection). I present the…",
+    "url": "https://kubecon-cloudnativecon-north-america-2026.sessionize.com/session/1334787",
+    "tags": [
+      "gitops",
+      "security",
+      "ai-ml",
+      "agentic"
     ]
   },
   {
@@ -5118,8 +5140,8 @@
       "Rita Zhang",
       "David Eads",
       "Micah Hausler",
-      "Peter Engelbert",
-      "Ben Petersen"
+      "Ben Petersen",
+      "Stanislav Láznička"
     ],
     "summary": "Refuel those propeller beanie-caps: \"\"it depends\"\" is about to become the Kubernetes API server's favorite answer. First, Conditional Authorization. Authorizers used to answer only Allow, Deny, or…",
     "url": "https://kubecon-cloudnativecon-north-america-2026.sessionize.com/session/1289677",
@@ -10056,8 +10078,8 @@
   {
     "id": "1293369",
     "title": "Agentic AI, Assembled in the Open",
-    "start": "2026-11-12T10:10:00-07:00",
-    "end": "2026-11-12T10:15:00-07:00",
+    "start": "2026-11-12T10:03:00-07:00",
+    "end": "2026-11-12T10:08:00-07:00",
     "day": "2026-11-12",
     "room": "Salt Palace | Level 1 | Hall DE",
     "track": "Keynote Sessions",
@@ -10068,6 +10090,26 @@
     ],
     "summary": "Agentic AI is moving from experiments to production, and Kubernetes is a natural place to think about how these workloads are run. Let's look at how open source can provide a common platform layer for…",
     "url": "https://kubecon-cloudnativecon-north-america-2026.sessionize.com/session/1293369",
+    "tags": [
+      "ai-ml",
+      "agentic"
+    ]
+  },
+  {
+    "id": "1294245",
+    "title": "Cloud Native Without Limits: What Can AI Agents Do for Us?",
+    "start": "2026-11-12T10:10:00-07:00",
+    "end": "2026-11-12T10:20:00-07:00",
+    "day": "2026-11-12",
+    "room": "Salt Palace | Level 1 | Hall DE",
+    "track": "Keynote Sessions",
+    "type": "keynote",
+    "level": "unknown",
+    "speakers": [
+      "Lin Sun"
+    ],
+    "summary": "In Amsterdam, we explored what cloud native could do with AI agents, MCP, and a drone controlled through natural language. Now it's time for Drone 2. What happens when AI agents become a natural part…",
+    "url": "https://kubecon-cloudnativecon-north-america-2026.sessionize.com/session/1294245",
     "tags": [
       "ai-ml",
       "agentic"
@@ -10099,29 +10141,9 @@
     ]
   },
   {
-    "id": "1294245",
-    "title": "Cloud Native Without Limits: What Can AI Agents Do for Us?",
-    "start": "2026-11-12T10:17:00-07:00",
-    "end": "2026-11-12T10:27:00-07:00",
-    "day": "2026-11-12",
-    "room": "Salt Palace | Level 1 | Hall DE",
-    "track": "Keynote Sessions",
-    "type": "keynote",
-    "level": "unknown",
-    "speakers": [
-      "Lin Sun"
-    ],
-    "summary": "In Amsterdam, we explored what cloud native could do with AI agents, MCP, and a drone controlled through natural language. Now it's time for Drone 2. What happens when AI agents become a natural part…",
-    "url": "https://kubecon-cloudnativecon-north-america-2026.sessionize.com/session/1294245",
-    "tags": [
-      "ai-ml",
-      "agentic"
-    ]
-  },
-  {
     "id": "1302806",
     "title": "Closing Remarks",
-    "start": "2026-11-12T10:29:00-07:00",
+    "start": "2026-11-12T10:22:00-07:00",
     "end": "2026-11-12T10:30:00-07:00",
     "day": "2026-11-12",
     "room": "Salt Palace | Level 1 | Hall DE",
