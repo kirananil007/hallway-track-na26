@@ -1604,7 +1604,7 @@
     "id": "1302801",
     "title": "Welcome + Opening Remarks",
     "start": "2026-11-10T09:00:00-07:00",
-    "end": "2026-11-10T09:30:00-07:00",
+    "end": "2026-11-10T09:31:00-07:00",
     "day": "2026-11-10",
     "room": "Salt Palace | Level 1 | Hall DE",
     "track": "Keynote Sessions",
@@ -1625,8 +1625,8 @@
   {
     "id": "1367757",
     "title": "Agent Substrate: Open Layers for Agentic Systems",
-    "start": "2026-11-10T09:32:00-07:00",
-    "end": "2026-11-10T09:39:00-07:00",
+    "start": "2026-11-10T09:33:00-07:00",
+    "end": "2026-11-10T09:40:00-07:00",
     "day": "2026-11-10",
     "room": "Salt Palace | Level 1 | Hall DE",
     "track": "Keynote Sessions",
@@ -1671,7 +1671,7 @@
     "id": "1363682",
     "title": "Building the Next Generation of AI with Open Source",
     "start": "2026-11-10T09:49:00-07:00",
-    "end": "2026-11-10T09:54:00-07:00",
+    "end": "2026-11-10T09:56:00-07:00",
     "day": "2026-11-10",
     "room": "Salt Palace | Level 1 | Hall DE",
     "track": "Keynote Sessions",
@@ -1689,8 +1689,8 @@
   {
     "id": "1301749",
     "title": "Sandbox Your Agents",
-    "start": "2026-11-10T09:56:00-07:00",
-    "end": "2026-11-10T10:01:00-07:00",
+    "start": "2026-11-10T09:58:00-07:00",
+    "end": "2026-11-10T10:03:00-07:00",
     "day": "2026-11-10",
     "room": "Salt Palace | Level 1 | Hall DE",
     "track": "Keynote Sessions",
@@ -1710,8 +1710,8 @@
   {
     "id": "1349401",
     "title": "Pods in the Wild: Reinforcement Learning on Kubernetes with OpenRL",
-    "start": "2026-11-10T10:03:00-07:00",
-    "end": "2026-11-10T10:11:00-07:00",
+    "start": "2026-11-10T10:05:00-07:00",
+    "end": "2026-11-10T10:13:00-07:00",
     "day": "2026-11-10",
     "room": "Salt Palace | Level 1 | Hall DE",
     "track": "Keynote Sessions",
@@ -1730,8 +1730,8 @@
   {
     "id": "1295993",
     "title": "The Harness Is the New Runtime",
-    "start": "2026-11-10T10:12:00-07:00",
-    "end": "2026-11-10T10:17:00-07:00",
+    "start": "2026-11-10T10:15:00-07:00",
+    "end": "2026-11-10T10:20:00-07:00",
     "day": "2026-11-10",
     "room": "Salt Palace | Level 1 | Hall DE",
     "track": "Keynote Sessions",
@@ -1753,8 +1753,8 @@
   {
     "id": "1362673",
     "title": "One Kubernetes, Different Environments: Closing the Portability Gaps",
-    "start": "2026-11-10T10:19:00-07:00",
-    "end": "2026-11-10T10:24:00-07:00",
+    "start": "2026-11-10T10:22:00-07:00",
+    "end": "2026-11-10T10:27:00-07:00",
     "day": "2026-11-10",
     "room": "Salt Palace | Level 1 | Hall DE",
     "track": "Keynote Sessions",
@@ -1770,8 +1770,8 @@
   {
     "id": "1309267",
     "title": "The Identity Crisis: Who is the AI Agent in Your Cluster?",
-    "start": "2026-11-10T10:26:00-07:00",
-    "end": "2026-11-10T10:36:00-07:00",
+    "start": "2026-11-10T10:29:00-07:00",
+    "end": "2026-11-10T10:39:00-07:00",
     "day": "2026-11-10",
     "room": "Salt Palace | Level 1 | Hall DE",
     "track": "Keynote Sessions",
@@ -1818,19 +1818,24 @@
     ]
   },
   {
-    "id": "1302802",
-    "title": "Closing Remarks",
-    "start": "2026-11-10T10:44:00-07:00",
-    "end": "2026-11-10T10:45:00-07:00",
+    "id": "1380168",
+    "title": "From Pod to Actuator: Physical AI and the Future of Kubernetes",
+    "start": "2026-11-10T10:41:00-07:00",
+    "end": "2026-11-10T10:46:00-07:00",
     "day": "2026-11-10",
     "room": "Salt Palace | Level 1 | Hall DE",
     "track": "Keynote Sessions",
     "type": "keynote",
     "level": "unknown",
-    "speakers": [],
+    "speakers": [
+      "Nathan Taber",
+      "Abhilash Somasamudramath"
+    ],
     "summary": "",
-    "url": "https://kubecon-cloudnativecon-north-america-2026.sessionize.com/session/1302802",
-    "tags": []
+    "url": "https://kubecon-cloudnativecon-north-america-2026.sessionize.com/session/1380168",
+    "tags": [
+      "ai-ml"
+    ]
   },
   {
     "id": "1376186",
@@ -1897,6 +1902,21 @@
     "speakers": [],
     "summary": "",
     "url": "https://kubecon-cloudnativecon-north-america-2026.sessionize.com/session/1289746",
+    "tags": []
+  },
+  {
+    "id": "1302802",
+    "title": "Closing Remarks",
+    "start": "2026-11-10T10:46:00-07:00",
+    "end": "2026-11-10T10:47:00-07:00",
+    "day": "2026-11-10",
+    "room": "Salt Palace | Level 1 | Hall DE",
+    "track": "Keynote Sessions",
+    "type": "keynote",
+    "level": "unknown",
+    "speakers": [],
+    "summary": "",
+    "url": "https://kubecon-cloudnativecon-north-america-2026.sessionize.com/session/1302802",
     "tags": []
   },
   {
@@ -5186,7 +5206,8 @@
       "Dylan Page",
       "Kashif Khan",
       "Xing Yang",
-      "Mesut Oezdil"
+      "Mesut Oezdil",
+      "Alexa Griffith"
     ],
     "summary": "Infrastructure is having a year. AI workloads are dragging cloud native back down the stack, into GPUs, bare metal, and datacenter realities most of the ecosystem spent a decade abstracting away with…",
     "url": "https://kubecon-cloudnativecon-north-america-2026.sessionize.com/session/1289642",
@@ -5986,21 +6007,6 @@
     ]
   },
   {
-    "id": "1302804",
-    "title": "Closing Remarks",
-    "start": "2026-11-11T10:35:00-07:00",
-    "end": "2026-11-11T10:36:00-07:00",
-    "day": "2026-11-11",
-    "room": "Salt Palace | Level 1 | Hall DE",
-    "track": "Keynote Sessions",
-    "type": "keynote",
-    "level": "unknown",
-    "speakers": [],
-    "summary": "",
-    "url": "https://kubecon-cloudnativecon-north-america-2026.sessionize.com/session/1302804",
-    "tags": []
-  },
-  {
     "id": "1362604",
     "title": "Demo Theater: AI already found your Java vulnerabilities. Has your scanner?",
     "start": "2026-11-11T10:35:00-07:00",
@@ -6074,6 +6080,21 @@
     ],
     "summary": "",
     "url": "https://kubecon-cloudnativecon-north-america-2026.sessionize.com/session/1334847",
+    "tags": []
+  },
+  {
+    "id": "1302804",
+    "title": "Closing Remarks",
+    "start": "2026-11-11T10:47:00-07:00",
+    "end": "2026-11-11T10:48:00-07:00",
+    "day": "2026-11-11",
+    "room": "Salt Palace | Level 1 | Hall DE",
+    "track": "Keynote Sessions",
+    "type": "keynote",
+    "level": "unknown",
+    "speakers": [],
+    "summary": "",
+    "url": "https://kubecon-cloudnativecon-north-america-2026.sessionize.com/session/1302804",
     "tags": []
   },
   {
@@ -7118,7 +7139,7 @@
     "type": "other",
     "level": "unknown",
     "speakers": [
-      "Marco Hernandez"
+      "Marcos Hernández"
     ],
     "summary": "This demo shows how Isovalent Private Networks (IPNs) connect Kubernetes workloads to a datacenter network solution built on Cisco Nexus One. Using Ethernet Virtual Private Network (EVPN), we’ll show…",
     "url": "https://kubecon-cloudnativecon-north-america-2026.sessionize.com/session/1362635",
@@ -7633,8 +7654,8 @@
     "type": "other",
     "level": "unknown",
     "speakers": [
-      "Mickey Boxell",
-      "Tanya Bansal"
+      "Tanya Bansal",
+      "Mickey Boxell"
     ],
     "summary": "Kubernetes gives teams a familiar production platform to orchestrate long-running, tool-using AI agents alongside their applications. These agents can write and run code, install packages, and use…",
     "url": "https://kubecon-cloudnativecon-north-america-2026.sessionize.com/session/1362669",
@@ -8738,30 +8759,10 @@
     ]
   },
   {
-    "id": "1250936",
-    "title": "When Agents Talk to Agents: Scaling A2A on Kubernetes Without Drowning in Connections",
-    "start": "2026-11-11T15:16:00-07:00",
-    "end": "2026-11-11T15:21:00-07:00",
-    "day": "2026-11-11",
-    "room": "Hyatt Regency | Level 4 | Regency Ballroom CD",
-    "track": "Lightning Talks",
-    "type": "lightning",
-    "level": "unknown",
-    "speakers": [
-      "Shriya Chaitanya Kamat Tarcar"
-    ],
-    "summary": "Multi-agent systems are entering production and the Linux foundation’s Agent2Agent (A2A) protocol is fast becoming the standard method for agents to find one another on kubernetes and call each other…",
-    "url": "https://kubecon-cloudnativecon-north-america-2026.sessionize.com/session/1250936",
-    "tags": [
-      "networking",
-      "agentic"
-    ]
-  },
-  {
     "id": "1250962",
     "title": "Two Newcomers, One Cloud Native Future: Learning Kubernetes In The AI Era",
-    "start": "2026-11-11T15:23:00-07:00",
-    "end": "2026-11-11T15:28:00-07:00",
+    "start": "2026-11-11T15:16:00-07:00",
+    "end": "2026-11-11T15:21:00-07:00",
     "day": "2026-11-11",
     "room": "Hyatt Regency | Level 4 | Regency Ballroom CD",
     "track": "Lightning Talks",
