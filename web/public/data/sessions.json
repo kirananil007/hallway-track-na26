@@ -434,8 +434,8 @@
     ]
   },
   {
-    "id": "1289833",
-    "title": "Ubiquitous Edge Computing: KubeEdge Industrial Cases Sharing",
+    "id": "1289876",
+    "title": "Architecture Without Gatekeepers: Decoupling for Neutrality",
     "start": "2026-11-09T10:08:00-07:00",
     "end": "2026-11-09T10:13:00-07:00",
     "day": "2026-11-09",
@@ -444,14 +444,11 @@
     "type": "lightning",
     "level": "unknown",
     "speakers": [
-      "Hongbing Zhang"
+      "Marcin Gwozdz"
     ],
-    "summary": "Since becoming the first cloud-native edge project to graduate from the CNCF, KubeEdge adoption has exploded. From intelligent transportation and smart cities to energy and banking, it is now the…",
-    "url": "https://kubecon-cloudnativecon-north-america-2026.sessionize.com/session/1289833",
-    "tags": [
-      "ai-ml",
-      "edge"
-    ]
+    "summary": "Open source only works if the community can contribute without hitting a wall. We realized our architecture at OpenEverest was unintentionally biased toward specific tools, so we rebuilt it. I’ll…",
+    "url": "https://kubecon-cloudnativecon-north-america-2026.sessionize.com/session/1289876",
+    "tags": []
   },
   {
     "id": "1289834",
@@ -1516,27 +1513,10 @@
     ]
   },
   {
-    "id": "1289876",
-    "title": "Architecture Without Gatekeepers: Decoupling for Neutrality",
-    "start": "2026-11-09T16:34:00-07:00",
-    "end": "2026-11-09T16:39:00-07:00",
-    "day": "2026-11-09",
-    "room": "Hyatt Regency | Level 4 | Regency Ballroom B-D",
-    "track": "Project Lightning Talks",
-    "type": "lightning",
-    "level": "unknown",
-    "speakers": [
-      "Marcin Gwozdz"
-    ],
-    "summary": "Open source only works if the community can contribute without hitting a wall. We realized our architecture at OpenEverest was unintentionally biased toward specific tools, so we rebuilt it. I’ll…",
-    "url": "https://kubecon-cloudnativecon-north-america-2026.sessionize.com/session/1289876",
-    "tags": []
-  },
-  {
     "id": "1289971",
     "title": "Project Lightning Talk Closing",
-    "start": "2026-11-09T16:39:00-07:00",
-    "end": "2026-11-09T16:41:00-07:00",
+    "start": "2026-11-09T16:32:00-07:00",
+    "end": "2026-11-09T16:35:00-07:00",
     "day": "2026-11-09",
     "room": "Hyatt Regency | Level 4 | Regency Ballroom B-D",
     "track": "Project Lightning Talks",
@@ -1678,7 +1658,8 @@
     "type": "keynote",
     "level": "unknown",
     "speakers": [
-      "Warren Barkley"
+      "Warren Barkley",
+      "Ali Golshan"
     ],
     "summary": "Join us to hear how NVIDIA is deepening its commitment to open source and working alongside the Kubernetes community to build the future of AI Factories—together. We’ll share how an open…",
     "url": "https://kubecon-cloudnativecon-north-america-2026.sessionize.com/session/1363682",
@@ -1850,13 +1831,12 @@
     "type": "other",
     "level": "unknown",
     "speakers": [],
-    "summary": "Sponsor: Cloudsmith Title: Patient zero is a dependency: tracing one attack two ways Booth: 175 Sponsor: Temporal Title: What if your AI agents were crash proof? Booth: 171 _In order to facilitate…",
+    "summary": "Sponsor: Cloudsmith Title: Patient zero is a dependency: tracing one attack two ways Booth: 175 Sponsor: Temporal Title: Temporal Worker Autoscaling on Kubernetes Booth: 171 _In order to facilitate…",
     "url": "https://kubecon-cloudnativecon-north-america-2026.sessionize.com/session/1369670",
     "tags": [
       "observability",
-      "networking",
-      "ai-ml",
-      "agentic"
+      "autoscaling",
+      "networking"
     ]
   },
   {
@@ -3564,7 +3544,8 @@
     "type": "other",
     "level": "unknown",
     "speakers": [
-      "David Palilonis"
+      "David Palilonis",
+      "Danielle Cook"
     ],
     "summary": "This session is your guide to becoming an impactful and effective CNCF member. We’ll cover the tangible benefits and responsibilities of membership, including providing project support, contributing…",
     "url": "https://kubecon-cloudnativecon-north-america-2026.sessionize.com/session/1306051",
@@ -10240,7 +10221,7 @@
     "type": "other",
     "level": "unknown",
     "speakers": [],
-    "summary": "Come celebrate the winners of the 2026 Security Slam at KubeCon + CloudNativeCon Europe! In the past month, projects have been competing to improve their security posture. They have been using LFX…",
+    "summary": "Come celebrate the winners of the 2026 Security Slam at KubeCon + CloudNativeCon North America! In the past month, projects have been competing to improve their security posture. They have been using…",
     "url": "https://kubecon-cloudnativecon-north-america-2026.sessionize.com/session/1370918",
     "tags": [
       "security"
