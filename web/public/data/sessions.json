@@ -340,7 +340,7 @@
   },
   {
     "id": "1339971",
-    "title": "Hands-On with Apple Open Source Tooling Hosted by Apple | SEPARATE REGISTRATION REQUIRED",
+    "title": "Hands-On with Apple Open Source Tooling Hosted by Apple | SOLD OUT",
     "start": "2026-11-09T09:30:00-07:00",
     "end": "2026-11-09T15:00:00-07:00",
     "day": "2026-11-09",
@@ -795,7 +795,7 @@
   },
   {
     "id": "1367685",
-    "title": "Stateful Done Right Hosted by Cockroach Labs | SEPARATE REGISTRATION REQUIRED",
+    "title": "Stateful Done Right Hosted by Cockroach Labs | SOLD OUT",
     "start": "2026-11-09T12:00:00-07:00",
     "end": "2026-11-09T16:00:00-07:00",
     "day": "2026-11-09",
@@ -1791,33 +1791,6 @@
     ]
   },
   {
-    "id": "1373663",
-    "title": "Project Pavilion Kiosks | Tuesday Morning",
-    "start": "2026-11-10T10:30:00-07:00",
-    "end": "2026-11-10T14:30:00-07:00",
-    "day": "2026-11-10",
-    "room": "Salt Palace | Level 1 | Solutions Showcase | Hall 5 | Cosmic Canyon Zone | Project Pavilion",
-    "track": "Project Opportunities",
-    "type": "other",
-    "level": "unknown",
-    "speakers": [],
-    "summary": "P-1A Helm P-1B OpenChoreo P-2A kube-burner P-2B Flux P-3A Rook P-3B Karmada P-4A Linkerd P-4B k0s P-5A Kueue / Workload Aware Scheduling (SIG Subproject) P-5B SIG-etcd P-6A Dynamic Resource Allocation…",
-    "url": "https://kubecon-cloudnativecon-north-america-2026.sessionize.com/session/1373663",
-    "tags": [
-      "opentelemetry",
-      "platform-engineering",
-      "gitops",
-      "security",
-      "networking",
-      "inference",
-      "storage",
-      "finops",
-      "multi-cluster",
-      "edge",
-      "contributor"
-    ]
-  },
-  {
     "id": "1380168",
     "title": "From Pod to Actuator: Physical AI and the Future of Kubernetes",
     "start": "2026-11-10T10:41:00-07:00",
@@ -1828,7 +1801,6 @@
     "type": "keynote",
     "level": "unknown",
     "speakers": [
-      "Nathan Taber",
       "Abhilash Somasamudramath"
     ],
     "summary": "",
@@ -1836,6 +1808,21 @@
     "tags": [
       "ai-ml"
     ]
+  },
+  {
+    "id": "1302802",
+    "title": "Closing Remarks",
+    "start": "2026-11-10T10:44:00-07:00",
+    "end": "2026-11-10T10:45:00-07:00",
+    "day": "2026-11-10",
+    "room": "Salt Palace | Level 1 | Hall DE",
+    "track": "Keynote Sessions",
+    "type": "keynote",
+    "level": "unknown",
+    "speakers": [],
+    "summary": "",
+    "url": "https://kubecon-cloudnativecon-north-america-2026.sessionize.com/session/1302802",
+    "tags": []
   },
   {
     "id": "1376186",
@@ -1873,6 +1860,33 @@
     ]
   },
   {
+    "id": "1373663",
+    "title": "Project Pavilion Kiosks | Tuesday Morning",
+    "start": "2026-11-10T10:45:00-07:00",
+    "end": "2026-11-10T14:30:00-07:00",
+    "day": "2026-11-10",
+    "room": "Salt Palace | Level 1 | Solutions Showcase | Hall 5 | Cosmic Canyon Zone | Project Pavilion",
+    "track": "Project Opportunities",
+    "type": "other",
+    "level": "unknown",
+    "speakers": [],
+    "summary": "P-1A Helm P-1B OpenChoreo P-2A kube-burner P-2B Flux P-3A Rook P-3B Karmada P-4A Linkerd P-4B k0s P-5A Kueue / Workload Aware Scheduling (SIG Subproject) P-5B SIG-etcd P-6A Dynamic Resource Allocation…",
+    "url": "https://kubecon-cloudnativecon-north-america-2026.sessionize.com/session/1373663",
+    "tags": [
+      "opentelemetry",
+      "platform-engineering",
+      "gitops",
+      "security",
+      "networking",
+      "inference",
+      "storage",
+      "finops",
+      "multi-cluster",
+      "edge",
+      "contributor"
+    ]
+  },
+  {
     "id": "1289738",
     "title": "Solutions Showcase",
     "start": "2026-11-10T10:45:00-07:00",
@@ -1902,21 +1916,6 @@
     "speakers": [],
     "summary": "",
     "url": "https://kubecon-cloudnativecon-north-america-2026.sessionize.com/session/1289746",
-    "tags": []
-  },
-  {
-    "id": "1302802",
-    "title": "Closing Remarks",
-    "start": "2026-11-10T10:46:00-07:00",
-    "end": "2026-11-10T10:47:00-07:00",
-    "day": "2026-11-10",
-    "room": "Salt Palace | Level 1 | Hall DE",
-    "track": "Keynote Sessions",
-    "type": "keynote",
-    "level": "unknown",
-    "speakers": [],
-    "summary": "",
-    "url": "https://kubecon-cloudnativecon-north-america-2026.sessionize.com/session/1302802",
     "tags": []
   },
   {
