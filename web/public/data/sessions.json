@@ -5207,7 +5207,7 @@
     "type": "other",
     "level": "unknown",
     "speakers": [
-      "Saad Malik"
+      "Adam Kentosh"
     ],
     "summary": "As a platform team, you probably did not design a hybrid AI architecture to begin with. While you were busy migrating hundreds of VMs, the GPU budget landed - and now you are running VMs, Kubernetes…",
     "url": "https://kubecon-cloudnativecon-north-america-2026.sessionize.com/session/1378904",
