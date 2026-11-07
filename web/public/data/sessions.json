@@ -6412,7 +6412,6 @@
     "speakers": [
       "Kai-Hsun Chen",
       "Richard Liaw",
-      "Andrew Sy Kim",
       "Mengjin Yan",
       "Jui-An Huang"
     ],
@@ -11024,7 +11023,7 @@
       "Seth McCombs",
       "Karim Alibhai"
     ],
-    "summary": "DuckDB is one of the fastest analytical databases available today, but wasn't designed to run as a multi-tenant, cloud native service. At Greybeam, we’ve been running DuckDB in production since before…",
+    "summary": "DuckDB is one of the fastest analytical databases available today, but wasn't designed to run as a multi-tenant, cloud native service. Greybeam has been running DuckDB in production since before v1.0…",
     "url": "https://kubecon-cloudnativecon-north-america-2026.sessionize.com/session/1250351",
     "tags": [
       "storage"
