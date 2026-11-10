@@ -2481,7 +2481,7 @@
     "id": "1364870",
     "title": "🚩 An Introduction to Capture The Flag",
     "start": "2026-11-10T11:30:00-07:00",
-    "end": "2026-11-10T13:30:00-07:00",
+    "end": "2026-11-10T12:00:00-07:00",
     "day": "2026-11-10",
     "room": "Salt Palace | Level 1 | Solutions Showcase | Hall 5 | Cosmic Canyon Zone | Project Pavilion",
     "track": "Project Pavilion Stage",
@@ -3596,21 +3596,6 @@
     ]
   },
   {
-    "id": "1370503",
-    "title": "CNCF Project Demos",
-    "start": "2026-11-10T14:50:00-07:00",
-    "end": "2026-11-10T16:25:00-07:00",
-    "day": "2026-11-10",
-    "room": "Salt Palace | Level 1 | Solutions Showcase | Hall 5 | Cosmic Canyon Zone | Project Pavilion",
-    "track": "Project Pavilion Stage",
-    "type": "other",
-    "level": "unknown",
-    "speakers": [],
-    "summary": "",
-    "url": "https://kubecon-cloudnativecon-north-america-2026.sessionize.com/session/1370503",
-    "tags": []
-  },
-  {
     "id": "1289637",
     "title": "Emissary-Ingress: State of the Project",
     "start": "2026-11-10T14:50:00-07:00",
@@ -3759,6 +3744,24 @@
       "inference",
       "agentic",
       "finops"
+    ]
+  },
+  {
+    "id": "1372851",
+    "title": "OpenTelemetry - OBI",
+    "start": "2026-11-10T14:50:00-07:00",
+    "end": "2026-11-10T15:15:00-07:00",
+    "day": "2026-11-10",
+    "room": "Salt Palace | Level 1 | Solutions Showcase | Hall 5 | Cosmic Canyon Zone | Project Pavilion",
+    "track": "Project Pavilion Stage",
+    "type": "other",
+    "level": "unknown",
+    "speakers": [],
+    "summary": "OBI is the new automatic instrumentation solution using eBPF. It offers users the ability to add o11y to applications with low overhead and no code changes. In this demo we'll show how to install and…",
+    "url": "https://kubecon-cloudnativecon-north-america-2026.sessionize.com/session/1372851",
+    "tags": [
+      "opentelemetry",
+      "ebpf"
     ]
   },
   {
@@ -4005,11 +4008,10 @@
     "type": "other",
     "level": "unknown",
     "speakers": [],
-    "summary": "P-1A Vitess P-1B Tekton Pipelines P-2A Cloud Native Buildpacks P-2B Flux P-3A Kubevela P-3B Backstage P-4A Linkerd P-4B KEDA P-5A Kueue / Workload Aware Scheduling (SIG Subproject) P-5B Headlamp (SIG)…",
+    "summary": "P-1A Vitess P-1B Tekton Pipelines P-2A Cloud Native Buildpacks P-2B Flux P-3A Kubevela P-3B Backstage P-4A Linkerd P-4B Microcks P-5A Kueue / Workload Aware Scheduling (SIG Subproject) P-5B Headlamp…",
     "url": "https://kubecon-cloudnativecon-north-america-2026.sessionize.com/session/1373665",
     "tags": [
       "observability",
-      "autoscaling",
       "platform-engineering",
       "gitops",
       "security",
@@ -4059,6 +4061,24 @@
       "ai-ml",
       "inference",
       "agentic"
+    ]
+  },
+  {
+    "id": "1372852",
+    "title": "Integrating MLflow for Kubeflow Pipelines: Enhanced Experiment Visibility - Model Training Workloads",
+    "start": "2026-11-10T15:25:00-07:00",
+    "end": "2026-11-10T15:50:00-07:00",
+    "day": "2026-11-10",
+    "room": "Salt Palace | Level 1 | Solutions Showcase | Hall 5 | Cosmic Canyon Zone | Project Pavilion",
+    "track": "Project Pavilion Stage",
+    "type": "other",
+    "level": "unknown",
+    "speakers": [],
+    "summary": "What projects are involved? Kubeflow (specifically Kubeflow Pipelines) and MLflow (open-source project, non-CNCF affiliated) Kubeflow Pipelines (KFP) 2.17, released in July, included a plugin for…",
+    "url": "https://kubecon-cloudnativecon-north-america-2026.sessionize.com/session/1372852",
+    "tags": [
+      "observability",
+      "ai-ml"
     ]
   },
   {
@@ -4674,7 +4694,7 @@
   },
   {
     "id": "1250975",
-    "title": "Building a Cloud-Native RAG Pipeline from Scratch: Docling Operator, KFP, and OpenSearch",
+    "title": "CANCELED: Building a Cloud-Native RAG Pipeline from Scratch: Docling Operator, KFP, and OpenSearch",
     "start": "2026-11-10T16:40:00-07:00",
     "end": "2026-11-10T18:00:00-07:00",
     "day": "2026-11-10",
@@ -7610,8 +7630,8 @@
     "end": "2026-11-11T14:20:00-07:00",
     "day": "2026-11-11",
     "room": "Salt Palace | Level 1 | Solutions Showcase | Hall 5 | Cosmic Canyon Zone | Project Pavilion",
-    "track": "",
-    "type": "breakout",
+    "track": "Project Pavilion Stage",
+    "type": "other",
     "level": "unknown",
     "speakers": [],
     "summary": "Kubernetes was built for long-running services. AI agents are different: mostly idle, bursty, running untrusted code, and needing to resume instantly with their state intact. What does that mean for…",
@@ -8288,6 +8308,23 @@
     "tags": [
       "observability",
       "networking"
+    ]
+  },
+  {
+    "id": "1372868",
+    "title": "Kubernetes: Ask the Experts",
+    "start": "2026-11-11T14:50:00-07:00",
+    "end": "2026-11-11T15:15:00-07:00",
+    "day": "2026-11-11",
+    "room": "Salt Palace | Level 1 | Solutions Showcase | Hall 5 | Cosmic Canyon Zone | Project Pavilion",
+    "track": "Project Pavilion Stage",
+    "type": "other",
+    "level": "unknown",
+    "speakers": [],
+    "summary": "Hear from Kubernetes maintainers and the Steering Committee as they discuss the future of Kubernetes. Come ready with your questions!",
+    "url": "https://kubecon-cloudnativecon-north-america-2026.sessionize.com/session/1372868",
+    "tags": [
+      "contributor"
     ]
   },
   {
@@ -9111,8 +9148,7 @@
     "type": "breakout",
     "level": "advanced",
     "speakers": [
-      "Phelipe Fabres",
-      "Daniel Bichuetti"
+      "Phelipe Fabres"
     ],
     "summary": "This session presents a production architecture orchestrating 252 GPUs across 21 multi-GPU nodes on Kubernetes to fine-tune a domain-specific Vision Language Model on 50–80 TB of multilingual document…",
     "url": "https://kubecon-cloudnativecon-north-america-2026.sessionize.com/session/1249812",
