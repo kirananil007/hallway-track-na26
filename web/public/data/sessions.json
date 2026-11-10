@@ -25,7 +25,7 @@
     "type": "other",
     "level": "unknown",
     "speakers": [],
-    "summary": "Got your badge? Next, make sure to visit any Info Desk for an ID check and a 21+ wristband to redeem your drink tickets at event receptions. Info Desk ID Check Hours: Sunday, November 8 | 8:00 AM…",
+    "summary": "Got your badge? Next, make sure to visit any Info Desk for an ID check and a 21+ wristband to redeem your drink tickets at event receptions. ID Check Station Hours: Sunday, November 8 | 8:00 AM - 5:00…",
     "url": "https://kubecon-cloudnativecon-north-america-2026.sessionize.com/session/1304040",
     "tags": []
   },
@@ -91,7 +91,7 @@
     "type": "other",
     "level": "unknown",
     "speakers": [],
-    "summary": "Got your badge? Next, make sure to visit any Info Desk for an ID check and a 21+ wristband to redeem your drink tickets at event receptions. Info Desk ID Check Hours: Sunday, November 8 | 8:00 AM…",
+    "summary": "Got your badge? Next, make sure to visit any Info Desk for an ID check and a 21+ wristband to redeem your drink tickets at event receptions. ID Check Station Hours: Sunday, November 8 | 8:00 AM - 5:00…",
     "url": "https://kubecon-cloudnativecon-north-america-2026.sessionize.com/session/1289947",
     "tags": []
   },
@@ -3230,8 +3230,8 @@
     ]
   },
   {
-    "id": "1370500",
-    "title": "CNCF Project Demos",
+    "id": "1372568",
+    "title": "Open Cluster Management (OCM): Live Demo Using k3d/KIND",
     "start": "2026-11-10T13:40:00-07:00",
     "end": "2026-11-10T14:05:00-07:00",
     "day": "2026-11-10",
@@ -3240,8 +3240,8 @@
     "type": "other",
     "level": "unknown",
     "speakers": [],
-    "summary": "",
-    "url": "https://kubecon-cloudnativecon-north-america-2026.sessionize.com/session/1370500",
+    "summary": "When deploying workloads from a central hub cluster to multiple managed clusters, two key questions often arise: How long does it take for a workload to reach each cluster, and how can you confirm it…",
+    "url": "https://kubecon-cloudnativecon-north-america-2026.sessionize.com/session/1372568",
     "tags": []
   },
   {
@@ -7566,21 +7566,6 @@
     ]
   },
   {
-    "id": "1370896",
-    "title": "CNCF Project Demos",
-    "start": "2026-11-11T13:40:00-07:00",
-    "end": "2026-11-11T15:15:00-07:00",
-    "day": "2026-11-11",
-    "room": "Salt Palace | Level 1 | Solutions Showcase | Hall 5 | Cosmic Canyon Zone | Project Pavilion",
-    "track": "Project Pavilion Stage",
-    "type": "other",
-    "level": "unknown",
-    "speakers": [],
-    "summary": "",
-    "url": "https://kubecon-cloudnativecon-north-america-2026.sessionize.com/session/1370896",
-    "tags": []
-  },
-  {
     "id": "1371079",
     "title": "From Cloud Native to Agent Native with MCP",
     "start": "2026-11-11T13:45:00-07:00",
@@ -7616,6 +7601,24 @@
       "observability",
       "opentelemetry",
       "networking"
+    ]
+  },
+  {
+    "id": "1372858",
+    "title": "Fireside Chat: Future of Kubernetes and Agents with Tim Hokin and Kelsey Hightower",
+    "start": "2026-11-11T13:50:00-07:00",
+    "end": "2026-11-11T14:20:00-07:00",
+    "day": "2026-11-11",
+    "room": "Salt Palace | Level 1 | Solutions Showcase | Hall 5 | Cosmic Canyon Zone | Project Pavilion",
+    "track": "",
+    "type": "breakout",
+    "level": "unknown",
+    "speakers": [],
+    "summary": "Kubernetes was built for long-running services. AI agents are different: mostly idle, bursty, running untrusted code, and needing to resume instantly with their state intact. What does that mean for…",
+    "url": "https://kubecon-cloudnativecon-north-america-2026.sessionize.com/session/1372858",
+    "tags": [
+      "ai-ml",
+      "agentic"
     ]
   },
   {
@@ -12427,8 +12430,8 @@
     "type": "other",
     "level": "unknown",
     "speakers": [
-      "Chris Plank",
-      "Colin Griffin"
+      "Colin Griffin",
+      "Avinash Sabat"
     ],
     "summary": "What is the CNCF User Group? What does it do, who’s it for? What are the Platform Factors we’ve been hearing about this week? Join co-chairs and members of the CNCF Platform Engineering User Group who…",
     "url": "https://kubecon-cloudnativecon-north-america-2026.sessionize.com/session/1375121",
