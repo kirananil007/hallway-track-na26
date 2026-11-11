@@ -5107,21 +5107,6 @@
     ]
   },
   {
-    "id": "1370893",
-    "title": "CNCF Project Demos",
-    "start": "2026-11-10T17:10:00-07:00",
-    "end": "2026-11-10T17:35:00-07:00",
-    "day": "2026-11-10",
-    "room": "Salt Palace | Level 1 | Solutions Showcase | Hall 5 | Cosmic Canyon Zone | Project Pavilion",
-    "track": "Project Pavilion Stage",
-    "type": "other",
-    "level": "unknown",
-    "speakers": [],
-    "summary": "",
-    "url": "https://kubecon-cloudnativecon-north-america-2026.sessionize.com/session/1370893",
-    "tags": []
-  },
-  {
     "id": "1336586",
     "title": "Merge Forward: The Missing Dependency",
     "start": "2026-11-10T17:15:00-07:00",
@@ -5519,7 +5504,7 @@
   },
   {
     "id": "1364853",
-    "title": "CLBO: ClashLoopBackOff: Demo Night",
+    "title": "CANCELLED - CLBO: ClashLoopBackOff: Demo Night",
     "start": "2026-11-10T18:00:00-07:00",
     "end": "2026-11-10T19:15:00-07:00",
     "day": "2026-11-10",
@@ -5824,7 +5809,7 @@
   },
   {
     "id": "1301748",
-    "title": "Context Unlocks Autonomous AI Infrastructure",
+    "title": "Autonomous Orchestration for AI Infrastructure",
     "start": "2026-11-11T10:04:00-07:00",
     "end": "2026-11-11T10:09:00-07:00",
     "day": "2026-11-11",
@@ -6097,7 +6082,7 @@
     "id": "1334848",
     "title": "Two Drivers, One Topology: GPU:NIC Rail Alignment for RDMA VMs with KubeVirt DRA",
     "start": "2026-11-11T10:50:00-07:00",
-    "end": "2026-11-11T11:10:00-07:00",
+    "end": "2026-11-11T11:05:00-07:00",
     "day": "2026-11-11",
     "room": "Salt Palace | Level 1 | Solutions Showcase | Halls 5 | Cosmic Canyon Zone | Cloud Native Theater",
     "track": "Cloud Native Theater",
@@ -6105,7 +6090,6 @@
     "level": "unknown",
     "speakers": [
       "Jian Li",
-      "Alay Patel",
       "Kazuki Sato"
     ],
     "summary": "A VM can receive the four GPUs and four RDMA NICs it asked for and still get a fraction of the RDMA bandwidth it paid for. What matters is the pairing: each GPU needs a NIC on its own rail, under the…",
@@ -6575,6 +6559,23 @@
       "storage",
       "contributor"
     ]
+  },
+  {
+    "id": "1384474",
+    "title": "DRA in KubeVirt Update",
+    "start": "2026-11-11T11:05:00-07:00",
+    "end": "2026-11-11T11:10:00-07:00",
+    "day": "2026-11-11",
+    "room": "Salt Palace | Level 1 | Solutions Showcase | Halls 5 | Cosmic Canyon Zone | Cloud Native Theater",
+    "track": "Cloud Native Theater",
+    "type": "other",
+    "level": "unknown",
+    "speakers": [
+      "Alay Patel"
+    ],
+    "summary": "A roadmap of DRA in KubeVirt: CPU DRA integration, KubeVirt-generated and managed ResourceClaims, and remaining work to reach GA.",
+    "url": "https://kubecon-cloudnativecon-north-america-2026.sessionize.com/session/1384474",
+    "tags": []
   },
   {
     "id": "1334849",
@@ -9946,7 +9947,7 @@
     "id": "1352067",
     "title": "Kubeflow Graduation: Powering the Next Era of Cloud Native AI With an Open Community",
     "start": "2026-11-12T09:12:00-07:00",
-    "end": "2026-11-12T09:17:00-07:00",
+    "end": "2026-11-12T09:19:00-07:00",
     "day": "2026-11-12",
     "room": "Salt Palace | Level 1 | Hall DE",
     "track": "Keynote Sessions",
@@ -9969,8 +9970,8 @@
   {
     "id": "1353351",
     "title": "Celebrating the People Who Make Cloud Native Possible",
-    "start": "2026-11-12T09:19:00-07:00",
-    "end": "2026-11-12T09:30:00-07:00",
+    "start": "2026-11-12T09:21:00-07:00",
+    "end": "2026-11-12T09:32:00-07:00",
     "day": "2026-11-12",
     "room": "Salt Palace | Level 1 | Hall DE",
     "track": "Keynote Sessions",
@@ -9986,8 +9987,8 @@
   {
     "id": "1337241",
     "title": "Scaling Multi-Modal Models and Computer-Use Agents on Kubernetes",
-    "start": "2026-11-12T09:32:00-07:00",
-    "end": "2026-11-12T09:37:00-07:00",
+    "start": "2026-11-12T09:34:00-07:00",
+    "end": "2026-11-12T09:39:00-07:00",
     "day": "2026-11-12",
     "room": "Salt Palace | Level 1 | Hall DE",
     "track": "Keynote Sessions",
@@ -10007,8 +10008,8 @@
   {
     "id": "1293929",
     "title": "Standardized Yet Adaptable: How Nutanix is Evolving Cluster API with CAREN",
-    "start": "2026-11-12T09:39:00-07:00",
-    "end": "2026-11-12T09:44:00-07:00",
+    "start": "2026-11-12T09:41:00-07:00",
+    "end": "2026-11-12T09:46:00-07:00",
     "day": "2026-11-12",
     "room": "Salt Palace | Level 1 | Hall DE",
     "track": "Keynote Sessions",
@@ -10027,8 +10028,8 @@
   {
     "id": "1367923",
     "title": "Salesforce Runs on Heroku: How We Empower Every Builder at Cloud Native Scale",
-    "start": "2026-11-12T09:46:00-07:00",
-    "end": "2026-11-12T09:49:00-07:00",
+    "start": "2026-11-12T09:48:00-07:00",
+    "end": "2026-11-12T09:51:00-07:00",
     "day": "2026-11-12",
     "room": "Salt Palace | Level 1 | Hall DE",
     "track": "Keynote Sessions",
@@ -10048,8 +10049,8 @@
   {
     "id": "1368936",
     "title": "The Storage Bottleneck AI Didn't See Coming: Inside StepFun’s Multimodal Production Stack",
-    "start": "2026-11-12T09:51:00-07:00",
-    "end": "2026-11-12T09:54:00-07:00",
+    "start": "2026-11-12T09:53:00-07:00",
+    "end": "2026-11-12T09:56:00-07:00",
     "day": "2026-11-12",
     "room": "Salt Palace | Level 1 | Hall DE",
     "track": "Keynote Sessions",
@@ -10071,8 +10072,8 @@
   {
     "id": "1301727",
     "title": "Kubernetes with Conviction: How Customization is Shaping the OSS AI Ecosystem's Future",
-    "start": "2026-11-12T09:56:00-07:00",
-    "end": "2026-11-12T10:01:00-07:00",
+    "start": "2026-11-12T09:58:00-07:00",
+    "end": "2026-11-12T10:03:00-07:00",
     "day": "2026-11-12",
     "room": "Salt Palace | Level 1 | Hall DE",
     "track": "Keynote Sessions",
@@ -10093,8 +10094,8 @@
   {
     "id": "1293369",
     "title": "Agentic AI, Assembled in the Open",
-    "start": "2026-11-12T10:03:00-07:00",
-    "end": "2026-11-12T10:08:00-07:00",
+    "start": "2026-11-12T10:05:00-07:00",
+    "end": "2026-11-12T10:10:00-07:00",
     "day": "2026-11-12",
     "room": "Salt Palace | Level 1 | Hall DE",
     "track": "Keynote Sessions",
@@ -10113,8 +10114,8 @@
   {
     "id": "1294245",
     "title": "Cloud Native Without Limits: What Can AI Agents Do for Us?",
-    "start": "2026-11-12T10:10:00-07:00",
-    "end": "2026-11-12T10:20:00-07:00",
+    "start": "2026-11-12T10:12:00-07:00",
+    "end": "2026-11-12T10:24:00-07:00",
     "day": "2026-11-12",
     "room": "Salt Palace | Level 1 | Hall DE",
     "track": "Keynote Sessions",
@@ -10133,7 +10134,7 @@
   {
     "id": "1302806",
     "title": "Closing Remarks",
-    "start": "2026-11-12T10:22:00-07:00",
+    "start": "2026-11-12T10:24:00-07:00",
     "end": "2026-11-12T10:30:00-07:00",
     "day": "2026-11-12",
     "room": "Salt Palace | Level 1 | Hall DE",
@@ -10315,8 +10316,8 @@
     "type": "breakout",
     "level": "unknown",
     "speakers": [
-      "Srikanth Rajan",
-      "Anubhav Dhoot"
+      "Anubhav Dhoot",
+      "Uttam Kumar"
     ],
     "summary": "Last KubeCon, we shared \"1000 Clusters, 1 Brain\" marking our exciting leap into AIOps. Since then, that brain had to grow up fast! An AI just executing tasks is not enough. It absolutely must…",
     "url": "https://kubecon-cloudnativecon-north-america-2026.sessionize.com/session/1248788",
