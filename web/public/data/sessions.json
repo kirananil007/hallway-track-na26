@@ -3747,24 +3747,6 @@
     ]
   },
   {
-    "id": "1372851",
-    "title": "OpenTelemetry - OBI",
-    "start": "2026-11-10T14:50:00-07:00",
-    "end": "2026-11-10T15:15:00-07:00",
-    "day": "2026-11-10",
-    "room": "Salt Palace | Level 1 | Solutions Showcase | Hall 5 | Cosmic Canyon Zone | Project Pavilion",
-    "track": "Project Pavilion Stage",
-    "type": "other",
-    "level": "unknown",
-    "speakers": [],
-    "summary": "OBI is the new automatic instrumentation solution using eBPF. It offers users the ability to add o11y to applications with low overhead and no code changes. In this demo we'll show how to install and…",
-    "url": "https://kubecon-cloudnativecon-north-america-2026.sessionize.com/session/1372851",
-    "tags": [
-      "opentelemetry",
-      "ebpf"
-    ]
-  },
-  {
     "id": "1294760",
     "title": "Podman Contribfest",
     "start": "2026-11-10T14:50:00-07:00",
@@ -4769,7 +4751,7 @@
     "speakers": [
       "Reza Jelveh",
       "Mengxuan Li",
-      "Han Shen"
+      "Meng Wang"
     ],
     "summary": "HAMi is a CNCF Incubation project for heterogeneous GPU virtualization in Kubernetes, supporting 10+ GPU/NPU vendors. Attendees set up HAMi on their laptop - with or without a GPU - and trace how the…",
     "url": "https://kubecon-cloudnativecon-north-america-2026.sessionize.com/session/1294775",
@@ -7285,7 +7267,6 @@
     "type": "other",
     "level": "unknown",
     "speakers": [
-      "Akshay Chitneni",
       "Aniket Shaha",
       "Ricardo Aravena"
     ],
@@ -7625,21 +7606,21 @@
     ]
   },
   {
-    "id": "1372858",
-    "title": "Fireside Chat: Future of Kubernetes and Agents with Tim Hokin and Kelsey Hightower",
-    "start": "2026-11-11T13:50:00-07:00",
-    "end": "2026-11-11T14:20:00-07:00",
+    "id": "1372851",
+    "title": "OpenTelemetry - OBI",
+    "start": "2026-11-11T13:45:00-07:00",
+    "end": "2026-11-11T14:10:00-07:00",
     "day": "2026-11-11",
     "room": "Salt Palace | Level 1 | Solutions Showcase | Hall 5 | Cosmic Canyon Zone | Project Pavilion",
     "track": "Project Pavilion Stage",
     "type": "other",
     "level": "unknown",
     "speakers": [],
-    "summary": "Kubernetes was built for long-running services. AI agents are different: mostly idle, bursty, running untrusted code, and needing to resume instantly with their state intact. What does that mean for…",
-    "url": "https://kubecon-cloudnativecon-north-america-2026.sessionize.com/session/1372858",
+    "summary": "OBI is the new automatic instrumentation solution using eBPF. It offers users the ability to add o11y to applications with low overhead and no code changes. In this demo we'll show how to install and…",
+    "url": "https://kubecon-cloudnativecon-north-america-2026.sessionize.com/session/1372851",
     "tags": [
-      "ai-ml",
-      "agentic"
+      "opentelemetry",
+      "ebpf"
     ]
   },
   {
@@ -7731,6 +7712,24 @@
     "url": "https://kubecon-cloudnativecon-north-america-2026.sessionize.com/session/1333711",
     "tags": [
       "ai-ml"
+    ]
+  },
+  {
+    "id": "1372870",
+    "title": "What's New in Podman 6: From 6.0 to 6.2",
+    "start": "2026-11-11T14:15:00-07:00",
+    "end": "2026-11-11T14:40:00-07:00",
+    "day": "2026-11-11",
+    "room": "Salt Palace | Level 1 | Solutions Showcase | Hall 5 | Cosmic Canyon Zone | Project Pavilion",
+    "track": "Project Pavilion Stage",
+    "type": "other",
+    "level": "unknown",
+    "speakers": [],
+    "summary": "Podman is a daemonless, rootless, CNCF sandbox container engine for finding, running, building, sharing, and deploying OCI containers and images. Since last year, Podman has shipped a major release…",
+    "url": "https://kubecon-cloudnativecon-north-america-2026.sessionize.com/session/1372870",
+    "tags": [
+      "networking",
+      "contributor"
     ]
   },
   {
@@ -8798,7 +8797,7 @@
   },
   {
     "id": "1364856",
-    "title": "CLBO: ClashLoopBackOff: Attendee Edition",
+    "title": "CANCELLED - CLBO: ClashLoopBackOff: Attendee Edition",
     "start": "2026-11-11T15:25:00-07:00",
     "end": "2026-11-11T16:25:00-07:00",
     "day": "2026-11-11",
@@ -9510,19 +9509,22 @@
     ]
   },
   {
-    "id": "1370902",
-    "title": "CNCF Project Demos",
-    "start": "2026-11-11T16:35:00-07:00",
+    "id": "1372858",
+    "title": "Fireside Chat: Future of Kubernetes and Agents with Tim Hockin and Kelsey Hightower",
+    "start": "2026-11-11T16:30:00-07:00",
     "end": "2026-11-11T17:00:00-07:00",
     "day": "2026-11-11",
-    "room": "Salt Palace | Level 1 | Solutions Showcase | Hall 5 | Cosmic Canyon Zone | Project Pavilion",
-    "track": "Project Pavilion Stage",
+    "room": "Salt Palace | Level 1 | Solutions Showcase | Halls 5 | Cosmic Canyon Zone | Cloud Native Theater",
+    "track": "Cloud Native Theater",
     "type": "other",
     "level": "unknown",
     "speakers": [],
-    "summary": "",
-    "url": "https://kubecon-cloudnativecon-north-america-2026.sessionize.com/session/1370902",
-    "tags": []
+    "summary": "Kubernetes was built for long-running services. AI agents are different: mostly idle, bursty, running untrusted code, and needing to resume instantly with their state intact. What does that mean for…",
+    "url": "https://kubecon-cloudnativecon-north-america-2026.sessionize.com/session/1372858",
+    "tags": [
+      "ai-ml",
+      "agentic"
+    ]
   },
   {
     "id": "1289661",
@@ -9671,7 +9673,6 @@
     "type": "breakout",
     "level": "unknown",
     "speakers": [
-      "Antoine Roy",
       "Léonard Suslian"
     ],
     "summary": "In July 2025, Mistral started building a sovereign AI cloud from scratch. Five months later, our first GB200/GB300 cluster was in production. We did it by standing on the shoulders of CNCF and…",
@@ -11005,6 +11006,21 @@
       "platform-engineering",
       "agentic"
     ]
+  },
+  {
+    "id": "1372877",
+    "title": "Map your K8s Clusters with Cartography",
+    "start": "2026-11-12T11:50:00-07:00",
+    "end": "2026-11-12T12:15:00-07:00",
+    "day": "2026-11-12",
+    "room": "Salt Palace | Level 1 | Solutions Showcase | Hall 5 | Cosmic Canyon Zone | Project Pavilion",
+    "track": "Project Pavilion Stage",
+    "type": "other",
+    "level": "unknown",
+    "speakers": [],
+    "summary": "Map your K8s infrastructure with Cartography in 2026. Any team can list their clusters, but they struggle to answer questions like: - which workloads are running which container images - what cloud…",
+    "url": "https://kubecon-cloudnativecon-north-america-2026.sessionize.com/session/1372877",
+    "tags": []
   },
   {
     "id": "1374960",
